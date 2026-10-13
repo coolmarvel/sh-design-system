@@ -86,32 +86,32 @@
   <Color x:Key="ShColorControlBorder">#FFB5B5B5</Color>
   <SolidColorBrush x:Key="ShColorControlBorderBrush" Color="{StaticResource ShColorControlBorder}"/>
   <!-- 바깥 1px 테두리·패널 구분선 -->
-  <Color x:Key="ShColorChromeFrame">#FFA1ABB9</Color>
+  <Color x:Key="ShColorChromeFrame">#FFB8BABC</Color>
   <SolidColorBrush x:Key="ShColorChromeFrameBrush" Color="{StaticResource ShColorChromeFrame}"/>
-  <Color x:Key="ShColorChromeMenubarTop">#FFEDF2F6</Color>
+  <Color x:Key="ShColorChromeMenubarTop">#FFF4F4F4</Color>
   <SolidColorBrush x:Key="ShColorChromeMenubarTopBrush" Color="{StaticResource ShColorChromeMenubarTop}"/>
-  <Color x:Key="ShColorChromeMenubarBottom">#FFD9E1EC</Color>
+  <Color x:Key="ShColorChromeMenubarBottom">#FFDFDFDF</Color>
   <SolidColorBrush x:Key="ShColorChromeMenubarBottomBrush" Color="{StaticResource ShColorChromeMenubarBottom}"/>
   <Color x:Key="ShColorChromeToolbarLight">#FFFAFBFF</Color>
   <SolidColorBrush x:Key="ShColorChromeToolbarLightBrush" Color="{StaticResource ShColorChromeToolbarLight}"/>
   <!-- 툴바 면·메뉴 항목 hover -->
-  <Color x:Key="ShColorChromeToolbarFace">#FFE6EDF6</Color>
+  <Color x:Key="ShColorChromeToolbarFace">#FFEAEAEA</Color>
   <SolidColorBrush x:Key="ShColorChromeToolbarFaceBrush" Color="{StaticResource ShColorChromeToolbarFace}"/>
-  <Color x:Key="ShColorChromeToolbarRow2Bottom">#FFECF1F7</Color>
+  <Color x:Key="ShColorChromeToolbarRow2Bottom">#FFEAEAEA</Color>
   <SolidColorBrush x:Key="ShColorChromeToolbarRow2BottomBrush" Color="{StaticResource ShColorChromeToolbarRow2Bottom}"/>
   <!-- 툴바 줄 사이 1px -->
-  <Color x:Key="ShColorChromeToolbarHairline">#FFBBC5D4</Color>
+  <Color x:Key="ShColorChromeToolbarHairline">#FFB8BABC</Color>
   <SolidColorBrush x:Key="ShColorChromeToolbarHairlineBrush" Color="{StaticResource ShColorChromeToolbarHairline}"/>
   <!-- 눌린·켜진 도구 버튼 테두리 -->
-  <Color x:Key="ShColorChromeToolbarEdge">#FFAFB6C6</Color>
+  <Color x:Key="ShColorChromeToolbarEdge">#FFB8BABC</Color>
   <SolidColorBrush x:Key="ShColorChromeToolbarEdgeBrush" Color="{StaticResource ShColorChromeToolbarEdge}"/>
   <!-- 켜진 도구 버튼·열린 드롭다운 면 아래 -->
-  <Color x:Key="ShColorChromePressed">#FFD3DBE7</Color>
+  <Color x:Key="ShColorChromePressed">#FFD5D5D5</Color>
   <SolidColorBrush x:Key="ShColorChromePressedBrush" Color="{StaticResource ShColorChromePressed}"/>
-  <Color x:Key="ShColorChromePressedLight">#FFEFF1F5</Color>
+  <Color x:Key="ShColorChromePressedLight">#FFF2F2F2</Color>
   <SolidColorBrush x:Key="ShColorChromePressedLightBrush" Color="{StaticResource ShColorChromePressedLight}"/>
   <!-- 툴바 세로 구분선 1px 단선 -->
-  <Color x:Key="ShColorChromeSeparator">#FFC5CCD9</Color>
+  <Color x:Key="ShColorChromeSeparator">#FFC6C6C6</Color>
   <SolidColorBrush x:Key="ShColorChromeSeparatorBrush" Color="{StaticResource ShColorChromeSeparator}"/>
   <Color x:Key="ShColorChromeStatusTop">#FFD4D4D4</Color>
   <SolidColorBrush x:Key="ShColorChromeStatusTopBrush" Color="{StaticResource ShColorChromeStatusTop}"/>
@@ -120,9 +120,9 @@
   <!-- 상태 줄 면 — 파란 스킨에서도 회색 -->
   <Color x:Key="ShColorChromeStatusFace">#FFECECEC</Color>
   <SolidColorBrush x:Key="ShColorChromeStatusFaceBrush" Color="{StaticResource ShColorChromeStatusFace}"/>
-  <Color x:Key="ShColorChromeTabActive">#FFD7DDE9</Color>
+  <Color x:Key="ShColorChromeTabActive">#FFE2E2E3</Color>
   <SolidColorBrush x:Key="ShColorChromeTabActiveBrush" Color="{StaticResource ShColorChromeTabActive}"/>
-  <Color x:Key="ShColorChromeTabDivider">#FFDBDBDB</Color>
+  <Color x:Key="ShColorChromeTabDivider">#FFB8BABC</Color>
   <SolidColorBrush x:Key="ShColorChromeTabDividerBrush" Color="{StaticResource ShColorChromeTabDivider}"/>
   <!-- 이미지·영상을 보는 어두운 바탕 -->
   <Color x:Key="ShColorStageImage">#FF1E2025</Color>
@@ -153,18 +153,18 @@
   <sys:Double x:Key="ShMotionDurationFast">100</sys:Double>
   <!-- 타이틀바·메뉴바·대화상자 제목 띠 -->
   <LinearGradientBrush x:Key="ShGradientChromeBrush" StartPoint="0,0" EndPoint="0,1">
-    <GradientStop Color="#FFEDF2F6" Offset="0"/>
-    <GradientStop Color="#FFD9E1EC" Offset="1"/>
+    <GradientStop Color="#FFF4F4F4" Offset="0"/>
+    <GradientStop Color="#FFDFDFDF" Offset="1"/>
   </LinearGradientBrush>
   <!-- 툴바 1줄 -->
   <LinearGradientBrush x:Key="ShGradientToolbarBrush" StartPoint="0,0" EndPoint="0,1">
     <GradientStop Color="#FFFAFBFF" Offset="0"/>
-    <GradientStop Color="#FFE6EDF6" Offset="1"/>
+    <GradientStop Color="#FFEAEAEA" Offset="1"/>
   </LinearGradientBrush>
   <!-- 툴바 2줄·옵션 바 -->
   <LinearGradientBrush x:Key="ShGradientToolbar2Brush" StartPoint="0,0" EndPoint="0,1">
     <GradientStop Color="#FFFFFFFF" Offset="0"/>
-    <GradientStop Color="#FFECF1F7" Offset="1"/>
+    <GradientStop Color="#FFEAEAEA" Offset="1"/>
   </LinearGradientBrush>
   <!-- 상태 줄·대화상자 버튼 줄 -->
   <LinearGradientBrush x:Key="ShGradientStatusBrush" StartPoint="0,0" EndPoint="0,1">
@@ -173,8 +173,8 @@
   </LinearGradientBrush>
   <!-- 켜진 도구 버튼·열린 드롭다운 -->
   <LinearGradientBrush x:Key="ShGradientPressedBrush" StartPoint="0,0" EndPoint="0,1">
-    <GradientStop Color="#FFEFF1F5" Offset="0"/>
-    <GradientStop Color="#FFD3DBE7" Offset="1"/>
+    <GradientStop Color="#FFF2F2F2" Offset="0"/>
+    <GradientStop Color="#FFD5D5D5" Offset="1"/>
   </LinearGradientBrush>
   <!-- 베벨 버튼·표 머리글·패널 제목 띠·스크롤 엄지 -->
   <LinearGradientBrush x:Key="ShGradientBevelBrush" StartPoint="0,0" EndPoint="0,1">

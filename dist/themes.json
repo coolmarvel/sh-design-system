@@ -16,6 +16,10 @@
     "description": "PACSPLUS Viewer 하늘색 — 의료 영상 뷰어 계열 (remote-assist 실측)"
   },
   {
+    "id": "skin-blue",
+    "description": "DEXT5 파랑 스킨 — sh-web-editor·sh-compositor 기본이던 크롬 색 (DEXT5 3.5 blue 실측)"
+  },
+  {
     "id": "skin-brown",
     "description": "DEXT5 갈색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
@@ -26,10 +30,6 @@
   {
     "id": "skin-gold",
     "description": "DEXT5 금색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
-  },
-  {
-    "id": "skin-gray",
-    "description": "DEXT5 회색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-green",

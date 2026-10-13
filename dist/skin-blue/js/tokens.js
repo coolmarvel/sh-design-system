@@ -32,22 +32,22 @@ export const colorControlTop = "#ffffff"; // 베벨 버튼 면 위 (Money Forwar
 export const colorControlBottom = "#e6e6e6"; // 베벨 버튼 면 아래
 export const colorControlPressed = "#d6d9df"; // 눌린 베벨 버튼 — 오목한 단색
 export const colorControlBorder = "#b5b5b5"; // 베벨 버튼 테두리
-export const colorChromeFrame = "#b8babc"; // 바깥 1px 테두리·패널 구분선
-export const colorChromeMenubarTop = "#f4f4f4";
-export const colorChromeMenubarBottom = "#dfdfdf";
+export const colorChromeFrame = "#a1abb9"; // 바깥 1px 테두리·패널 구분선
+export const colorChromeMenubarTop = "#edf2f6";
+export const colorChromeMenubarBottom = "#d9e1ec";
 export const colorChromeToolbarLight = "#fafbff";
-export const colorChromeToolbarFace = "#eaeaea"; // 툴바 면·메뉴 항목 hover
-export const colorChromeToolbarRow2Bottom = "#eaeaea";
-export const colorChromeToolbarHairline = "#b8babc"; // 툴바 줄 사이 1px
-export const colorChromeToolbarEdge = "#b8babc"; // 눌린·켜진 도구 버튼 테두리
-export const colorChromePressed = "#d5d5d5"; // 켜진 도구 버튼·열린 드롭다운 면 아래
-export const colorChromePressedLight = "#f2f2f2";
-export const colorChromeSeparator = "#c6c6c6"; // 툴바 세로 구분선 1px 단선
+export const colorChromeToolbarFace = "#e6edf6"; // 툴바 면·메뉴 항목 hover
+export const colorChromeToolbarRow2Bottom = "#ecf1f7";
+export const colorChromeToolbarHairline = "#bbc5d4"; // 툴바 줄 사이 1px
+export const colorChromeToolbarEdge = "#afb6c6"; // 눌린·켜진 도구 버튼 테두리
+export const colorChromePressed = "#d3dbe7"; // 켜진 도구 버튼·열린 드롭다운 면 아래
+export const colorChromePressedLight = "#eff1f5";
+export const colorChromeSeparator = "#c5ccd9"; // 툴바 세로 구분선 1px 단선
 export const colorChromeStatusTop = "#d4d4d4";
 export const colorChromeStatusLight = "#f8f8f8";
 export const colorChromeStatusFace = "#ececec"; // 상태 줄 면 — 파란 스킨에서도 회색
-export const colorChromeTabActive = "#e2e2e3";
-export const colorChromeTabDivider = "#b8babc";
+export const colorChromeTabActive = "#d7dde9";
+export const colorChromeTabDivider = "#dbdbdb";
 export const colorStageImage = "#1e2025"; // 이미지·영상을 보는 어두운 바탕
 export const colorStageDocument = "#8a8f98"; // 종이 문서 편집 바탕
 export const colorStageViewer = "#5a5e66"; // 작성·열람 뷰어 바탕
@@ -61,15 +61,15 @@ export const shadowPage = "2px 2px 0px 0px #00000059"; // 문서 스테이지 �
 export const motionDurationNone = "0ms"; // 이동·크기 애니메이션 없음 — 기본
 export const motionDurationFast = "100ms"; // hover 색 전환에만
 export const gradientChrome =
-  "linear-gradient(to bottom, #f4f4f4 0%, #dfdfdf 100%)"; // 타이틀바·메뉴바·대화상자 제목 띠
+  "linear-gradient(to bottom, #edf2f6 0%, #d9e1ec 100%)"; // 타이틀바·메뉴바·대화상자 제목 띠
 export const gradientToolbar =
-  "linear-gradient(to bottom, #fafbff 0%, #eaeaea 100%)"; // 툴바 1줄
+  "linear-gradient(to bottom, #fafbff 0%, #e6edf6 100%)"; // 툴바 1줄
 export const gradientToolbar2 =
-  "linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%)"; // 툴바 2줄·옵션 바
+  "linear-gradient(to bottom, #ffffff 0%, #ecf1f7 100%)"; // 툴바 2줄·옵션 바
 export const gradientStatus =
   "linear-gradient(to bottom, #f8f8f8 0%, #ececec 100%)"; // 상태 줄·대화상자 버튼 줄
 export const gradientPressed =
-  "linear-gradient(to bottom, #f2f2f2 0%, #d5d5d5 100%)"; // 켜진 도구 버튼·열린 드롭다운
+  "linear-gradient(to bottom, #eff1f5 0%, #d3dbe7 100%)"; // 켜진 도구 버튼·열린 드롭다운
 export const gradientBevel =
   "linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%)"; // 베벨 버튼·표 머리글·패널 제목 띠·스크롤 엄지
 export const sizeControlSm = "22px"; // 작은 버튼·세그먼트·아이콘 버튼

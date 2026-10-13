@@ -114,44 +114,44 @@
       }
     },
     "chrome": {
-      "$description": "크롬(메뉴바·툴바·상태 줄·탭) 색 — 스킨 테마가 이 그룹만 바꾼다. 기본 = DEXT5 blue 실측 (sh-web-editor)",
+      "$description": "크롬(메뉴바·툴바·상태 줄·탭) 색 — 스킨 테마가 이 그룹만 바꾼다. 기본 = DEXT5 회색 스킨 (2026-10-13 사용자 결정, sh-econsent·pdf-editor 톤)",
       "frame": {
-        "$value": "#a1abb9",
+        "$value": "#b8babc",
         "$description": "바깥 1px 테두리·패널 구분선"
       },
       "menubar-top": {
-        "$value": "#edf2f6"
+        "$value": "#f4f4f4"
       },
       "menubar-bottom": {
-        "$value": "#d9e1ec"
+        "$value": "#dfdfdf"
       },
       "toolbar-light": {
         "$value": "#fafbff"
       },
       "toolbar-face": {
-        "$value": "#e6edf6",
+        "$value": "#eaeaea",
         "$description": "툴바 면·메뉴 항목 hover"
       },
       "toolbar-row2-bottom": {
-        "$value": "#ecf1f7"
+        "$value": "#eaeaea"
       },
       "toolbar-hairline": {
-        "$value": "#bbc5d4",
+        "$value": "#b8babc",
         "$description": "툴바 줄 사이 1px"
       },
       "toolbar-edge": {
-        "$value": "#afb6c6",
+        "$value": "#b8babc",
         "$description": "눌린·켜진 도구 버튼 테두리"
       },
       "pressed": {
-        "$value": "#d3dbe7",
+        "$value": "#d5d5d5",
         "$description": "켜진 도구 버튼·열린 드롭다운 면 아래"
       },
       "pressed-light": {
-        "$value": "#eff1f5"
+        "$value": "#f2f2f2"
       },
       "separator": {
-        "$value": "#c5ccd9",
+        "$value": "#c6c6c6",
         "$description": "툴바 세로 구분선 1px 단선"
       },
       "status-top": {
@@ -165,10 +165,10 @@
         "$description": "상태 줄 면 — 파란 스킨에서도 회색"
       },
       "tab-active": {
-        "$value": "#d7dde9"
+        "$value": "#e2e2e3"
       },
       "tab-divider": {
-        "$value": "#dbdbdb"
+        "$value": "#b8babc"
       }
     },
     "stage": {

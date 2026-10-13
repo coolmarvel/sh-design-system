@@ -17,7 +17,7 @@ domain: development
   정리. 기준은 sh-web-editor + sh-messenger (나머지는 이 둘을 차용). omd 빌더 내보내기(DESIGN.md · Tailwind v4 · CSS 변수 ·
   DTCG JSON)와 색·타이포·간격·부품·지침 구성 스크린샷 4장 첨부(확인 후 삭제). 공개 범위 public.
 - **결정**: omd 호환 DESIGN.md + DTCG 토큰 SSOT + Style Dictionary 5.5.5 → 13개 플랫폼, 쇼케이스 도커 8083 (ADR-0002).
-  통합 판정표 (ADR-0003): accent `#2f6fed`, 기본 스킨 blue(DEXT5), 탭 굵기 불변, 흰 상자 체크, 메뉴 hover toolbar-face 등.
+  통합 판정표 (ADR-0003): accent `#2f6fed`, 기본 스킨 gray(사용자 결정, 파랑은 skin-blue), 탭 굵기 불변, 흰 상자 체크, 메뉴 hover toolbar-face 등.
 - **수정**: tokens(베이스 5파일 + 테마 16), build(빌드·포맷·omd·check), DESIGN.md 16절, components/css/sh-classic.css,
   showcase(omd 빌더형, 클래식 앱 모양), bin/sh-ds.mjs, README, 문서 일체.
 - **검증**: `npm run verify` 통과(prettier + dist 신선도 + DESIGN.md 동기화 + CSS 변수 참조 + 17개 테마 대비).

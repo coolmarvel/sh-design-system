@@ -1,40 +1,40 @@
 {
-  "$description": "DEXT5 회색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)",
+  "$description": "DEXT5 파랑 스킨 — sh-web-editor·sh-compositor 기본이던 크롬 색 (DEXT5 3.5 blue 실측)",
   "color": {
     "$type": "color",
     "chrome": {
       "frame": {
-        "$value": "#b8babc"
+        "$value": "#a1abb9"
       },
       "menubar-top": {
-        "$value": "#f4f4f4"
+        "$value": "#edf2f6"
       },
       "menubar-bottom": {
-        "$value": "#dfdfdf"
+        "$value": "#d9e1ec"
       },
       "toolbar-light": {
         "$value": "#fafbff"
       },
       "toolbar-face": {
-        "$value": "#eaeaea"
+        "$value": "#e6edf6"
       },
       "toolbar-row2-bottom": {
-        "$value": "#eaeaea"
+        "$value": "#ecf1f7"
       },
       "toolbar-hairline": {
-        "$value": "#b8babc"
+        "$value": "#bbc5d4"
       },
       "toolbar-edge": {
-        "$value": "#b8babc"
+        "$value": "#afb6c6"
       },
       "pressed": {
-        "$value": "#d5d5d5"
+        "$value": "#d3dbe7"
       },
       "pressed-light": {
-        "$value": "#f2f2f2"
+        "$value": "#eff1f5"
       },
       "separator": {
-        "$value": "#c6c6c6"
+        "$value": "#c5ccd9"
       },
       "status-top": {
         "$value": "#d4d4d4"
@@ -46,10 +46,10 @@
         "$value": "#ececec"
       },
       "tab-active": {
-        "$value": "#e2e2e3"
+        "$value": "#d7dde9"
       },
       "tab-divider": {
-        "$value": "#b8babc"
+        "$value": "#dbdbdb"
       }
     }
   }

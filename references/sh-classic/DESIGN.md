@@ -12,7 +12,7 @@ updated: "2026-10-13"
 author: 이성현 (SeongHyun Lee)
 lineage:
   base: [ sh-web-editor, sh-messenger ] # 2026-10-13 사용자 지정 — 두 프로젝트가 기준, 나머지는 이 둘을 차용
-  sh-web-editor: "크롬 실측값(DEXT5 3.5 blue), 스킨 13종, 베벨 버튼, hover 테두리, 메뉴·툴바·대화상자 배치"
+  sh-web-editor: "크롬 실측값(DEXT5 3.5, 기본 회색 스킨 — 2026-10-13 사용자 결정), 스킨 13종, 베벨 버튼, hover 테두리, 메뉴·툴바·대화상자 배치"
   sh-messenger: "중립 팔레트(글자·선·면), accent, 그림자, 타입 스케일, 프레임리스 타이틀바, 컨텍스트 메뉴 문법, 다크"
   refined_by: [ sh-compositor, sh-econsent, sh-form-designer, remote-assist, pdf-editor-live ]
 platforms: [ css, scss, less, js, tailwind3, tailwind4, dtcg, wpf, avalonia, ios, android, compose, flutter ]
@@ -64,22 +64,22 @@ tokens:
     control-bottom: "#e6e6e6"
     control-pressed: "#d6d9df"
     control-border: "#b5b5b5"
-    chrome-frame: "#a1abb9"
-    chrome-menubar-top: "#edf2f6"
-    chrome-menubar-bottom: "#d9e1ec"
+    chrome-frame: "#b8babc"
+    chrome-menubar-top: "#f4f4f4"
+    chrome-menubar-bottom: "#dfdfdf"
     chrome-toolbar-light: "#fafbff"
-    chrome-toolbar-face: "#e6edf6"
-    chrome-toolbar-row2-bottom: "#ecf1f7"
-    chrome-toolbar-hairline: "#bbc5d4"
-    chrome-toolbar-edge: "#afb6c6"
-    chrome-pressed: "#d3dbe7"
-    chrome-pressed-light: "#eff1f5"
-    chrome-separator: "#c5ccd9"
+    chrome-toolbar-face: "#eaeaea"
+    chrome-toolbar-row2-bottom: "#eaeaea"
+    chrome-toolbar-hairline: "#b8babc"
+    chrome-toolbar-edge: "#b8babc"
+    chrome-pressed: "#d5d5d5"
+    chrome-pressed-light: "#f2f2f2"
+    chrome-separator: "#c6c6c6"
     chrome-status-top: "#d4d4d4"
     chrome-status-light: "#f8f8f8"
     chrome-status-face: "#ececec"
-    chrome-tab-active: "#d7dde9"
-    chrome-tab-divider: "#dbdbdb"
+    chrome-tab-active: "#e2e2e3"
+    chrome-tab-divider: "#b8babc"
     stage-image: "#1e2025"
     stage-document: "#8a8f98"
     stage-viewer: "#5a5e66"
@@ -88,11 +88,11 @@ tokens:
     tree-line: "#9aa0a8"
     tree-box: "#7b8490"
   gradients:
-    chrome: "linear-gradient(to bottom, #edf2f6 0%, #d9e1ec 100%)"
-    toolbar: "linear-gradient(to bottom, #fafbff 0%, #e6edf6 100%)"
-    toolbar2: "linear-gradient(to bottom, #ffffff 0%, #ecf1f7 100%)"
+    chrome: "linear-gradient(to bottom, #f4f4f4 0%, #dfdfdf 100%)"
+    toolbar: "linear-gradient(to bottom, #fafbff 0%, #eaeaea 100%)"
+    toolbar2: "linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%)"
     status: "linear-gradient(to bottom, #f8f8f8 0%, #ececec 100%)"
-    pressed: "linear-gradient(to bottom, #eff1f5 0%, #d3dbe7 100%)"
+    pressed: "linear-gradient(to bottom, #f2f2f2 0%, #d5d5d5 100%)"
     bevel: "linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%)"
   typography:
     family-ui: 돋움, Dotum, 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif
@@ -262,6 +262,25 @@ themes:
       gradient-pressed: "linear-gradient(to bottom, #f0f0f0 0%, #dddddd 100%)"
       gradient-bevel: "linear-gradient(to bottom, #ffffff 0%, #dddddd 100%)"
       font-family-ui: 굴림, Gulim, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif, 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif
+  skin-blue:
+    description: DEXT5 파랑 스킨 — sh-web-editor·sh-compositor 기본이던 크롬 색 (DEXT5 3.5 blue 실측)
+    tokens:
+      color-chrome-frame: "#a1abb9"
+      color-chrome-menubar-top: "#edf2f6"
+      color-chrome-menubar-bottom: "#d9e1ec"
+      color-chrome-toolbar-face: "#e6edf6"
+      color-chrome-toolbar-row2-bottom: "#ecf1f7"
+      color-chrome-toolbar-hairline: "#bbc5d4"
+      color-chrome-toolbar-edge: "#afb6c6"
+      color-chrome-pressed: "#d3dbe7"
+      color-chrome-pressed-light: "#eff1f5"
+      color-chrome-separator: "#c5ccd9"
+      color-chrome-tab-active: "#d7dde9"
+      color-chrome-tab-divider: "#dbdbdb"
+      gradient-chrome: "linear-gradient(to bottom, #edf2f6 0%, #d9e1ec 100%)"
+      gradient-toolbar: "linear-gradient(to bottom, #fafbff 0%, #e6edf6 100%)"
+      gradient-toolbar2: "linear-gradient(to bottom, #ffffff 0%, #ecf1f7 100%)"
+      gradient-pressed: "linear-gradient(to bottom, #eff1f5 0%, #d3dbe7 100%)"
   skin-brown:
     description: DEXT5 갈색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
@@ -334,25 +353,6 @@ themes:
       gradient-toolbar2: "linear-gradient(to bottom, #ffffff 0%, #e8e1b4 100%)"
       gradient-status: "linear-gradient(to bottom, #f3efd1 0%, #f6f2da 100%)"
       gradient-pressed: "linear-gradient(to bottom, #f9f7e0 0%, #d8cd8a 100%)"
-  skin-gray:
-    description: DEXT5 회색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
-    tokens:
-      color-chrome-frame: "#b8babc"
-      color-chrome-menubar-top: "#f4f4f4"
-      color-chrome-menubar-bottom: "#dfdfdf"
-      color-chrome-toolbar-face: "#eaeaea"
-      color-chrome-toolbar-row2-bottom: "#eaeaea"
-      color-chrome-toolbar-hairline: "#b8babc"
-      color-chrome-toolbar-edge: "#b8babc"
-      color-chrome-pressed: "#d5d5d5"
-      color-chrome-pressed-light: "#f2f2f2"
-      color-chrome-separator: "#c6c6c6"
-      color-chrome-tab-active: "#e2e2e3"
-      color-chrome-tab-divider: "#b8babc"
-      gradient-chrome: "linear-gradient(to bottom, #f4f4f4 0%, #dfdfdf 100%)"
-      gradient-toolbar: "linear-gradient(to bottom, #fafbff 0%, #eaeaea 100%)"
-      gradient-toolbar2: "linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%)"
-      gradient-pressed: "linear-gradient(to bottom, #f2f2f2 0%, #d5d5d5 100%)"
   skin-green:
     description: DEXT5 초록 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:

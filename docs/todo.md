@@ -18,7 +18,7 @@ domain: development
 
 - [ ] WPF·Avalonia 부품 스타일 레퍼런스(`components/wpf`, `components/avalonia`) — 지금은 토큰만
 - [ ] project-seed 위저드 디자인 단계에 sh-classic 선택지 추가 (발사대 유지보수 모드에서 사용자 요청 시)
-- [ ] ADR-0003 판정 중 사용자 확인이 필요한 항목 재확인: 기본 스킨 blue vs gray, 대화상자 제목 13px, 스크롤바 12px
+- [ ] ADR-0003 판정 중 사용자 확인이 필요한 항목 재확인: 대화상자 제목 13px, 스크롤바 12px
 
 ## P3 — 품질
 

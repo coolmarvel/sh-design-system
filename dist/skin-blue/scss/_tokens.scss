@@ -31,22 +31,22 @@ $sh-color-control-top: #ffffff; // 베벨 버튼 면 위 (Money Forward·DEXT5 �
 $sh-color-control-bottom: #e6e6e6; // 베벨 버튼 면 아래
 $sh-color-control-pressed: #d6d9df; // 눌린 베벨 버튼 — 오목한 단색
 $sh-color-control-border: #b5b5b5; // 베벨 버튼 테두리
-$sh-color-chrome-frame: #b8babc; // 바깥 1px 테두리·패널 구분선
-$sh-color-chrome-menubar-top: #f4f4f4;
-$sh-color-chrome-menubar-bottom: #dfdfdf;
+$sh-color-chrome-frame: #a1abb9; // 바깥 1px 테두리·패널 구분선
+$sh-color-chrome-menubar-top: #edf2f6;
+$sh-color-chrome-menubar-bottom: #d9e1ec;
 $sh-color-chrome-toolbar-light: #fafbff;
-$sh-color-chrome-toolbar-face: #eaeaea; // 툴바 면·메뉴 항목 hover
-$sh-color-chrome-toolbar-row2-bottom: #eaeaea;
-$sh-color-chrome-toolbar-hairline: #b8babc; // 툴바 줄 사이 1px
-$sh-color-chrome-toolbar-edge: #b8babc; // 눌린·켜진 도구 버튼 테두리
-$sh-color-chrome-pressed: #d5d5d5; // 켜진 도구 버튼·열린 드롭다운 면 아래
-$sh-color-chrome-pressed-light: #f2f2f2;
-$sh-color-chrome-separator: #c6c6c6; // 툴바 세로 구분선 1px 단선
+$sh-color-chrome-toolbar-face: #e6edf6; // 툴바 면·메뉴 항목 hover
+$sh-color-chrome-toolbar-row2-bottom: #ecf1f7;
+$sh-color-chrome-toolbar-hairline: #bbc5d4; // 툴바 줄 사이 1px
+$sh-color-chrome-toolbar-edge: #afb6c6; // 눌린·켜진 도구 버튼 테두리
+$sh-color-chrome-pressed: #d3dbe7; // 켜진 도구 버튼·열린 드롭다운 면 아래
+$sh-color-chrome-pressed-light: #eff1f5;
+$sh-color-chrome-separator: #c5ccd9; // 툴바 세로 구분선 1px 단선
 $sh-color-chrome-status-top: #d4d4d4;
 $sh-color-chrome-status-light: #f8f8f8;
 $sh-color-chrome-status-face: #ececec; // 상태 줄 면 — 파란 스킨에서도 회색
-$sh-color-chrome-tab-active: #e2e2e3;
-$sh-color-chrome-tab-divider: #b8babc;
+$sh-color-chrome-tab-active: #d7dde9;
+$sh-color-chrome-tab-divider: #dbdbdb;
 $sh-color-stage-image: #1e2025; // 이미지·영상을 보는 어두운 바탕
 $sh-color-stage-document: #8a8f98; // 종이 문서 편집 바탕
 $sh-color-stage-viewer: #5a5e66; // 작성·열람 뷰어 바탕
@@ -59,11 +59,11 @@ $sh-shadow-dialog: 3px 3px 6px 0px #00000038; // 대화상자
 $sh-shadow-page: 2px 2px 0px 0px #00000059; // 문서 스테이지 위 종이
 $sh-motion-duration-none: 0ms; // 이동·크기 애니메이션 없음 — 기본
 $sh-motion-duration-fast: 100ms; // hover 색 전환에만
-$sh-gradient-chrome: linear-gradient(to bottom, #f4f4f4 0%, #dfdfdf 100%); // 타이틀바·메뉴바·대화상자 제목 띠
-$sh-gradient-toolbar: linear-gradient(to bottom, #fafbff 0%, #eaeaea 100%); // 툴바 1줄
-$sh-gradient-toolbar2: linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%); // 툴바 2줄·옵션 바
+$sh-gradient-chrome: linear-gradient(to bottom, #edf2f6 0%, #d9e1ec 100%); // 타이틀바·메뉴바·대화상자 제목 띠
+$sh-gradient-toolbar: linear-gradient(to bottom, #fafbff 0%, #e6edf6 100%); // 툴바 1줄
+$sh-gradient-toolbar2: linear-gradient(to bottom, #ffffff 0%, #ecf1f7 100%); // 툴바 2줄·옵션 바
 $sh-gradient-status: linear-gradient(to bottom, #f8f8f8 0%, #ececec 100%); // 상태 줄·대화상자 버튼 줄
-$sh-gradient-pressed: linear-gradient(to bottom, #f2f2f2 0%, #d5d5d5 100%); // 켜진 도구 버튼·열린 드롭다운
+$sh-gradient-pressed: linear-gradient(to bottom, #eff1f5 0%, #d3dbe7 100%); // 켜진 도구 버튼·열린 드롭다운
 $sh-gradient-bevel: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%); // 베벨 버튼·표 머리글·패널 제목 띠·스크롤 엄지
 $sh-size-control-sm: 22px; // 작은 버튼·세그먼트·아이콘 버튼
 $sh-size-control-md: 24px; // 버튼·입력·콤보 기본

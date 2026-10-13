@@ -53,7 +53,7 @@ type: `feat` `fix` `refactor` `chore` `docs` `style` `test` `perf` `ci` `build` 
 이성현의 모든 프로젝트가 같은 **클래식 UI(sh-classic)** 를 따르게 하는 디자인 시스템 레퍼런스 저장소다. oh-my-design(omd)
 브랜드 레퍼런스와 같은 형식의 `references/sh-classic/DESIGN.md`(AI 가 읽는 계약)와, DTCG 토큰 SSOT 에서 생성한 13개 플랫폼
 토큰 파일(CSS·SCSS·LESS·JS·Tailwind 3/4·DTCG·WPF·Avalonia·iOS·Android·Compose·Flutter), 웹용 부품 CSS, 쇼케이스를 담는다.
-기준은 sh-web-editor(DEXT5 실측 크롬) + sh-messenger(중립 팔레트) — `docs/adr/0003-classic-consolidation.md`. 제품 앱은 여기 없다.
+기준은 sh-web-editor(DEXT5 실측 크롬, 기본 회색 스킨) + sh-messenger(중립 팔레트) — `docs/adr/0003-classic-consolidation.md`. 제품 앱은 여기 없다.
 
 ## 문서 인덱스 (docs/)
 
