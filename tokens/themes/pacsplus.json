@@ -1,0 +1,98 @@
+{
+  "$description": "PACSPLUS Viewer 하늘색 — 의료 영상 뷰어 계열 (remote-assist 실측)",
+  "color": {
+    "$type": "color",
+    "accent": {
+      "$value": "#0062df"
+    },
+    "accent-hover": {
+      "$value": "#1375ec"
+    },
+    "accent-pressed": {
+      "$value": "#003597"
+    },
+    "text": {
+      "$value": "#000000"
+    },
+    "text-secondary": {
+      "$value": "#565d6a"
+    },
+    "text-disabled": {
+      "$value": "#8e929b"
+    },
+    "border-strong": {
+      "$value": "#707070"
+    },
+    "control": {
+      "bottom": {
+        "$value": "#dddddd"
+      },
+      "border": {
+        "$value": "#707070"
+      }
+    },
+    "stage": {
+      "image": {
+        "$value": "#000000"
+      }
+    },
+    "chrome": {
+      "frame": {
+        "$value": "#a0a0a0"
+      },
+      "menubar-top": {
+        "$value": "#bee1ff"
+      },
+      "menubar-bottom": {
+        "$value": "#bee1ff"
+      },
+      "toolbar-light": {
+        "$value": "#bee1ff"
+      },
+      "toolbar-face": {
+        "$value": "#bee1ff"
+      },
+      "toolbar-row2-bottom": {
+        "$value": "#bee1ff"
+      },
+      "toolbar-hairline": {
+        "$value": "#a0a0a0"
+      },
+      "toolbar-edge": {
+        "$value": "#707070"
+      },
+      "pressed": {
+        "$value": "#dddddd"
+      },
+      "pressed-light": {
+        "$value": "#f0f0f0"
+      },
+      "separator": {
+        "$value": "#a0a0a0"
+      },
+      "status-top": {
+        "$value": "#a0a0a0"
+      },
+      "status-light": {
+        "$value": "#bee1ff"
+      },
+      "status-face": {
+        "$value": "#bee1ff"
+      },
+      "tab-active": {
+        "$value": "#31adff"
+      },
+      "tab-divider": {
+        "$value": "#a0a0a0"
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "ui": {
+        "$value": ["굴림", "Gulim", "Malgun Gothic", "Apple SD Gothic Neo", "sans-serif"]
+      }
+    }
+  }
+}

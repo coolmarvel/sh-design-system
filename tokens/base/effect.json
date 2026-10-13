@@ -1,0 +1,48 @@
+{
+  "shadow": {
+    "$type": "shadow",
+    "raised": {
+      "$value": {
+        "color": "#0000002e",
+        "offsetX": "2px",
+        "offsetY": "2px",
+        "blur": "4px",
+        "spread": "0px"
+      },
+      "$description": "메뉴·팝오버·툴팁"
+    },
+    "dialog": {
+      "$value": {
+        "color": "#00000038",
+        "offsetX": "3px",
+        "offsetY": "3px",
+        "blur": "6px",
+        "spread": "0px"
+      },
+      "$description": "대화상자"
+    },
+    "page": {
+      "$value": {
+        "color": "#00000059",
+        "offsetX": "2px",
+        "offsetY": "2px",
+        "blur": "0px",
+        "spread": "0px"
+      },
+      "$description": "문서 스테이지 위 종이"
+    }
+  },
+  "motion": {
+    "duration": {
+      "$type": "duration",
+      "none": {
+        "$value": "0ms",
+        "$description": "이동·크기 애니메이션 없음 — 기본"
+      },
+      "fast": {
+        "$value": "100ms",
+        "$description": "hover 색 전환에만"
+      }
+    }
+  }
+}

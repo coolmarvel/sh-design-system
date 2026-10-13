@@ -1,0 +1,32 @@
+{
+  "name": "sh-design-system",
+  "version": "0.1.0",
+  "description": "이성현의 클래식 UI 디자인 시스템 레퍼런스 (sh-classic) — omd 호환 DESIGN.md + 다중 플랫폼 토큰 + 쇼케이스",
+  "scripts": {
+    "build": "node build/build.mjs",
+    "check": "node build/check.mjs",
+    "lint": "prettier --check build showcase tokens",
+    "format": "prettier --write build showcase tokens",
+    "verify": "npm run lint && npm run check",
+    "showcase:up": "docker compose up -d",
+    "showcase:down": "docker compose down"
+  },
+  "author": "이성현",
+  "license": "UNLICENSED",
+  "type": "module",
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "style-dictionary": "5.5.5",
+    "yaml": "2.8.1"
+  },
+  "private": true,
+  "bin": {
+    "sh-ds": "bin/sh-ds.mjs"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "references",
+    "components"
+  ]
+}

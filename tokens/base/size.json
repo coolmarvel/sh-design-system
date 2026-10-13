@@ -1,0 +1,148 @@
+{
+  "size": {
+    "$type": "dimension",
+    "control": {
+      "sm": {
+        "$value": "22px",
+        "$description": "작은 버튼·세그먼트·아이콘 버튼"
+      },
+      "md": {
+        "$value": "24px",
+        "$description": "버튼·입력·콤보 기본"
+      },
+      "lg": {
+        "$value": "28px",
+        "$description": "로그인 등 큰 입력"
+      }
+    },
+    "tool-button": {
+      "$value": "24px"
+    },
+    "icon": {
+      "$value": "16px"
+    },
+    "titlebar": {
+      "$value": "28px",
+      "$description": "프레임리스 앱 타이틀바"
+    },
+    "menubar": {
+      "$value": "22px"
+    },
+    "toolbar": {
+      "$value": "30px"
+    },
+    "statusbar": {
+      "$value": "22px"
+    },
+    "status-pane": {
+      "$value": "16px"
+    },
+    "panel-title": {
+      "$value": "22px"
+    },
+    "dialog-title": {
+      "$value": "28px"
+    },
+    "dialog-button-min": {
+      "$value": "72px"
+    },
+    "row": {
+      "$value": "22px",
+      "$description": "목록·표 행"
+    },
+    "table-header": {
+      "$value": "24px"
+    },
+    "menu-item": {
+      "$value": "22px"
+    },
+    "menu-min-width": {
+      "$value": "180px"
+    },
+    "tab": {
+      "$value": "24px",
+      "$description": "활성·비활성 같은 높이"
+    },
+    "tree-row": {
+      "$value": "19px"
+    },
+    "tree-indent": {
+      "$value": "16px"
+    },
+    "tree-box": {
+      "$value": "9px"
+    },
+    "checkbox": {
+      "$value": "13px"
+    },
+    "scrollbar": {
+      "$value": "12px",
+      "$description": "sh-messenger"
+    },
+    "splitter": {
+      "$value": "5px"
+    },
+    "window-button": {
+      "$value": "40px",
+      "$description": "타이틀바 창 버튼 폭"
+    }
+  },
+  "space": {
+    "$type": "dimension",
+    "0": {
+      "$value": "0px"
+    },
+    "2": {
+      "$value": "2px"
+    },
+    "4": {
+      "$value": "4px"
+    },
+    "6": {
+      "$value": "6px"
+    },
+    "8": {
+      "$value": "8px"
+    },
+    "12": {
+      "$value": "12px"
+    },
+    "16": {
+      "$value": "16px"
+    },
+    "20": {
+      "$value": "20px"
+    },
+    "24": {
+      "$value": "24px"
+    },
+    "32": {
+      "$value": "32px"
+    },
+    "48": {
+      "$value": "48px"
+    }
+  },
+  "radius": {
+    "$type": "dimension",
+    "none": {
+      "$value": "0px",
+      "$description": "모든 컨트롤·패널·대화상자·메뉴"
+    },
+    "round": {
+      "$value": "9999px",
+      "$description": "상태 점·dirty 점에만"
+    }
+  },
+  "border": {
+    "$type": "dimension",
+    "width": {
+      "$value": "1px",
+      "$description": "모든 선은 1px"
+    },
+    "focus-offset": {
+      "$value": "-3px",
+      "$description": "포커스 점선을 안쪽 3px 에"
+    }
+  }
+}

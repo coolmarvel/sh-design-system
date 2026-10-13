@@ -1,0 +1,21 @@
+{
+  "$description": "글자/바탕 대비 최소 기준 — 모든 테마에서 npm run check 가 확인한다 (WCAG: 본문 4.5, 비텍스트 3)",
+  "pairs": [
+    ["text", "canvas", 7],
+    ["text", "sunken", 7],
+    ["text-secondary", "canvas", 4.5],
+    ["text-muted", "canvas", 4.5],
+    ["on-accent", "accent", 4.5],
+    ["accent", "canvas", 3],
+    ["link", "canvas", 4.5],
+    ["danger", "canvas", 4.5],
+    ["danger", "danger-subtle", 4.5],
+    ["warning", "warning-subtle", 4.5],
+    ["success", "canvas", 4.5],
+    ["text", "accent-subtle", 7],
+    ["text", "warning-subtle", 7],
+    ["border-strong", "canvas", 3],
+    ["text-secondary", "sunken", 4.5],
+    ["text", "chrome.toolbar-face", 7]
+  ]
+}

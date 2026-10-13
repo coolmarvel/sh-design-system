@@ -1,0 +1,67 @@
+{
+  "$description": "터치 밀도 — 환자용 화면·coarse 포인터. 색은 그대로, 크기만 키운다 (sh-econsent .touch, pdf-editor coarse)",
+  "size": {
+    "$type": "dimension",
+    "control": {
+      "sm": {
+        "$value": "40px"
+      },
+      "md": {
+        "$value": "48px"
+      },
+      "lg": {
+        "$value": "52px"
+      }
+    },
+    "tool-button": {
+      "$value": "48px"
+    },
+    "icon": {
+      "$value": "24px"
+    },
+    "row": {
+      "$value": "45px"
+    },
+    "menu-item": {
+      "$value": "40px"
+    },
+    "tab": {
+      "$value": "40px"
+    },
+    "tree-row": {
+      "$value": "32px"
+    },
+    "checkbox": {
+      "$value": "24px"
+    },
+    "scrollbar": {
+      "$value": "16px"
+    },
+    "splitter": {
+      "$value": "12px"
+    },
+    "toolbar": {
+      "$value": "56px"
+    },
+    "statusbar": {
+      "$value": "28px"
+    }
+  },
+  "font": {
+    "size": {
+      "$type": "dimension",
+      "caption": {
+        "$value": "13px"
+      },
+      "body": {
+        "$value": "16px"
+      },
+      "emphasis": {
+        "$value": "17px"
+      },
+      "title": {
+        "$value": "18px"
+      }
+    }
+  }
+}

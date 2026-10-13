@@ -1,0 +1,83 @@
+{
+  "gradient": {
+    "$type": "gradient",
+    "chrome": {
+      "$value": [
+        {
+          "color": "{color.chrome.menubar-top}",
+          "position": 0
+        },
+        {
+          "color": "{color.chrome.menubar-bottom}",
+          "position": 1
+        }
+      ],
+      "$description": "타이틀바·메뉴바·대화상자 제목 띠"
+    },
+    "toolbar": {
+      "$value": [
+        {
+          "color": "{color.chrome.toolbar-light}",
+          "position": 0
+        },
+        {
+          "color": "{color.chrome.toolbar-face}",
+          "position": 1
+        }
+      ],
+      "$description": "툴바 1줄"
+    },
+    "toolbar2": {
+      "$value": [
+        {
+          "color": "{color.canvas}",
+          "position": 0
+        },
+        {
+          "color": "{color.chrome.toolbar-row2-bottom}",
+          "position": 1
+        }
+      ],
+      "$description": "툴바 2줄·옵션 바"
+    },
+    "status": {
+      "$value": [
+        {
+          "color": "{color.chrome.status-light}",
+          "position": 0
+        },
+        {
+          "color": "{color.chrome.status-face}",
+          "position": 1
+        }
+      ],
+      "$description": "상태 줄·대화상자 버튼 줄"
+    },
+    "pressed": {
+      "$value": [
+        {
+          "color": "{color.chrome.pressed-light}",
+          "position": 0
+        },
+        {
+          "color": "{color.chrome.pressed}",
+          "position": 1
+        }
+      ],
+      "$description": "켜진 도구 버튼·열린 드롭다운"
+    },
+    "bevel": {
+      "$value": [
+        {
+          "color": "{color.control.top}",
+          "position": 0
+        },
+        {
+          "color": "{color.control.bottom}",
+          "position": 1
+        }
+      ],
+      "$description": "베벨 버튼·표 머리글·패널 제목 띠·스크롤 엄지"
+    }
+  }
+}

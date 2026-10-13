@@ -1,0 +1,19 @@
+{
+  "$description": "앱 브랜드 파랑 #3b74f2 — sh-compositor·file-converter·pdf-editor 의 accent",
+  "color": {
+    "$type": "color",
+    "accent": {
+      "$value": "#336ef1",
+      "$description": "브랜드 #3b74f2 는 흰 글자 대비 4.23 — AA 4.5 를 넘는 가장 가까운 음영"
+    },
+    "accent-hover": {
+      "$value": "#2c5cd9"
+    },
+    "accent-pressed": {
+      "$value": "#2149b3"
+    },
+    "accent-subtle": {
+      "$value": "#eef3fe"
+    }
+  }
+}

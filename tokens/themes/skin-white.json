@@ -1,0 +1,56 @@
+{
+  "$description": "DEXT5 흰색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)",
+  "color": {
+    "$type": "color",
+    "chrome": {
+      "frame": {
+        "$value": "#b1b2b4"
+      },
+      "menubar-top": {
+        "$value": "#ffffff"
+      },
+      "menubar-bottom": {
+        "$value": "#f3f3f3"
+      },
+      "toolbar-light": {
+        "$value": "#ffffff"
+      },
+      "toolbar-face": {
+        "$value": "#ffffff"
+      },
+      "toolbar-row2-bottom": {
+        "$value": "#ffffff"
+      },
+      "toolbar-hairline": {
+        "$value": "#b1b2b4"
+      },
+      "toolbar-edge": {
+        "$value": "#b1b2b4"
+      },
+      "pressed": {
+        "$value": "#f6f6f6"
+      },
+      "pressed-light": {
+        "$value": "#fefefe"
+      },
+      "separator": {
+        "$value": "#b7b8ba"
+      },
+      "status-top": {
+        "$value": "#d4d4d4"
+      },
+      "status-light": {
+        "$value": "#f3f3f3"
+      },
+      "status-face": {
+        "$value": "#f3f3f3"
+      },
+      "tab-active": {
+        "$value": "#ffffff"
+      },
+      "tab-divider": {
+        "$value": "#b1b2b4"
+      }
+    }
+  }
+}

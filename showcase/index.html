@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SH Classic</title>
+    <meta name="description" content="이성현의 클래식 UI 디자인 시스템 sh-classic 의 토큰·부품·지침 쇼케이스" />
+    <link rel="icon" href="data:," />
+    <link id="sh-tokens" rel="stylesheet" href="../dist/classic/css/tokens.css" />
+    <link rel="stylesheet" href="../components/css/sh-classic.css" />
+    <link rel="stylesheet" href="showcase.css" />
+  </head>
+  <body class="sh-root">
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="i-new" viewBox="0 0 16 16">
+          <path d="M3.5 1.5h6l3 3v10h-9z M9.5 1.5v3h3" fill="none" stroke="currentColor" />
+        </symbol>
+        <symbol id="i-open" viewBox="0 0 16 16">
+          <path d="M1.5 13.5v-10h4l1 1.5h6v2 M1.5 13.5l2-6h11l-2 6z" fill="none" stroke="currentColor" />
+        </symbol>
+        <symbol id="i-save" viewBox="0 0 16 16">
+          <path d="M2.5 2.5h9l2 2v9h-11z M5.5 2.5v3h5v-3 M4.5 13.5v-4h7v4" fill="none" stroke="currentColor" />
+        </symbol>
+        <symbol id="i-undo" viewBox="0 0 16 16">
+          <path d="M5.5 3.5l-3 3 3 3 M2.5 6.5h7a4 4 0 0 1 0 8h-3" fill="none" stroke="currentColor" />
+        </symbol>
+        <symbol id="i-bold" viewBox="0 0 16 16">
+          <path
+            d="M4.5 2.5h4.5a3 3 0 0 1 0 6h-4.5z M4.5 8.5h5.5a3 3 0 0 1 0 6h-5.5z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+        </symbol>
+        <symbol id="i-italic" viewBox="0 0 16 16">
+          <path d="M6.5 2.5h6 M3.5 13.5h6 M9.5 2.5l-3 11" fill="none" stroke="currentColor" />
+        </symbol>
+        <symbol id="i-left" viewBox="0 0 16 16">
+          <path d="M1.5 3.5h13 M1.5 6.5h9 M1.5 9.5h13 M1.5 12.5h9" fill="none" stroke="currentColor" />
+        </symbol>
+        <symbol id="i-center" viewBox="0 0 16 16">
+          <path d="M1.5 3.5h13 M3.5 6.5h9 M1.5 9.5h13 M3.5 12.5h9" fill="none" stroke="currentColor" />
+        </symbol>
+        <symbol id="i-copy" viewBox="0 0 16 16">
+          <path d="M5.5 5.5h8v9h-8z M2.5 11.5v-9h8" fill="none" stroke="currentColor" />
+        </symbol>
+        <symbol id="i-down" viewBox="0 0 16 16">
+          <path d="M8 1.5v9 M4.5 7l3.5 3.5 3.5-3.5 M2.5 14.5h11" fill="none" stroke="currentColor" />
+        </symbol>
+        <symbol id="i-min" viewBox="0 0 10 10"><path d="M0 5.5h10" stroke="currentColor" /></symbol>
+        <symbol id="i-max" viewBox="0 0 10 10"><path d="M0.5 0.5h9v9h-9z" fill="none" stroke="currentColor" /></symbol>
+        <symbol id="i-close" viewBox="0 0 10 10"><path d="M0 0l10 10 M10 0l-10 10" stroke="currentColor" /></symbol>
+      </defs>
+    </svg>
+
+    <div class="app">
+      <header class="sh-titlebar">
+        <svg width="16" height="16" aria-hidden="true"><use href="#i-new" /></svg>
+        <div class="sh-titlebar__title">
+          SH Classic 디자인 시스템 <span class="sh-titlebar__doc">· sh-design-system</span>
+        </div>
+        <button class="sh-winbtn" type="button" aria-label="최소화">
+          <svg><use href="#i-min" /></svg>
+        </button>
+        <button class="sh-winbtn" type="button" aria-label="최대화">
+          <svg><use href="#i-max" /></svg>
+        </button>
+        <button class="sh-winbtn sh-winbtn--close" type="button" aria-label="닫기">
+          <svg><use href="#i-close" /></svg>
+        </button>
+      </header>
+
+      <nav class="sh-menubar" id="menubar" aria-label="주 메뉴">
+        <button class="sh-menubar__item" type="button" data-menu="m-file" aria-haspopup="true" aria-expanded="false">
+          파일(F)
+        </button>
+        <button class="sh-menubar__item" type="button" data-menu="m-view" aria-haspopup="true" aria-expanded="false">
+          보기(V)
+        </button>
+        <button class="sh-menubar__item" type="button" data-menu="m-theme" aria-haspopup="true" aria-expanded="false">
+          테마(T)
+        </button>
+        <button class="sh-menubar__item" type="button" data-menu="m-help" aria-haspopup="true" aria-expanded="false">
+          도움말(H)
+        </button>
+      </nav>
+      <div class="sh-menu sh-menu--float" id="m-file" role="menu" hidden>
+        <button class="sh-menu__item" role="menuitem" data-action="copy">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">현재 탭 복사</span
+          ><span class="sh-menu__key">Ctrl+C</span>
+        </button>
+        <button class="sh-menu__item" role="menuitem" data-action="download">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">현재 탭 내려받기</span
+          ><span class="sh-menu__key">Ctrl+S</span>
+        </button>
+        <div class="sh-menu__sep"></div>
+        <button class="sh-menu__item" role="menuitem" disabled>
+          <span class="sh-menu__check"></span><span class="sh-menu__label">인쇄</span
+          ><span class="sh-menu__key">Ctrl+P</span>
+        </button>
+      </div>
+      <div class="sh-menu sh-menu--float" id="m-view" role="menu" hidden>
+        <button class="sh-menu__item" role="menuitem" data-goto="sec-color">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">01 색 팔레트</span>
+        </button>
+        <button class="sh-menu__item" role="menuitem" data-goto="sec-type">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">02 타이포그래피</span>
+        </button>
+        <button class="sh-menu__item" role="menuitem" data-goto="sec-space">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">03 간격·크기·모양</span>
+        </button>
+        <button class="sh-menu__item" role="menuitem" data-goto="sec-comp">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">04 부품</span>
+        </button>
+        <button class="sh-menu__item" role="menuitem" data-goto="sec-guide">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">05 지침</span>
+        </button>
+        <div class="sh-menu__sep"></div>
+        <button class="sh-menu__item" role="menuitem" data-action="toggle-export">
+          <span class="sh-menu__check" id="chk-export">✓</span><span class="sh-menu__label">내보내기 패널</span
+          ><span class="sh-menu__key">F4</span>
+        </button>
+      </div>
+      <div class="sh-menu sh-menu--float" id="m-theme" role="menu" hidden></div>
+      <div class="sh-menu sh-menu--float" id="m-help" role="menu" hidden>
+        <button class="sh-menu__item" role="menuitem" data-href="../references/sh-classic/DESIGN.md">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">DESIGN.md 원문 열기</span>
+        </button>
+        <button class="sh-menu__item" role="menuitem" data-href="https://github.com/coolmarvel/sh-design-system">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">GitHub 저장소</span>
+        </button>
+        <div class="sh-menu__sep"></div>
+        <button class="sh-menu__item" role="menuitem" data-action="about">
+          <span class="sh-menu__check"></span><span class="sh-menu__label">정보</span>
+        </button>
+      </div>
+
+      <div class="sh-toolbar" role="toolbar" aria-label="도구">
+        <label for="theme-picker">테마</label>
+        <select class="sh-select" id="theme-picker" style="width: 150px"></select>
+        <span class="sh-separator"></span>
+        <button class="sh-tool" type="button" data-action="copy" title="현재 탭 복사 (Ctrl+C)">
+          <svg><use href="#i-copy" /></svg><span class="hide-narrow">복사</span>
+        </button>
+        <button class="sh-tool" type="button" data-action="download" title="현재 탭 내려받기 (Ctrl+S)">
+          <svg><use href="#i-down" /></svg><span class="hide-narrow">내려받기</span>
+        </button>
+        <span class="sh-separator"></span>
+        <div class="sh-segment" role="radiogroup" aria-label="부품 상태 보기">
+          <button type="button" role="radio" aria-checked="true" data-states="live">실제 동작</button>
+          <button type="button" role="radio" aria-checked="false" data-states="forced">모든 상태 펼침</button>
+        </div>
+      </div>
+
+      <main class="app__main">
+        <aside class="app__nav sh-panel">
+          <div class="sh-panel__title">목차</div>
+          <div class="sh-scroll"><ul class="sh-tree" id="nav-tree"></ul></div>
+        </aside>
+
+        <div class="content sh-scroll" id="content">
+          <div class="content__inner">
+            <section class="section" id="sec-color">
+              <div class="section__no">01</div>
+              <h2>색 팔레트</h2>
+              <p class="lead">견본을 누르면 CSS 변수 이름이 복사됩니다. 테마를 바꾸면 바뀌는 값만 달라집니다.</p>
+              <div id="palette"></div>
+            </section>
+
+            <section class="section" id="sec-type">
+              <div class="section__no">02</div>
+              <h2>타이포그래피</h2>
+              <p class="lead">돋움 12px 가 기준입니다. 크롬 글자는 14px 를 넘지 않고, 정수 크기만 씁니다.</p>
+              <div id="typography"></div>
+            </section>
+
+            <section class="section" id="sec-space">
+              <div class="section__no">03</div>
+              <h2>간격·크기·모양</h2>
+              <p class="lead">반경 0, 모든 선 1px. 그림자는 메뉴·대화상자·종이에만 짧고 옅게.</p>
+              <div id="spacing"></div>
+            </section>
+
+            <section class="section" id="sec-comp">
+              <div class="section__no">04</div>
+              <h2>부품</h2>
+              <p class="lead">
+                위 도구모음의 "모든 상태 펼침"을 누르면 hover·눌림·포커스 상태를 한 번에 볼 수 있습니다.
+              </p>
+
+              <h3 id="c-window">앱 골격</h3>
+              <div class="mock-window">
+                <div class="sh-titlebar">
+                  <svg width="16" height="16" aria-hidden="true"><use href="#i-save" /></svg>
+                  <div class="sh-titlebar__title">
+                    SH e-Consent <span class="sh-titlebar__doc">· 수술 동의서.pdf</span>
+                  </div>
+                  <button class="sh-winbtn" type="button" aria-label="최소화">
+                    <svg><use href="#i-min" /></svg>
+                  </button>
+                  <button class="sh-winbtn" type="button" aria-label="최대화">
+                    <svg><use href="#i-max" /></svg>
+                  </button>
+                  <button class="sh-winbtn sh-winbtn--close" type="button" aria-label="닫기">
+                    <svg><use href="#i-close" /></svg>
+                  </button>
+                </div>
+                <div class="sh-menubar">
+                  <span class="sh-menubar__item">파일</span><span class="sh-menubar__item" data-state="open">편집</span
+                  ><span class="sh-menubar__item">보기</span><span class="sh-menubar__item">도움말</span>
+                </div>
+                <div class="sh-toolbar">
+                  <button class="sh-tool" type="button" title="새 문서">
+                    <svg><use href="#i-new" /></svg>
+                  </button>
+                  <button class="sh-tool" type="button" title="열기">
+                    <svg><use href="#i-open" /></svg>
+                  </button>
+                  <button class="sh-tool" type="button" title="저장">
+                    <svg><use href="#i-save" /></svg>
+                  </button>
+                  <span class="sh-separator"></span>
+                  <button class="sh-tool" type="button" title="실행 취소" disabled>
+                    <svg><use href="#i-undo" /></svg>
+                  </button>
+                  <span class="sh-separator"></span>
+                  <label>쪽</label
+                  ><input class="sh-input sh-tnum" value="3" style="width: 40px" aria-label="쪽 번호" /><span>/ 8</span>
+                  <span class="sh-separator"></span>
+                  <select class="sh-select" aria-label="배율">
+                    <option>100%</option>
+                    <option>150%</option>
+                  </select>
+                </div>
+                <div class="mock-window__body">
+                  <div class="sh-panel">
+                    <div class="sh-panel__title">서식 목록</div>
+                    <ul class="sh-tree demo-tree"></ul>
+                  </div>
+                  <div class="sh-stage-document"><div class="sh-paper" style="height: 120px"></div></div>
+                </div>
+                <div class="sh-statusbar">
+                  <span class="sh-pane sh-pane--grow">준비</span>
+                  <span class="sh-pane sh-tnum">210 × 297 mm</span>
+                  <span class="sh-pane"
+                    ><span class="sh-progress"><span style="width: 62%"></span></span
+                  ></span>
+                  <span class="sh-pane sh-tnum">100%</span>
+                </div>
+              </div>
+
+              <h3 id="c-button">버튼</h3>
+              <div class="demo-row" data-demo="button">
+                <span class="cap">기본</span><button class="sh-btn" type="button">보통</button
+                ><button class="sh-btn" type="button" data-force="hover">hover</button
+                ><button class="sh-btn" type="button" data-force="pressed">눌림</button
+                ><button class="sh-btn" type="button" data-force="focus">포커스</button
+                ><button class="sh-btn" type="button" disabled>비활성</button
+                ><button class="sh-btn sh-btn--sm" type="button">작게</button>
+              </div>
+              <div class="demo-row">
+                <span class="cap">주</span><button class="sh-btn sh-btn--primary" type="button">확인</button
+                ><button class="sh-btn sh-btn--primary" type="button" data-force="hover">hover</button
+                ><button class="sh-btn sh-btn--primary" type="button" data-force="pressed">눌림</button
+                ><button class="sh-btn sh-btn--primary" type="button" data-force="focus">포커스</button
+                ><button class="sh-btn sh-btn--primary" type="button" disabled>비활성</button>
+              </div>
+              <div class="demo-row">
+                <span class="cap">위험</span><button class="sh-btn sh-btn--danger" type="button">삭제</button
+                ><button class="sh-btn sh-btn--danger" type="button" data-force="hover">hover</button
+                ><button class="sh-btn sh-btn--danger-fill" type="button">영구 삭제</button>
+              </div>
+
+              <h3 id="c-tool">도구 버튼·툴바</h3>
+              <div class="sh-toolbar" style="border: var(--sh-border-width) solid var(--sh-color-chrome-frame)">
+                <button class="sh-tool" type="button" title="굵게" aria-pressed="true">
+                  <svg><use href="#i-bold" /></svg>
+                </button>
+                <button class="sh-tool" type="button" title="기울임" aria-pressed="false">
+                  <svg><use href="#i-italic" /></svg>
+                </button>
+                <span class="sh-separator"></span>
+                <button class="sh-tool" type="button" title="왼쪽 정렬" data-force="hover">
+                  <svg><use href="#i-left" /></svg>
+                </button>
+                <button class="sh-tool" type="button" title="가운데 정렬" data-force="pressed">
+                  <svg><use href="#i-center" /></svg>
+                </button>
+                <span class="sh-separator"></span>
+                <button class="sh-tool" type="button">
+                  <svg><use href="#i-save" /></svg>저장
+                </button>
+                <button class="sh-tool" type="button" disabled>
+                  <svg><use href="#i-undo" /></svg>실행 취소
+                </button>
+              </div>
+              <div
+                class="sh-toolbar sh-toolbar--option"
+                style="border: var(--sh-border-width) solid var(--sh-color-chrome-frame); border-top: 0"
+              >
+                <label>글꼴</label
+                ><select class="sh-select" style="width: 110px">
+                  <option>돋움</option>
+                  <option>굴림</option>
+                </select>
+                <label>크기</label><input class="sh-input sh-tnum" type="number" value="12" style="width: 48px" />
+              </div>
+
+              <h3 id="c-menu">메뉴</h3>
+              <div class="demo-grid">
+                <div class="sh-menu" role="menu">
+                  <button class="sh-menu__item" role="menuitem">
+                    <span class="sh-menu__check"></span><span class="sh-menu__label">잘라내기</span
+                    ><span class="sh-menu__key">Ctrl+X</span>
+                  </button>
+                  <button class="sh-menu__item" role="menuitem" data-force="hover">
+                    <span class="sh-menu__check"></span><span class="sh-menu__label">복사</span
+                    ><span class="sh-menu__key">Ctrl+C</span>
+                  </button>
+                  <button class="sh-menu__item" role="menuitem" disabled>
+                    <span class="sh-menu__check"></span><span class="sh-menu__label">붙여넣기</span
+                    ><span class="sh-menu__key">Ctrl+V</span>
+                  </button>
+                  <div class="sh-menu__sep"></div>
+                  <button class="sh-menu__item" role="menuitemcheckbox" aria-checked="true">
+                    <span class="sh-menu__check">✓</span><span class="sh-menu__label">눈금자 보기</span>
+                  </button>
+                  <button class="sh-menu__item sh-menu__sub" role="menuitem">
+                    <span class="sh-menu__check"></span><span class="sh-menu__label">정렬</span>
+                  </button>
+                </div>
+              </div>
+
+              <h3 id="c-tabs">탭</h3>
+              <div style="max-width: 420px">
+                <div class="sh-tabs" role="tablist" id="demo-tabs">
+                  <button class="sh-tab" role="tab" aria-selected="true" type="button">일반</button>
+                  <button class="sh-tab" role="tab" aria-selected="false" type="button">보안</button>
+                  <button class="sh-tab" role="tab" aria-selected="false" type="button">
+                    인쇄<span class="sh-dirty" aria-label="수정됨"></span>
+                  </button>
+                </div>
+                <div class="sh-tabpanel">선택해도 크기·굵기가 변하지 않고 면과 글자 색만 바뀝니다.</div>
+              </div>
+
+              <h3 id="c-input">입력·콤보</h3>
+              <div class="sh-form" style="max-width: 420px">
+                <label for="d-name">이름</label><input class="sh-input" id="d-name" placeholder="환자 이름" />
+                <label for="d-hover">hover</label
+                ><input class="sh-input" id="d-hover" value="hover 테두리" data-force="hover" />
+                <label for="d-focus">포커스</label
+                ><input class="sh-input" id="d-focus" value="포커스 테두리" data-force="focus" />
+                <label for="d-err">오류</label>
+                <div>
+                  <input class="sh-input" id="d-err" value="2026-13-40" aria-invalid="true" style="width: 100%" />
+                  <div class="sh-field-error">날짜 형식이 올바르지 않습니다. YYYY-MM-DD 로 입력하세요.</div>
+                </div>
+                <label for="d-dis">비활성</label><input class="sh-input" id="d-dis" value="수정할 수 없음" disabled />
+                <label for="d-sel">진료과</label
+                ><select class="sh-select" id="d-sel">
+                  <option>내과</option>
+                  <option>외과</option>
+                  <option>정형외과</option>
+                </select>
+              </div>
+
+              <h3 id="c-check">체크·라디오·세그먼트</h3>
+              <div class="demo-row">
+                <label class="sh-check"><input type="checkbox" checked />동의함</label>
+                <label class="sh-check"><input type="checkbox" />동의 안 함</label>
+                <label class="sh-check"><input type="checkbox" id="indet" />일부</label>
+                <label class="sh-check"><input type="checkbox" disabled />비활성</label>
+                <span class="sh-separator"></span>
+                <label class="sh-check"><input type="radio" name="r" checked />외래</label>
+                <label class="sh-check"><input type="radio" name="r" />입원</label>
+              </div>
+              <div class="demo-row">
+                <div class="sh-segment" role="radiogroup" aria-label="보기 방식" id="demo-seg">
+                  <button type="button" role="radio" aria-checked="true">목록</button
+                  ><button type="button" role="radio" aria-checked="false">자세히</button
+                  ><button type="button" role="radio" aria-checked="false">미리보기</button>
+                </div>
+              </div>
+
+              <h3 id="c-table">표</h3>
+              <div style="overflow-x: auto">
+                <table class="sh-table" id="demo-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 28px">
+                        <label class="sh-check"><input type="checkbox" aria-label="전체 선택" /></label>
+                      </th>
+                      <th>등록번호</th>
+                      <th>이름</th>
+                      <th>서식</th>
+                      <th>작성일</th>
+                      <th>쪽</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="sh-check"><input type="checkbox" aria-label="선택" /></label>
+                      </td>
+                      <td class="sh-tnum">00012345</td>
+                      <td>홍길동</td>
+                      <td>수술 동의서</td>
+                      <td class="sh-tnum">2026-10-13</td>
+                      <td class="sh-num">3</td>
+                    </tr>
+                    <tr aria-selected="true">
+                      <td>
+                        <label class="sh-check"><input type="checkbox" checked aria-label="선택" /></label>
+                      </td>
+                      <td class="sh-tnum">00012346</td>
+                      <td>김영희</td>
+                      <td>마취 동의서</td>
+                      <td class="sh-tnum">2026-10-12</td>
+                      <td class="sh-num">2</td>
+                    </tr>
+                    <tr data-force="hover">
+                      <td>
+                        <label class="sh-check"><input type="checkbox" aria-label="선택" /></label>
+                      </td>
+                      <td class="sh-tnum">00012347</td>
+                      <td>이철수</td>
+                      <td>개인정보 수집 동의서</td>
+                      <td class="sh-tnum">2026-10-11</td>
+                      <td class="sh-num">1</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="sh-check"><input type="checkbox" aria-label="선택" /></label>
+                      </td>
+                      <td class="sh-tnum">00012348</td>
+                      <td>박민수</td>
+                      <td>수혈 동의서</td>
+                      <td class="sh-tnum">2026-10-10</td>
+                      <td class="sh-num">12</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 id="c-tree">트리</h3>
+              <div class="sh-panel" style="max-width: 280px"><ul class="sh-tree demo-tree"></ul></div>
+
+              <h3 id="c-dialog">대화상자·그룹 박스</h3>
+              <div class="demo-grid">
+                <div class="sh-dialog sh-dialog--inline" role="dialog" aria-label="환경 설정">
+                  <div class="sh-dialog__title">
+                    환경 설정<button
+                      class="sh-winbtn sh-winbtn--close"
+                      type="button"
+                      aria-label="닫기"
+                      style="width: 24px; height: 22px"
+                    >
+                      <svg><use href="#i-close" /></svg>
+                    </button>
+                  </div>
+                  <div class="sh-dialog__body">
+                    <fieldset class="sh-group">
+                      <legend>저장</legend>
+                      <label class="sh-check"><input type="checkbox" checked />5분마다 자동 저장</label>
+                      <label class="sh-check"><input type="checkbox" />닫을 때 묻기</label>
+                    </fieldset>
+                  </div>
+                  <div class="sh-dialog__buttons">
+                    <button class="sh-btn sh-btn--dialog" type="button">취소</button
+                    ><button class="sh-btn sh-btn--primary sh-btn--dialog" type="button">확인</button>
+                  </div>
+                </div>
+                <div>
+                  <button class="sh-btn" type="button" id="open-dialog">대화상자 열기…</button>
+                  <p class="lead" style="margin-top: var(--sh-space-8)">
+                    제목 띠를 끌어 옮기고, Enter 는 확인, Esc 는 취소입니다.
+                  </p>
+                </div>
+              </div>
+
+              <h3 id="c-feedback">툴팁·알림·칩·진행</h3>
+              <div class="demo-row">
+                <span class="sh-tooltip">저장 (Ctrl+S)</span><span class="sh-chip">초안</span
+                ><span class="sh-chip sh-chip--accent">서명 대기</span><span class="sh-chip sh-chip--success">완료</span
+                ><span class="sh-chip sh-chip--danger">반려</span>
+              </div>
+              <div style="display: grid; gap: var(--sh-space-4); max-width: 480px">
+                <div class="sh-alert">서식 3건을 불러왔습니다.</div>
+                <div class="sh-alert sh-alert--success">저장했습니다.</div>
+                <div class="sh-alert sh-alert--warning">서명하지 않은 칸이 2개 있습니다.</div>
+                <div class="sh-alert sh-alert--danger">
+                  파일을 열 수 없습니다. 다른 프로그램에서 열려 있는지 확인하세요.
+                </div>
+                <div class="demo-row">
+                  <span class="sh-progress"><span style="width: 40%"></span></span><span class="sh-tnum">40%</span>
+                </div>
+              </div>
+
+              <h3 id="c-scroll">스크롤바·스테이지</h3>
+              <div class="demo-grid">
+                <div class="sh-scroll sh-panel" style="height: 96px; display: block; padding: var(--sh-space-6)">
+                  <div style="height: 260px; width: 420px">긴 내용입니다. 가로·세로 스크롤바 견본</div>
+                </div>
+                <div class="sh-stage-document" style="height: 96px">
+                  <div class="sh-paper" style="height: 64px"></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="section" id="sec-guide">
+              <div class="section__no">05</div>
+              <h2>지침</h2>
+              <p class="lead">DESIGN.md 의 원칙과 Do/Don't 를 그대로 보여 줍니다.</p>
+              <div id="guidelines"></div>
+            </section>
+          </div>
+        </div>
+
+        <aside class="app__export sh-panel" id="export-panel">
+          <div class="sh-panel__title">
+            <span>내보내기</span>
+            <span class="export-actions">
+              <button class="sh-btn sh-btn--sm" type="button" data-action="copy">복사</button>
+              <button class="sh-btn sh-btn--sm sh-btn--primary" type="button" data-action="download">내려받기</button>
+            </span>
+          </div>
+          <div class="sh-tabs export-tabs" role="tablist" id="export-tabs"></div>
+          <div class="sh-scroll"><pre class="code" id="export-code"></pre></div>
+        </aside>
+      </main>
+
+      <footer class="sh-statusbar">
+        <span class="sh-pane sh-pane--grow" id="st-msg">준비</span>
+        <span class="sh-pane" id="st-theme">테마</span>
+        <span class="sh-pane sh-tnum" id="st-count">토큰</span>
+        <span class="sh-pane hide-narrow">© 2026 이성현 (SeongHyun Lee)</span>
+      </footer>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

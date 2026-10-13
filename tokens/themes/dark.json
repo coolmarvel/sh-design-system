@@ -1,0 +1,175 @@
+{
+  "$description": "다크 — sh-messenger 다크 팔레트. 클래식 기본은 라이트, 어두운 작업실·야간용",
+  "color": {
+    "$type": "color",
+    "accent": {
+      "$value": "#3c71df",
+      "$description": "sh-messenger #3a6fde 를 바탕 대비 3:1·흰 글자 4.5:1 동시 충족하게 미세 조정"
+    },
+    "accent-hover": {
+      "$value": "#4f80e8"
+    },
+    "accent-pressed": {
+      "$value": "#2f5fc4"
+    },
+    "accent-subtle": {
+      "$value": "#263651"
+    },
+    "accent-subtle-hover": {
+      "$value": "#2d4063"
+    },
+    "hover-edge": {
+      "$value": "#6fa3ff"
+    },
+    "canvas": {
+      "$value": "#2a2c32"
+    },
+    "sunken": {
+      "$value": "#212328"
+    },
+    "hover": {
+      "$value": "#33353c"
+    },
+    "border": {
+      "$value": "#3a3d45"
+    },
+    "border-strong": {
+      "$value": "#7a808b"
+    },
+    "grid": {
+      "$value": "#3a3d45"
+    },
+    "text": {
+      "$value": "#dde0e5"
+    },
+    "text-secondary": {
+      "$value": "#a0a6b1"
+    },
+    "text-muted": {
+      "$value": "#9098a5"
+    },
+    "text-disabled": {
+      "$value": "#6b717c"
+    },
+    "link": {
+      "$value": "#6fa3ff"
+    },
+    "danger": {
+      "$value": "#f5686c"
+    },
+    "danger-subtle": {
+      "$value": "#3d2326"
+    },
+    "danger-border": {
+      "$value": "#7a3236"
+    },
+    "success": {
+      "$value": "#4cc47a"
+    },
+    "success-subtle": {
+      "$value": "#1f3327"
+    },
+    "warning": {
+      "$value": "#e3b341"
+    },
+    "warning-subtle": {
+      "$value": "#3a3120"
+    },
+    "scrim": {
+      "$value": "#000000a6"
+    },
+    "control": {
+      "top": {
+        "$value": "#3a3d45"
+      },
+      "bottom": {
+        "$value": "#2a2c32"
+      },
+      "pressed": {
+        "$value": "#212328"
+      },
+      "border": {
+        "$value": "#7a808b"
+      }
+    },
+    "chrome": {
+      "frame": {
+        "$value": "#17181c"
+      },
+      "menubar-top": {
+        "$value": "#33353c"
+      },
+      "menubar-bottom": {
+        "$value": "#2a2c32"
+      },
+      "toolbar-light": {
+        "$value": "#33353c"
+      },
+      "toolbar-face": {
+        "$value": "#2a2c32"
+      },
+      "toolbar-row2-bottom": {
+        "$value": "#26282d"
+      },
+      "toolbar-hairline": {
+        "$value": "#3a3d45"
+      },
+      "toolbar-edge": {
+        "$value": "#5e636d"
+      },
+      "pressed": {
+        "$value": "#1c1d21"
+      },
+      "pressed-light": {
+        "$value": "#26282d"
+      },
+      "separator": {
+        "$value": "#3a3d45"
+      },
+      "status-top": {
+        "$value": "#3a3d45"
+      },
+      "status-light": {
+        "$value": "#2a2c32"
+      },
+      "status-face": {
+        "$value": "#212328"
+      },
+      "tab-active": {
+        "$value": "#33353c"
+      },
+      "tab-divider": {
+        "$value": "#3a3d45"
+      }
+    },
+    "tree": {
+      "line": {
+        "$value": "#5e636d"
+      },
+      "box": {
+        "$value": "#7b8490"
+      }
+    }
+  },
+  "shadow": {
+    "$type": "shadow",
+    "raised": {
+      "$value": {
+        "color": "#00000080",
+        "offsetX": "2px",
+        "offsetY": "2px",
+        "blur": "4px",
+        "spread": "0px"
+      }
+    },
+    "dialog": {
+      "$value": {
+        "color": "#00000099",
+        "offsetX": "3px",
+        "offsetY": "3px",
+        "blur": "6px",
+        "spread": "0px"
+      }
+    }
+  }
+}

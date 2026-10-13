@@ -1,0 +1,56 @@
+{
+  "$description": "DEXT5 보라 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)",
+  "color": {
+    "$type": "color",
+    "chrome": {
+      "frame": {
+        "$value": "#ae9bd5"
+      },
+      "menubar-top": {
+        "$value": "#f3ecff"
+      },
+      "menubar-bottom": {
+        "$value": "#d8c9f2"
+      },
+      "toolbar-light": {
+        "$value": "#fbfaff"
+      },
+      "toolbar-face": {
+        "$value": "#e4daf7"
+      },
+      "toolbar-row2-bottom": {
+        "$value": "#ddd0f1"
+      },
+      "toolbar-hairline": {
+        "$value": "#c5b3e7"
+      },
+      "toolbar-edge": {
+        "$value": "#b5a2da"
+      },
+      "pressed": {
+        "$value": "#ded3f1"
+      },
+      "pressed-light": {
+        "$value": "#faf8fd"
+      },
+      "separator": {
+        "$value": "#b5a3d9"
+      },
+      "status-top": {
+        "$value": "#ccb8ec"
+      },
+      "status-light": {
+        "$value": "#f2eef6"
+      },
+      "status-face": {
+        "$value": "#f1e8f6"
+      },
+      "tab-active": {
+        "$value": "#e1d6f3"
+      },
+      "tab-divider": {
+        "$value": "#ae9bd5"
+      }
+    }
+  }
+}

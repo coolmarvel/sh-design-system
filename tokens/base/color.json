@@ -1,0 +1,206 @@
+{
+  "color": {
+    "$type": "color",
+    "accent": {
+      "$value": "#2f6fed",
+      "$description": "주 동작·선택·포커스에만. 배지·성공에 재사용 금지 (sh-messenger)"
+    },
+    "accent-hover": {
+      "$value": "#255fd1"
+    },
+    "accent-pressed": {
+      "$value": "#1f4fb0",
+      "$description": "주 버튼 테두리·눌림"
+    },
+    "accent-subtle": {
+      "$value": "#e9f0ff",
+      "$description": "선택 행·선택 라벨·켜진 세그먼트 면 (진한 글자 유지)"
+    },
+    "accent-subtle-hover": {
+      "$value": "#dbe6fc"
+    },
+    "hover-edge": {
+      "$value": "#2a8dd4",
+      "$description": "베벨·도구 버튼·입력 hover 테두리 — 크롬의 유일한 채도 (DEXT5 실측, sh-web-editor)"
+    },
+    "canvas": {
+      "$value": "#ffffff",
+      "$description": "흰 면 — 입력·표·대화상자·활성 탭"
+    },
+    "sunken": {
+      "$value": "#f5f6f8",
+      "$description": "앱 바탕·사이드바·비활성 컨트롤 면"
+    },
+    "hover": {
+      "$value": "#eef0f3",
+      "$description": "목록·표·트리 라벨 hover 면"
+    },
+    "border": {
+      "$value": "#e3e5ea",
+      "$description": "안쪽 헤어라인"
+    },
+    "border-strong": {
+      "$value": "#8a919e",
+      "$description": "입력·메뉴 판·체크 상자 테두리 (비텍스트 대비 3:1)"
+    },
+    "grid": {
+      "$value": "#d4d4d4",
+      "$description": "표 격자선"
+    },
+    "text": {
+      "$value": "#1f2329",
+      "$description": "본문·라벨·포커스 점선 (라이트에 순검정 금지)"
+    },
+    "text-secondary": {
+      "$value": "#5c6370"
+    },
+    "text-muted": {
+      "$value": "#6e7683"
+    },
+    "text-disabled": {
+      "$value": "#a2a8b3"
+    },
+    "on-accent": {
+      "$value": "#ffffff"
+    },
+    "link": {
+      "$value": "#1d5fd6",
+      "$description": "UI 링크. 편집 콘텐츠 안 링크는 브라우저 기본 파랑"
+    },
+    "danger": {
+      "$value": "#d42f37",
+      "$description": "삭제·오류·닫기 hover"
+    },
+    "danger-subtle": {
+      "$value": "#fef2f2"
+    },
+    "danger-border": {
+      "$value": "#f1a9ad",
+      "$description": "삭제류 외곽선 버튼 테두리"
+    },
+    "success": {
+      "$value": "#15803d"
+    },
+    "success-subtle": {
+      "$value": "#e7f5ec"
+    },
+    "warning": {
+      "$value": "#8a5a00"
+    },
+    "warning-subtle": {
+      "$value": "#fff4d6",
+      "$description": "툴팁 면·경고 띠"
+    },
+    "scrim": {
+      "$value": "#00000026",
+      "$description": "대화상자 덮개 — 검정 15%"
+    },
+    "control": {
+      "top": {
+        "$value": "#ffffff",
+        "$description": "베벨 버튼 면 위 (Money Forward·DEXT5 계열)"
+      },
+      "bottom": {
+        "$value": "#e6e6e6",
+        "$description": "베벨 버튼 면 아래"
+      },
+      "pressed": {
+        "$value": "#d6d9df",
+        "$description": "눌린 베벨 버튼 — 오목한 단색"
+      },
+      "border": {
+        "$value": "#b5b5b5",
+        "$description": "베벨 버튼 테두리"
+      }
+    },
+    "chrome": {
+      "$description": "크롬(메뉴바·툴바·상태 줄·탭) 색 — 스킨 테마가 이 그룹만 바꾼다. 기본 = DEXT5 blue 실측 (sh-web-editor)",
+      "frame": {
+        "$value": "#a1abb9",
+        "$description": "바깥 1px 테두리·패널 구분선"
+      },
+      "menubar-top": {
+        "$value": "#edf2f6"
+      },
+      "menubar-bottom": {
+        "$value": "#d9e1ec"
+      },
+      "toolbar-light": {
+        "$value": "#fafbff"
+      },
+      "toolbar-face": {
+        "$value": "#e6edf6",
+        "$description": "툴바 면·메뉴 항목 hover"
+      },
+      "toolbar-row2-bottom": {
+        "$value": "#ecf1f7"
+      },
+      "toolbar-hairline": {
+        "$value": "#bbc5d4",
+        "$description": "툴바 줄 사이 1px"
+      },
+      "toolbar-edge": {
+        "$value": "#afb6c6",
+        "$description": "눌린·켜진 도구 버튼 테두리"
+      },
+      "pressed": {
+        "$value": "#d3dbe7",
+        "$description": "켜진 도구 버튼·열린 드롭다운 면 아래"
+      },
+      "pressed-light": {
+        "$value": "#eff1f5"
+      },
+      "separator": {
+        "$value": "#c5ccd9",
+        "$description": "툴바 세로 구분선 1px 단선"
+      },
+      "status-top": {
+        "$value": "#d4d4d4"
+      },
+      "status-light": {
+        "$value": "#f8f8f8"
+      },
+      "status-face": {
+        "$value": "#ececec",
+        "$description": "상태 줄 면 — 파란 스킨에서도 회색"
+      },
+      "tab-active": {
+        "$value": "#d7dde9"
+      },
+      "tab-divider": {
+        "$value": "#dbdbdb"
+      }
+    },
+    "stage": {
+      "image": {
+        "$value": "#1e2025",
+        "$description": "이미지·영상을 보는 어두운 바탕"
+      },
+      "document": {
+        "$value": "#8a8f98",
+        "$description": "종이 문서 편집 바탕"
+      },
+      "viewer": {
+        "$value": "#5a5e66",
+        "$description": "작성·열람 뷰어 바탕"
+      },
+      "checker-a": {
+        "$value": "#3a3d45",
+        "$description": "투명 표시 체커"
+      },
+      "checker-b": {
+        "$value": "#2a2c32"
+      }
+    },
+    "tree": {
+      "line": {
+        "$value": "#9aa0a8",
+        "$description": "연결선 점선"
+      },
+      "box": {
+        "$value": "#7b8490",
+        "$description": "[+]/[−] 상자 테두리"
+      }
+    }
+  }
+}

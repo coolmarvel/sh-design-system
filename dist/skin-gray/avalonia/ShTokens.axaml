@@ -1,0 +1,272 @@
+<!--
+  ShTokens.axaml — sh-design-system 이 생성한 파일. 직접 고치지 말 것.
+  원본: tokens/*.json → npm run build
+-->
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!-- 주 동작·선택·포커스에만. 배지·성공에 재사용 금지 (sh-messenger) -->
+  <Color x:Key="ShColorAccent">#FF2F6FED</Color>
+  <SolidColorBrush x:Key="ShColorAccentBrush" Color="{StaticResource ShColorAccent}"/>
+  <Color x:Key="ShColorAccentHover">#FF255FD1</Color>
+  <SolidColorBrush x:Key="ShColorAccentHoverBrush" Color="{StaticResource ShColorAccentHover}"/>
+  <!-- 주 버튼 테두리·눌림 -->
+  <Color x:Key="ShColorAccentPressed">#FF1F4FB0</Color>
+  <SolidColorBrush x:Key="ShColorAccentPressedBrush" Color="{StaticResource ShColorAccentPressed}"/>
+  <!-- 선택 행·선택 라벨·켜진 세그먼트 면 (진한 글자 유지) -->
+  <Color x:Key="ShColorAccentSubtle">#FFE9F0FF</Color>
+  <SolidColorBrush x:Key="ShColorAccentSubtleBrush" Color="{StaticResource ShColorAccentSubtle}"/>
+  <Color x:Key="ShColorAccentSubtleHover">#FFDBE6FC</Color>
+  <SolidColorBrush x:Key="ShColorAccentSubtleHoverBrush" Color="{StaticResource ShColorAccentSubtleHover}"/>
+  <!-- 베벨·도구 버튼·입력 hover 테두리 — 크롬의 유일한 채도 (DEXT5 실측, sh-web-editor) -->
+  <Color x:Key="ShColorHoverEdge">#FF2A8DD4</Color>
+  <SolidColorBrush x:Key="ShColorHoverEdgeBrush" Color="{StaticResource ShColorHoverEdge}"/>
+  <!-- 흰 면 — 입력·표·대화상자·활성 탭 -->
+  <Color x:Key="ShColorCanvas">#FFFFFFFF</Color>
+  <SolidColorBrush x:Key="ShColorCanvasBrush" Color="{StaticResource ShColorCanvas}"/>
+  <!-- 앱 바탕·사이드바·비활성 컨트롤 면 -->
+  <Color x:Key="ShColorSunken">#FFF5F6F8</Color>
+  <SolidColorBrush x:Key="ShColorSunkenBrush" Color="{StaticResource ShColorSunken}"/>
+  <!-- 목록·표·트리 라벨 hover 면 -->
+  <Color x:Key="ShColorHover">#FFEEF0F3</Color>
+  <SolidColorBrush x:Key="ShColorHoverBrush" Color="{StaticResource ShColorHover}"/>
+  <!-- 안쪽 헤어라인 -->
+  <Color x:Key="ShColorBorder">#FFE3E5EA</Color>
+  <SolidColorBrush x:Key="ShColorBorderBrush" Color="{StaticResource ShColorBorder}"/>
+  <!-- 입력·메뉴 판·체크 상자 테두리 (비텍스트 대비 3:1) -->
+  <Color x:Key="ShColorBorderStrong">#FF8A919E</Color>
+  <SolidColorBrush x:Key="ShColorBorderStrongBrush" Color="{StaticResource ShColorBorderStrong}"/>
+  <!-- 표 격자선 -->
+  <Color x:Key="ShColorGrid">#FFD4D4D4</Color>
+  <SolidColorBrush x:Key="ShColorGridBrush" Color="{StaticResource ShColorGrid}"/>
+  <!-- 본문·라벨·포커스 점선 (라이트에 순검정 금지) -->
+  <Color x:Key="ShColorText">#FF1F2329</Color>
+  <SolidColorBrush x:Key="ShColorTextBrush" Color="{StaticResource ShColorText}"/>
+  <Color x:Key="ShColorTextSecondary">#FF5C6370</Color>
+  <SolidColorBrush x:Key="ShColorTextSecondaryBrush" Color="{StaticResource ShColorTextSecondary}"/>
+  <Color x:Key="ShColorTextMuted">#FF6E7683</Color>
+  <SolidColorBrush x:Key="ShColorTextMutedBrush" Color="{StaticResource ShColorTextMuted}"/>
+  <Color x:Key="ShColorTextDisabled">#FFA2A8B3</Color>
+  <SolidColorBrush x:Key="ShColorTextDisabledBrush" Color="{StaticResource ShColorTextDisabled}"/>
+  <Color x:Key="ShColorOnAccent">#FFFFFFFF</Color>
+  <SolidColorBrush x:Key="ShColorOnAccentBrush" Color="{StaticResource ShColorOnAccent}"/>
+  <!-- UI 링크. 편집 콘텐츠 안 링크는 브라우저 기본 파랑 -->
+  <Color x:Key="ShColorLink">#FF1D5FD6</Color>
+  <SolidColorBrush x:Key="ShColorLinkBrush" Color="{StaticResource ShColorLink}"/>
+  <!-- 삭제·오류·닫기 hover -->
+  <Color x:Key="ShColorDanger">#FFD42F37</Color>
+  <SolidColorBrush x:Key="ShColorDangerBrush" Color="{StaticResource ShColorDanger}"/>
+  <Color x:Key="ShColorDangerSubtle">#FFFEF2F2</Color>
+  <SolidColorBrush x:Key="ShColorDangerSubtleBrush" Color="{StaticResource ShColorDangerSubtle}"/>
+  <!-- 삭제류 외곽선 버튼 테두리 -->
+  <Color x:Key="ShColorDangerBorder">#FFF1A9AD</Color>
+  <SolidColorBrush x:Key="ShColorDangerBorderBrush" Color="{StaticResource ShColorDangerBorder}"/>
+  <Color x:Key="ShColorSuccess">#FF15803D</Color>
+  <SolidColorBrush x:Key="ShColorSuccessBrush" Color="{StaticResource ShColorSuccess}"/>
+  <Color x:Key="ShColorSuccessSubtle">#FFE7F5EC</Color>
+  <SolidColorBrush x:Key="ShColorSuccessSubtleBrush" Color="{StaticResource ShColorSuccessSubtle}"/>
+  <Color x:Key="ShColorWarning">#FF8A5A00</Color>
+  <SolidColorBrush x:Key="ShColorWarningBrush" Color="{StaticResource ShColorWarning}"/>
+  <!-- 툴팁 면·경고 띠 -->
+  <Color x:Key="ShColorWarningSubtle">#FFFFF4D6</Color>
+  <SolidColorBrush x:Key="ShColorWarningSubtleBrush" Color="{StaticResource ShColorWarningSubtle}"/>
+  <!-- 대화상자 덮개 — 검정 15% -->
+  <Color x:Key="ShColorScrim">#26000000</Color>
+  <SolidColorBrush x:Key="ShColorScrimBrush" Color="{StaticResource ShColorScrim}"/>
+  <!-- 베벨 버튼 면 위 (Money Forward·DEXT5 계열) -->
+  <Color x:Key="ShColorControlTop">#FFFFFFFF</Color>
+  <SolidColorBrush x:Key="ShColorControlTopBrush" Color="{StaticResource ShColorControlTop}"/>
+  <!-- 베벨 버튼 면 아래 -->
+  <Color x:Key="ShColorControlBottom">#FFE6E6E6</Color>
+  <SolidColorBrush x:Key="ShColorControlBottomBrush" Color="{StaticResource ShColorControlBottom}"/>
+  <!-- 눌린 베벨 버튼 — 오목한 단색 -->
+  <Color x:Key="ShColorControlPressed">#FFD6D9DF</Color>
+  <SolidColorBrush x:Key="ShColorControlPressedBrush" Color="{StaticResource ShColorControlPressed}"/>
+  <!-- 베벨 버튼 테두리 -->
+  <Color x:Key="ShColorControlBorder">#FFB5B5B5</Color>
+  <SolidColorBrush x:Key="ShColorControlBorderBrush" Color="{StaticResource ShColorControlBorder}"/>
+  <!-- 바깥 1px 테두리·패널 구분선 -->
+  <Color x:Key="ShColorChromeFrame">#FFB8BABC</Color>
+  <SolidColorBrush x:Key="ShColorChromeFrameBrush" Color="{StaticResource ShColorChromeFrame}"/>
+  <Color x:Key="ShColorChromeMenubarTop">#FFF4F4F4</Color>
+  <SolidColorBrush x:Key="ShColorChromeMenubarTopBrush" Color="{StaticResource ShColorChromeMenubarTop}"/>
+  <Color x:Key="ShColorChromeMenubarBottom">#FFDFDFDF</Color>
+  <SolidColorBrush x:Key="ShColorChromeMenubarBottomBrush" Color="{StaticResource ShColorChromeMenubarBottom}"/>
+  <Color x:Key="ShColorChromeToolbarLight">#FFFAFBFF</Color>
+  <SolidColorBrush x:Key="ShColorChromeToolbarLightBrush" Color="{StaticResource ShColorChromeToolbarLight}"/>
+  <!-- 툴바 면·메뉴 항목 hover -->
+  <Color x:Key="ShColorChromeToolbarFace">#FFEAEAEA</Color>
+  <SolidColorBrush x:Key="ShColorChromeToolbarFaceBrush" Color="{StaticResource ShColorChromeToolbarFace}"/>
+  <Color x:Key="ShColorChromeToolbarRow2Bottom">#FFEAEAEA</Color>
+  <SolidColorBrush x:Key="ShColorChromeToolbarRow2BottomBrush" Color="{StaticResource ShColorChromeToolbarRow2Bottom}"/>
+  <!-- 툴바 줄 사이 1px -->
+  <Color x:Key="ShColorChromeToolbarHairline">#FFB8BABC</Color>
+  <SolidColorBrush x:Key="ShColorChromeToolbarHairlineBrush" Color="{StaticResource ShColorChromeToolbarHairline}"/>
+  <!-- 눌린·켜진 도구 버튼 테두리 -->
+  <Color x:Key="ShColorChromeToolbarEdge">#FFB8BABC</Color>
+  <SolidColorBrush x:Key="ShColorChromeToolbarEdgeBrush" Color="{StaticResource ShColorChromeToolbarEdge}"/>
+  <!-- 켜진 도구 버튼·열린 드롭다운 면 아래 -->
+  <Color x:Key="ShColorChromePressed">#FFD5D5D5</Color>
+  <SolidColorBrush x:Key="ShColorChromePressedBrush" Color="{StaticResource ShColorChromePressed}"/>
+  <Color x:Key="ShColorChromePressedLight">#FFF2F2F2</Color>
+  <SolidColorBrush x:Key="ShColorChromePressedLightBrush" Color="{StaticResource ShColorChromePressedLight}"/>
+  <!-- 툴바 세로 구분선 1px 단선 -->
+  <Color x:Key="ShColorChromeSeparator">#FFC6C6C6</Color>
+  <SolidColorBrush x:Key="ShColorChromeSeparatorBrush" Color="{StaticResource ShColorChromeSeparator}"/>
+  <Color x:Key="ShColorChromeStatusTop">#FFD4D4D4</Color>
+  <SolidColorBrush x:Key="ShColorChromeStatusTopBrush" Color="{StaticResource ShColorChromeStatusTop}"/>
+  <Color x:Key="ShColorChromeStatusLight">#FFF8F8F8</Color>
+  <SolidColorBrush x:Key="ShColorChromeStatusLightBrush" Color="{StaticResource ShColorChromeStatusLight}"/>
+  <!-- 상태 줄 면 — 파란 스킨에서도 회색 -->
+  <Color x:Key="ShColorChromeStatusFace">#FFECECEC</Color>
+  <SolidColorBrush x:Key="ShColorChromeStatusFaceBrush" Color="{StaticResource ShColorChromeStatusFace}"/>
+  <Color x:Key="ShColorChromeTabActive">#FFE2E2E3</Color>
+  <SolidColorBrush x:Key="ShColorChromeTabActiveBrush" Color="{StaticResource ShColorChromeTabActive}"/>
+  <Color x:Key="ShColorChromeTabDivider">#FFB8BABC</Color>
+  <SolidColorBrush x:Key="ShColorChromeTabDividerBrush" Color="{StaticResource ShColorChromeTabDivider}"/>
+  <!-- 이미지·영상을 보는 어두운 바탕 -->
+  <Color x:Key="ShColorStageImage">#FF1E2025</Color>
+  <SolidColorBrush x:Key="ShColorStageImageBrush" Color="{StaticResource ShColorStageImage}"/>
+  <!-- 종이 문서 편집 바탕 -->
+  <Color x:Key="ShColorStageDocument">#FF8A8F98</Color>
+  <SolidColorBrush x:Key="ShColorStageDocumentBrush" Color="{StaticResource ShColorStageDocument}"/>
+  <!-- 작성·열람 뷰어 바탕 -->
+  <Color x:Key="ShColorStageViewer">#FF5A5E66</Color>
+  <SolidColorBrush x:Key="ShColorStageViewerBrush" Color="{StaticResource ShColorStageViewer}"/>
+  <!-- 투명 표시 체커 -->
+  <Color x:Key="ShColorStageCheckerA">#FF3A3D45</Color>
+  <SolidColorBrush x:Key="ShColorStageCheckerABrush" Color="{StaticResource ShColorStageCheckerA}"/>
+  <Color x:Key="ShColorStageCheckerB">#FF2A2C32</Color>
+  <SolidColorBrush x:Key="ShColorStageCheckerBBrush" Color="{StaticResource ShColorStageCheckerB}"/>
+  <!-- 연결선 점선 -->
+  <Color x:Key="ShColorTreeLine">#FF9AA0A8</Color>
+  <SolidColorBrush x:Key="ShColorTreeLineBrush" Color="{StaticResource ShColorTreeLine}"/>
+  <!-- [+]/[−] 상자 테두리 -->
+  <Color x:Key="ShColorTreeBox">#FF7B8490</Color>
+  <SolidColorBrush x:Key="ShColorTreeBoxBrush" Color="{StaticResource ShColorTreeBox}"/>
+  <!-- ShShadowRaised: shadow — XAML 대응 없음, DESIGN.md 계약 참고 -->
+  <!-- ShShadowDialog: shadow — XAML 대응 없음, DESIGN.md 계약 참고 -->
+  <!-- ShShadowPage: shadow — XAML 대응 없음, DESIGN.md 계약 참고 -->
+  <!-- 이동·크기 애니메이션 없음 — 기본 -->
+  <x:Double x:Key="ShMotionDurationNone">0</x:Double>
+  <!-- hover 색 전환에만 -->
+  <x:Double x:Key="ShMotionDurationFast">100</x:Double>
+  <!-- 타이틀바·메뉴바·대화상자 제목 띠 -->
+  <LinearGradientBrush x:Key="ShGradientChromeBrush" StartPoint="0%,0%" EndPoint="0%,100%">
+    <LinearGradientBrush.GradientStops>
+      <GradientStop Color="#FFF4F4F4" Offset="0"/>
+      <GradientStop Color="#FFDFDFDF" Offset="1"/>
+    </LinearGradientBrush.GradientStops>
+  </LinearGradientBrush>
+  <!-- 툴바 1줄 -->
+  <LinearGradientBrush x:Key="ShGradientToolbarBrush" StartPoint="0%,0%" EndPoint="0%,100%">
+    <LinearGradientBrush.GradientStops>
+      <GradientStop Color="#FFFAFBFF" Offset="0"/>
+      <GradientStop Color="#FFEAEAEA" Offset="1"/>
+    </LinearGradientBrush.GradientStops>
+  </LinearGradientBrush>
+  <!-- 툴바 2줄·옵션 바 -->
+  <LinearGradientBrush x:Key="ShGradientToolbar2Brush" StartPoint="0%,0%" EndPoint="0%,100%">
+    <LinearGradientBrush.GradientStops>
+      <GradientStop Color="#FFFFFFFF" Offset="0"/>
+      <GradientStop Color="#FFEAEAEA" Offset="1"/>
+    </LinearGradientBrush.GradientStops>
+  </LinearGradientBrush>
+  <!-- 상태 줄·대화상자 버튼 줄 -->
+  <LinearGradientBrush x:Key="ShGradientStatusBrush" StartPoint="0%,0%" EndPoint="0%,100%">
+    <LinearGradientBrush.GradientStops>
+      <GradientStop Color="#FFF8F8F8" Offset="0"/>
+      <GradientStop Color="#FFECECEC" Offset="1"/>
+    </LinearGradientBrush.GradientStops>
+  </LinearGradientBrush>
+  <!-- 켜진 도구 버튼·열린 드롭다운 -->
+  <LinearGradientBrush x:Key="ShGradientPressedBrush" StartPoint="0%,0%" EndPoint="0%,100%">
+    <LinearGradientBrush.GradientStops>
+      <GradientStop Color="#FFF2F2F2" Offset="0"/>
+      <GradientStop Color="#FFD5D5D5" Offset="1"/>
+    </LinearGradientBrush.GradientStops>
+  </LinearGradientBrush>
+  <!-- 베벨 버튼·표 머리글·패널 제목 띠·스크롤 엄지 -->
+  <LinearGradientBrush x:Key="ShGradientBevelBrush" StartPoint="0%,0%" EndPoint="0%,100%">
+    <LinearGradientBrush.GradientStops>
+      <GradientStop Color="#FFFFFFFF" Offset="0"/>
+      <GradientStop Color="#FFE6E6E6" Offset="1"/>
+    </LinearGradientBrush.GradientStops>
+  </LinearGradientBrush>
+  <!-- 작은 버튼·세그먼트·아이콘 버튼 -->
+  <x:Double x:Key="ShSizeControlSm">22</x:Double>
+  <!-- 버튼·입력·콤보 기본 -->
+  <x:Double x:Key="ShSizeControlMd">24</x:Double>
+  <!-- 로그인 등 큰 입력 -->
+  <x:Double x:Key="ShSizeControlLg">28</x:Double>
+  <x:Double x:Key="ShSizeToolButton">24</x:Double>
+  <x:Double x:Key="ShSizeIcon">16</x:Double>
+  <!-- 프레임리스 앱 타이틀바 -->
+  <x:Double x:Key="ShSizeTitlebar">28</x:Double>
+  <x:Double x:Key="ShSizeMenubar">22</x:Double>
+  <x:Double x:Key="ShSizeToolbar">30</x:Double>
+  <x:Double x:Key="ShSizeStatusbar">22</x:Double>
+  <x:Double x:Key="ShSizeStatusPane">16</x:Double>
+  <x:Double x:Key="ShSizePanelTitle">22</x:Double>
+  <x:Double x:Key="ShSizeDialogTitle">28</x:Double>
+  <x:Double x:Key="ShSizeDialogButtonMin">72</x:Double>
+  <!-- 목록·표 행 -->
+  <x:Double x:Key="ShSizeRow">22</x:Double>
+  <x:Double x:Key="ShSizeTableHeader">24</x:Double>
+  <x:Double x:Key="ShSizeMenuItem">22</x:Double>
+  <x:Double x:Key="ShSizeMenuMinWidth">180</x:Double>
+  <!-- 활성·비활성 같은 높이 -->
+  <x:Double x:Key="ShSizeTab">24</x:Double>
+  <x:Double x:Key="ShSizeTreeRow">19</x:Double>
+  <x:Double x:Key="ShSizeTreeIndent">16</x:Double>
+  <x:Double x:Key="ShSizeTreeBox">9</x:Double>
+  <x:Double x:Key="ShSizeCheckbox">13</x:Double>
+  <!-- sh-messenger -->
+  <x:Double x:Key="ShSizeScrollbar">12</x:Double>
+  <x:Double x:Key="ShSizeSplitter">5</x:Double>
+  <!-- 타이틀바 창 버튼 폭 -->
+  <x:Double x:Key="ShSizeWindowButton">40</x:Double>
+  <x:Double x:Key="ShSpace0">0</x:Double>
+  <x:Double x:Key="ShSpace2">2</x:Double>
+  <x:Double x:Key="ShSpace4">4</x:Double>
+  <x:Double x:Key="ShSpace6">6</x:Double>
+  <x:Double x:Key="ShSpace8">8</x:Double>
+  <x:Double x:Key="ShSpace12">12</x:Double>
+  <x:Double x:Key="ShSpace16">16</x:Double>
+  <x:Double x:Key="ShSpace20">20</x:Double>
+  <x:Double x:Key="ShSpace24">24</x:Double>
+  <x:Double x:Key="ShSpace32">32</x:Double>
+  <x:Double x:Key="ShSpace48">48</x:Double>
+  <!-- 모든 컨트롤·패널·대화상자·메뉴 -->
+  <x:Double x:Key="ShRadiusNone">0</x:Double>
+  <!-- 상태 점·dirty 점에만 -->
+  <x:Double x:Key="ShRadiusRound">9999</x:Double>
+  <!-- 모든 선은 1px -->
+  <x:Double x:Key="ShBorderWidth">1</x:Double>
+  <!-- 포커스 점선을 안쪽 3px 에 -->
+  <x:Double x:Key="ShBorderFocusOffset">-3</x:Double>
+  <!-- UI 기본 — 돋움 12px 정체성 -->
+  <FontFamily x:Key="ShFontFamilyUi">돋움, Dotum, Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, Noto Sans CJK KR, Noto Sans KR, sans-serif</FontFamily>
+  <!-- Avalonia/Skia 렌더러 — 돋움 비트맵이 비정수 크기·합성 굵게에서 깨진다 (2026-10-01) -->
+  <FontFamily x:Key="ShFontFamilyUiSkia">Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, Noto Sans CJK KR, Noto Sans KR, sans-serif</FontFamily>
+  <!-- 편집기 본문 콘텐츠 (sh-web-editor) -->
+  <FontFamily x:Key="ShFontFamilyContent">굴림, Gulim, Malgun Gothic, 맑은 고딕, Apple SD Gothic Neo, Noto Sans KR, sans-serif</FontFamily>
+  <FontFamily x:Key="ShFontFamilyMono">Cascadia Mono, Consolas, D2Coding, ui-monospace, monospace</FontFamily>
+  <!-- 상태 칸·단축키·툴팁·배지 -->
+  <x:Double x:Key="ShFontSizeCaption">11</x:Double>
+  <!-- 본문·라벨·버튼·메뉴 — 기본 -->
+  <x:Double x:Key="ShFontSizeBody">12</x:Double>
+  <!-- 대화상자 제목·섹션 강조 -->
+  <x:Double x:Key="ShFontSizeEmphasis">13</x:Double>
+  <!-- 화면 제목 (크롬 글자 상한) -->
+  <x:Double x:Key="ShFontSizeTitle">14</x:Double>
+  <!-- 문서·랜딩 제목 — 크롬에는 쓰지 않는다 -->
+  <x:Double x:Key="ShFontSizeHeading">16</x:Double>
+  <x:Double x:Key="ShFontWeightRegular">400</x:Double>
+  <!-- 버튼 라벨 -->
+  <x:Double x:Key="ShFontWeightSemibold">600</x:Double>
+  <!-- 제목·legend — 상한 -->
+  <x:Double x:Key="ShFontWeightBold">700</x:Double>
+  <x:Double x:Key="ShFontLineHeightTight">1.2</x:Double>
+  <x:Double x:Key="ShFontLineHeightDense">1.3</x:Double>
+  <x:Double x:Key="ShFontLineHeightNormal">1.45</x:Double>
+</ResourceDictionary>
