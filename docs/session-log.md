@@ -23,4 +23,6 @@ domain: development
 - **검증**: `npm run verify` 통과(prettier + dist 신선도 + DESIGN.md 동기화 + CSS 변수 참조 + 17개 테마 대비).
   대비 검사가 잡은 4건 보정(danger-subtle, brand accent, dark accent·border-strong). Playwright 1440·390 두 크기 확인,
   모바일 가로 넘침 없음. 설치 명령 임시 폴더 시험 통과.
-- **다음**: GitHub 공개 저장소 생성·푸시(확인 필요) → 실제 프로젝트 하나에 `sh-ds init` 적용.
+- **추가 결정**: 기본 크롬 스킨을 회색으로 변경(사용자), 파랑은 `skin-blue` 테마. GitHub `coolmarvel/sh-design-system` 공개 저장소 생성·푸시.
+  `npx -y github:coolmarvel/sh-design-system init --platform css,avalonia` 를 빈 폴더에서 실행해 설치 확인.
+- **다음**: 실제 프로젝트 하나에 `sh-ds init` 적용해 어긋남 찾기.

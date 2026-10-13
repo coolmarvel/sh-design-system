@@ -11,7 +11,6 @@ domain: development
 
 ## P1 — 다음 릴리스에서 다뤄야 함
 
-- [ ] GitHub `coolmarvel/sh-design-system` 공개 저장소 생성·푸시 후 `npx -y github:coolmarvel/sh-design-system list` 실사용 확인
 - [ ] 실제 프로젝트 하나(웹)에 `sh-ds init --platform css` 적용해 계약과 어긋나는 부품 찾기 (docs/plans/0001-mvp.md 마일스톤 2)
 
 ## P2 — 가까운 로드맵
