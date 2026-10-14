@@ -1,5 +1,5 @@
 {
-  "$description": "DEXT5 흰색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)",
+  "$description": "DEXT5 흰색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)",
   "color": {
     "$type": "color",
     "chrome": {

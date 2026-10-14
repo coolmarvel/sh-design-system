@@ -1,4 +1,4 @@
-# 쇼케이스 확인용 — http://localhost:8083/ (8080~8082 는 다른 프로젝트가 사용 중)
+# 쇼케이스 확인용 - http://localhost:8083/ (8080~8082 는 다른 프로젝트가 사용 중)
 services:
   showcase:
     image: nginx:1.27.5-alpine

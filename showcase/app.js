@@ -1,4 +1,4 @@
-// 쇼케이스 동작 — 토큰(dist/<테마>/dtcg/tokens.json)을 읽어 견본을 그리고, 메뉴·탭·트리·대화상자를 시연한다.
+// 쇼케이스 동작 - 토큰(dist/<테마>/dtcg/tokens.json)을 읽어 견본을 그리고, 메뉴·탭·트리·대화상자를 시연한다.
 // 값은 화면에 하드코딩하지 않는다. 테마를 바꾸면 tokens.css 링크와 견본을 함께 다시 읽는다.
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -35,7 +35,7 @@ const EXPORTS = [
   { id: 'components', label: '부품 CSS', path: () => '../components/css/sh-classic.css', file: 'sh-classic.css' },
 ];
 
-// ── 상태 줄 ────────────────────────────────────────
+// -- 상태 줄 ----------------------------------------
 let msgTimer;
 function status(text) {
   $('#st-msg').textContent = text;
@@ -43,7 +43,7 @@ function status(text) {
   msgTimer = setTimeout(() => ($('#st-msg').textContent = '준비'), 4000);
 }
 
-// ── 토큰 읽기 ──────────────────────────────────────
+// -- 토큰 읽기 --------------------------------------
 const leaves = (obj, path = []) =>
   Object.entries(obj).flatMap(([k, v]) =>
     v && typeof v === 'object' && '$value' in v
@@ -70,7 +70,7 @@ async function loadTheme(id) {
   renderExport();
 }
 
-// ── 01 색 ──────────────────────────────────────────
+// -- 01 색 ------------------------------------------
 const COLOR_GROUPS = [
   ['강조·선택', (p) => /^accent|^hover-edge|^link$/.test(p)],
   ['면', (p) => /^(canvas|sunken|hover|scrim)$/.test(p)],
@@ -121,7 +121,7 @@ function renderPalette() {
   box.append(h3('그라데이션'), gl);
 }
 
-// ── 02 타이포 ──────────────────────────────────────
+// -- 02 타이포 --------------------------------------
 function typeRow(meta, text, style) {
   const row = document.createElement('div');
   row.className = 'type-sample';
@@ -149,12 +149,12 @@ function renderTypography() {
   for (const fam of leaves(f.family)) {
     const v = cssVar(['font', 'family', ...fam.path]);
     box.append(
-      typeRow(v, `${sample}  (${[].concat(fam.$value).slice(0, 3).join(', ')} …)`, { fontFamily: `var(${v})` }),
+      typeRow(v, `${sample}  (${[].concat(fam.$value).slice(0, 3).join(', ')} ...)`, { fontFamily: `var(${v})` }),
     );
   }
 }
 
-// ── 03 간격·크기·모양 ──────────────────────────────
+// -- 03 간격·크기·모양 ------------------------------
 function specTable(rows) {
   const t = document.createElement('table');
   t.className = 'sh-table specs';
@@ -209,7 +209,7 @@ function renderSpacing() {
   );
 }
 
-// ── 05 지침 (DESIGN.md 에서 읽음) ──────────────────
+// -- 05 지침 (DESIGN.md 에서 읽음) ------------------
 function richLi(text) {
   const el = document.createElement('li');
   for (const part of text.split(/(\*\*[^*]+\*\*|`[^`]+`)/)) {
@@ -253,7 +253,7 @@ async function renderGuidelines() {
   $('#guidelines').replaceChildren(h3('원칙'), principles, h3("Do · Don't"), dos);
 }
 
-// ── 내보내기 패널 ──────────────────────────────────
+// -- 내보내기 패널 ----------------------------------
 let exportText = '';
 const currentExport = () => EXPORTS.find((x) => x.id === exportTab) ?? EXPORTS[0];
 function renderExportTabs() {
@@ -299,7 +299,7 @@ function download() {
   status(`${a.download} 을(를) 내려받았습니다.`);
 }
 
-// ── 메뉴바 ─────────────────────────────────────────
+// -- 메뉴바 -----------------------------------------
 let openMenu = null;
 function closeMenus() {
   $$('#menubar [data-menu]').forEach((b) => b.setAttribute('aria-expanded', 'false'));
@@ -379,7 +379,7 @@ function toggleExport() {
   $('.app__main').classList.toggle('no-export', p.hidden);
 }
 
-// ── 트리 ───────────────────────────────────────────
+// -- 트리 -------------------------------------------
 function tree(el, nodes, onSelect) {
   const build = (list) =>
     list.map((n) => {
@@ -419,7 +419,7 @@ function tree(el, nodes, onSelect) {
   el.replaceChildren(...build(nodes));
 }
 
-// ── 대화상자 ───────────────────────────────────────
+// -- 대화상자 ---------------------------------------
 function openDialog(title, body) {
   const scrim = document.createElement('div');
   scrim.className = 'sh-scrim';
@@ -471,7 +471,7 @@ function openDialog(title, body) {
   });
 }
 
-// ── 상태 펼침 ──────────────────────────────────────
+// -- 상태 펼침 --------------------------------------
 function setStates(mode) {
   $$('[data-force]').forEach((el) => {
     if (mode === 'forced') el.dataset.state = el.dataset.force;
@@ -481,7 +481,7 @@ function setStates(mode) {
   store.set('sh-states', mode);
 }
 
-// ── 시작 ───────────────────────────────────────────
+// -- 시작 -------------------------------------------
 async function main() {
   themes = await (await fetch('../dist/themes.json')).json();
   const picker = $('#theme-picker');

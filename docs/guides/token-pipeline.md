@@ -21,12 +21,12 @@ domain: development
 4. `build/check.mjs` 는 임시 폴더로 다시 빌드해 `dist/` 와 바이트 비교하고, DESIGN.md 머리말 일치, 쇼케이스·부품 CSS·DESIGN.md 의
    `--sh-*` 참조 존재, `tokens/contrast.json` 대비 쌍을 모든 테마에서 확인한다.
 
-변환 규칙: CSS 계열은 `--sh-` 접두 kebab, 그라데이션 → `linear-gradient(to bottom, …)`, 모바일은 px 를 dp/pt 로 1:1(글자는 sp),
+변환 규칙: CSS 계열은 `--sh-` 접두 kebab, 그라데이션은 `linear-gradient(to bottom, ...)`, 모바일은 px 를 dp/pt 로 1:1(글자는 sp),
 모바일 글꼴은 목록의 첫 이름만.
 
 ## 관련 코드
 
-- `build/build.mjs` — 플랫폼 목록 `platforms()`, 모바일 변환
-- `build/formats/xaml.mjs` · `tailwind.mjs` · `dtcg.mjs` — 커스텀 포맷
-- `build/omd.mjs` — DESIGN.md 머리말
-- `build/check.mjs` — 검증
+- `build/build.mjs` - 플랫폼 목록 `platforms()`, 모바일 변환
+- `build/formats/xaml.mjs` · `tailwind.mjs` · `dtcg.mjs` - 커스텀 포맷
+- `build/omd.mjs` - DESIGN.md 머리말
+- `build/check.mjs` - 검증

@@ -1,70 +1,70 @@
 [
   {
     "id": "classic",
-    "description": "베이스 — sh-classic"
+    "description": "베이스 - sh-classic"
   },
   {
     "id": "brand-compositor",
-    "description": "앱 브랜드 파랑 #3b74f2 — sh-compositor·file-converter·pdf-editor 의 accent"
+    "description": "앱 브랜드 파랑 #3b74f2 - sh-compositor·file-converter·pdf-editor 의 accent"
   },
   {
     "id": "dark",
-    "description": "다크 — sh-messenger 다크 팔레트. 클래식 기본은 라이트, 어두운 작업실·야간용"
+    "description": "다크 - sh-messenger 다크 팔레트. 클래식 기본은 라이트, 어두운 작업실·야간용"
   },
   {
     "id": "pacsplus",
-    "description": "PACSPLUS Viewer 하늘색 — 의료 영상 뷰어 계열 (remote-assist 실측)"
+    "description": "PACSPLUS Viewer 하늘색 - 의료 영상 뷰어 계열 (remote-assist 실측)"
   },
   {
     "id": "skin-blue",
-    "description": "DEXT5 파랑 스킨 — sh-web-editor·sh-compositor 기본이던 크롬 색 (DEXT5 3.5 blue 실측)"
+    "description": "DEXT5 파랑 스킨 - sh-web-editor·sh-compositor 기본이던 크롬 색 (DEXT5 3.5 blue 실측)"
   },
   {
     "id": "skin-brown",
-    "description": "DEXT5 갈색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 갈색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-darkgray",
-    "description": "DEXT5 진회색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 진회색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-gold",
-    "description": "DEXT5 금색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 금색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-green",
-    "description": "DEXT5 초록 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 초록 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-orange",
-    "description": "DEXT5 주황 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 주황 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-pink",
-    "description": "DEXT5 분홍 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 분홍 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-purple",
-    "description": "DEXT5 보라 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 보라 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-red",
-    "description": "DEXT5 빨강 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 빨강 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-silver",
-    "description": "DEXT5 은색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 은색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-white",
-    "description": "DEXT5 흰색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 흰색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "skin-yellow",
-    "description": "DEXT5 노랑 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)"
+    "description": "DEXT5 노랑 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)"
   },
   {
     "id": "touch",
-    "description": "터치 밀도 — 환자용 화면·coarse 포인터. 색은 그대로, 크기만 키운다 (sh-econsent .touch, pdf-editor coarse)"
+    "description": "터치 밀도 - 환자용 화면·coarse 포인터. 색은 그대로, 크기만 키운다 (sh-econsent .touch, pdf-editor coarse)"
   }
 ]

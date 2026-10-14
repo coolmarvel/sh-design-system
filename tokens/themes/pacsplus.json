@@ -1,5 +1,5 @@
 {
-  "$description": "PACSPLUS Viewer 하늘색 — 의료 영상 뷰어 계열 (remote-assist 실측)",
+  "$description": "PACSPLUS Viewer 하늘색 - 의료 영상 뷰어 계열 (remote-assist 실측)",
   "color": {
     "$type": "color",
     "accent": {

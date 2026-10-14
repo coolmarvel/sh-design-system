@@ -26,8 +26,8 @@ sh-form-designer, pdf-editor(-live), dicom-studio, sh-dicom-studio, sh-ip-scanne
 | 중립 팔레트 | text `#1f2329` · border-strong `#8a919e` · sunken `#f5f6f8` · hover `#eef0f3` | sh-messenger. 5개 프로젝트가 이미 수렴 |
 | accent | `#2f6fed` (hover `#255fd1`, pressed `#1f4fb0`, subtle `#e9f0ff`) | sh-messenger. sh-web-editor 는 accent 가 없음 |
 | `#3b74f2` (compositor·pdf 브랜드) | `brand-compositor` 테마로 분리. 흰 글자 대비 4.23 이라 `#336ef1` 로 보정 | 대비 검사 |
-| 크롬 기본 스킨 | **gray** (DEXT5 회색 스킨 실측) | 2026-10-13 사용자 결정 "회색으로 변경" — econsent·form-designer·pdf 가 수렴한 톤. 파랑은 `skin-blue` 테마 |
-| 베벨 버튼 | `#fff→#e6e6e6`, 테두리 `#b5b5b5`, hover 흰 면 + `#2a8dd4`, 눌림 `#d6d9df` | sh-web-editor 실측 + messenger 눌림 |
+| 크롬 기본 스킨 | **gray** (DEXT5 회색 스킨 실측) | 2026-10-13 사용자 결정 "회색으로 변경" - econsent·form-designer·pdf 가 수렴한 톤. 파랑은 `skin-blue` 테마 |
+| 베벨 버튼 | `#fff` 에서 `#e6e6e6` 로, 테두리 `#b5b5b5`, hover 흰 면 + `#2a8dd4`, 눌림 `#d6d9df` | sh-web-editor 실측 + messenger 눌림 |
 | 글꼴 | 돋움 우선. Avalonia/Skia 는 맑은 고딕 우선인 `font.family.ui-skia` | 두 기준 모두 돋움. form-designer 렌더 깨짐 사례는 별도 토큰으로 수용 |
 | 타입 스케일 | 11 · 12 · 13 · 14 · 16, 굵기 400/600/700, 줄 높이 1.2/1.3/1.45 | sh-messenger |
 | 간격 | 2 · 4 · 6 · 8 · 12 · 16 · 20 · 24 · 32 · 48 | messenger 4px 그리드 + 촘촘한 2·6 |

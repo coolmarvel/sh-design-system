@@ -1,15 +1,15 @@
 #!/usr/bin/env node
-// sh-ds — 소비 프로젝트에 sh-classic 레퍼런스를 설치·갱신한다. 의존성 없음(node 내장만).
+// sh-ds - 소비 프로젝트에 sh-classic 레퍼런스를 설치·갱신한다. 의존성 없음(node 내장만).
 //
 //   npx -y github:coolmarvel/sh-design-system init --platform css,wpf [--theme classic] [--dir .]
 //   npx -y github:coolmarvel/sh-design-system update        # sh-ds.json 에 적힌 구성 그대로 다시 복사
 //   npx -y github:coolmarvel/sh-design-system list          # 테마·플랫폼 목록
 //
 // 설치 결과 (소비 프로젝트 기준):
-//   DESIGN.md                                   ← references/sh-classic/DESIGN.md (프로젝트 계약의 출발점)
-//   .claude/data/references/sh-classic/DESIGN.md ← omd 스킬이 레퍼런스로 찾는 위치 (원본 그대로, 수정 금지)
-//   design-tokens/<플랫폼>/…                    ← dist/<테마>/<플랫폼>/… (css 는 부품 CSS sh-classic.css 포함)
-//   sh-ds.json                                  ← 설치 구성·버전 기록 (update 가 읽음)
+//   DESIGN.md                                   <- references/sh-classic/DESIGN.md (프로젝트 계약의 출발점)
+//   .claude/data/references/sh-classic/DESIGN.md <- omd 스킬이 레퍼런스로 찾는 위치 (원본 그대로, 수정 금지)
+//   design-tokens/<플랫폼>/...                    <- dist/<테마>/<플랫폼>/... (css 는 부품 CSS sh-classic.css 포함)
+//   sh-ds.json                                  <- 설치 구성·버전 기록 (update 가 읽음)
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync, copyFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -34,24 +34,24 @@ function install({ dir, theme, platforms: want, keepDesign }) {
   mkdirSync(omdRef, { recursive: true });
   copyFileSync(ref, join(omdRef, 'DESIGN.md'));
   const design = join(dir, 'DESIGN.md');
-  if (keepDesign && existsSync(design)) console.log('· DESIGN.md 는 프로젝트 소유 — 덮어쓰지 않음 (레퍼런스 원본은 .claude/data/references/sh-classic/)');
+  if (keepDesign && existsSync(design)) console.log('- DESIGN.md 는 프로젝트 소유, 덮어쓰지 않음 (레퍼런스 원본은 .claude/data/references/sh-classic/)');
   else {
     copyFileSync(ref, design);
-    console.log('· DESIGN.md 생성 (sh-classic 원본 복사 — 이제 프로젝트 소유)');
+    console.log('- DESIGN.md 생성 (sh-classic 원본 복사, 이제 프로젝트 소유)');
   }
   for (const p of want) {
     cpSync(join(ROOT, 'dist', theme, p), join(dir, 'design-tokens', p), { recursive: true });
-    console.log(`· design-tokens/${p}/ ← dist/${theme}/${p}/`);
+    console.log(`- design-tokens/${p}/ <- dist/${theme}/${p}/`);
   }
   if (want.includes('css')) {
     copyFileSync(join(ROOT, 'components/css/sh-classic.css'), join(dir, 'design-tokens/css/sh-classic.css'));
-    console.log('· design-tokens/css/sh-classic.css ← 부품 CSS (tokens.css 다음에 로드)');
+    console.log('- design-tokens/css/sh-classic.css <- 부품 CSS (tokens.css 다음에 로드)');
   }
   writeFileSync(
     join(dir, 'sh-ds.json'),
     JSON.stringify({ reference: 'sh-classic', version: pkg.version, theme, platforms: want }, null, 2) + '\n',
   );
-  console.log(`✓ sh-design-system ${pkg.version} (테마 ${theme}) 설치 완료 → ${dir}`);
+  console.log(`sh-design-system ${pkg.version} (테마 ${theme}) 설치 완료: ${dir}`);
 }
 
 try {
@@ -69,6 +69,6 @@ try {
     console.log(readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').slice(1, 14).map((l) => l.replace(/^\/\/ ?/, '')).join('\n'));
   }
 } catch (e) {
-  console.error(`✗ ${e.message}`);
+  console.error(`오류: ${e.message}`);
   process.exit(1);
 }

@@ -1,5 +1,5 @@
 {
-  "$description": "다크 — sh-messenger 다크 팔레트. 클래식 기본은 라이트, 어두운 작업실·야간용",
+  "$description": "다크 - sh-messenger 다크 팔레트. 클래식 기본은 라이트, 어두운 작업실·야간용",
   "color": {
     "$type": "color",
     "accent": {

@@ -1,5 +1,5 @@
 {
-  "_remoteControl": "Remote Control(로컬 세션을 claude.ai/code 에 동기화) 차단 — 대화 내용이 웹에 남지 않게. 2026-09-05 결정",
+  "_remoteControl": "Remote Control(로컬 세션을 claude.ai/code 에 동기화) 차단 - 대화 내용이 웹에 남지 않게. 2026-09-05 결정",
   "disableRemoteControl": true,
   "remoteControlAtStartup": false,
   "autoUploadSessions": false,

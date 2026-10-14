@@ -1,4 +1,4 @@
-// 토큰 빌드 — tokens/base/*.json (+ tokens/themes/<테마>.json 덮어쓰기) → dist/<테마>/<플랫폼>/…
+// 토큰 빌드 - tokens/base/*.json (+ tokens/themes/<테마>.json 덮어쓰기) -> dist/<테마>/<플랫폼>/...
 // 새 플랫폼 추가 = platforms() 에 항목 하나 + (필요하면) build/formats/ 에 포맷 하나.
 import StyleDictionary from 'style-dictionary';
 import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
@@ -16,7 +16,7 @@ const themes = [
     .map((f) => f.replace(/\.json$/, '')),
 ];
 
-// gradient → CSS linear-gradient
+// gradient -> CSS linear-gradient
 StyleDictionary.registerTransform({
   name: 'sh/gradient/css',
   type: 'value',
@@ -27,7 +27,7 @@ StyleDictionary.registerTransform({
     return `linear-gradient(to bottom, ${stops.join(', ')})`;
   },
 });
-// 모바일 플랫폼 — 클래식 데스크톱 기준 단위 px 를 1:1 로 dp/pt 로 옮긴다. 글자 크기는 sp.
+// 모바일 플랫폼 - 클래식 데스크톱 기준 단위 px 를 1:1 로 dp/pt 로 옮긴다. 글자 크기는 sp.
 // 글꼴은 목록의 첫 이름만(모바일엔 대체 목록 문법이 없다) 따옴표 문자열로.
 const typeOf = (t) => t.$type ?? t.type;
 const n = (t) => parseFloat(String(t.$value ?? t.value));
@@ -82,7 +82,7 @@ const cssTransforms = [
   'color/css',
   'sh/gradient/css',
 ];
-// 모바일 출력은 그라데이션·그림자·선 스타일을 뺀다 (네이티브 리소스 대응이 없다 — DESIGN.md 계약을 따른다)
+// 모바일 출력은 그라데이션·그림자·선 스타일을 뺀다 (네이티브 리소스 대응이 없다. DESIGN.md 계약을 따른다)
 const noGradient = (t) =>
   !['gradient', 'shadow', 'strokeStyle', 'cubicBezier', 'transition'].includes(t.$type ?? t.type);
 
@@ -182,7 +182,7 @@ const platforms = (dir) => ({
   },
 });
 
-// 폴더 자체는 남기고 내용만 비운다 — 도커 bind mount 가 지워진 폴더를 계속 가리키지 않게
+// 폴더 자체는 남기고 내용만 비운다. 도커 bind mount 가 지워진 폴더를 계속 가리키지 않게
 mkdirSync(OUT, { recursive: true });
 for (const f of readdirSync(OUT)) rmSync(`${OUT}/${f}`, { recursive: true, force: true });
 for (const theme of themes) {
@@ -200,7 +200,7 @@ const themeList = themes.map((id) => ({
   id,
   description:
     id === BASE_THEME
-      ? '베이스 — sh-classic'
+      ? '베이스 - sh-classic'
       : (JSON.parse(readFileSync(`tokens/themes/${id}.json`, 'utf8')).$description ?? ''),
 }));
 writeFileSync(`${OUT}/themes.json`, JSON.stringify(themeList, null, 2) + '\n');

@@ -37,7 +37,7 @@
       "$type": "duration",
       "none": {
         "$value": "0ms",
-        "$description": "이동·크기 애니메이션 없음 — 기본"
+        "$description": "이동·크기 애니메이션 없음 - 기본"
       },
       "fast": {
         "$value": "100ms",

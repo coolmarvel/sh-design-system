@@ -7,8 +7,8 @@ export const colorAccentHover = "#4f80e8";
 export const colorAccentPressed = "#2f5fc4"; // 주 버튼 테두리·눌림
 export const colorAccentSubtle = "#263651"; // 선택 행·선택 라벨·켜진 세그먼트 면 (진한 글자 유지)
 export const colorAccentSubtleHover = "#2d4063";
-export const colorHoverEdge = "#6fa3ff"; // 베벨·도구 버튼·입력 hover 테두리 — 크롬의 유일한 채도 (DEXT5 실측, sh-web-editor)
-export const colorCanvas = "#2a2c32"; // 흰 면 — 입력·표·대화상자·활성 탭
+export const colorHoverEdge = "#6fa3ff"; // 베벨·도구 버튼·입력 hover 테두리 - 크롬의 유일한 채도 (DEXT5 실측, sh-web-editor)
+export const colorCanvas = "#2a2c32"; // 흰 면 - 입력·표·대화상자·활성 탭
 export const colorSunken = "#212328"; // 앱 바탕·사이드바·비활성 컨트롤 면
 export const colorHover = "#33353c"; // 목록·표·트리 라벨 hover 면
 export const colorBorder = "#3a3d45"; // 안쪽 헤어라인
@@ -27,10 +27,10 @@ export const colorSuccess = "#4cc47a";
 export const colorSuccessSubtle = "#1f3327";
 export const colorWarning = "#e3b341";
 export const colorWarningSubtle = "#3a3120"; // 툴팁 면·경고 띠
-export const colorScrim = "#000000a6"; // 대화상자 덮개 — 검정 15%
+export const colorScrim = "#000000a6"; // 대화상자 덮개 - 검정 15%
 export const colorControlTop = "#3a3d45"; // 베벨 버튼 면 위 (Money Forward·DEXT5 계열)
 export const colorControlBottom = "#2a2c32"; // 베벨 버튼 면 아래
-export const colorControlPressed = "#212328"; // 눌린 베벨 버튼 — 오목한 단색
+export const colorControlPressed = "#212328"; // 눌린 베벨 버튼 - 오목한 단색
 export const colorControlBorder = "#7a808b"; // 베벨 버튼 테두리
 export const colorChromeFrame = "#17181c"; // 바깥 1px 테두리·패널 구분선
 export const colorChromeMenubarTop = "#33353c";
@@ -45,7 +45,7 @@ export const colorChromePressedLight = "#26282d";
 export const colorChromeSeparator = "#3a3d45"; // 툴바 세로 구분선 1px 단선
 export const colorChromeStatusTop = "#3a3d45";
 export const colorChromeStatusLight = "#2a2c32";
-export const colorChromeStatusFace = "#212328"; // 상태 줄 면 — 파란 스킨에서도 회색
+export const colorChromeStatusFace = "#212328"; // 상태 줄 면 - 파란 스킨에서도 회색
 export const colorChromeTabActive = "#33353c";
 export const colorChromeTabDivider = "#3a3d45";
 export const colorStageImage = "#1e2025"; // 이미지·영상을 보는 어두운 바탕
@@ -54,11 +54,11 @@ export const colorStageViewer = "#5a5e66"; // 작성·열람 뷰어 바탕
 export const colorStageCheckerA = "#3a3d45"; // 투명 표시 체커
 export const colorStageCheckerB = "#2a2c32";
 export const colorTreeLine = "#5e636d"; // 연결선 점선
-export const colorTreeBox = "#7b8490"; // [+]/[−] 상자 테두리
+export const colorTreeBox = "#7b8490"; // [+]/[-] 상자 테두리
 export const shadowRaised = "2px 2px 4px 0px #00000080"; // 메뉴·팝오버·툴팁
 export const shadowDialog = "3px 3px 6px 0px #00000099"; // 대화상자
 export const shadowPage = "2px 2px 0px 0px #00000059"; // 문서 스테이지 위 종이
-export const motionDurationNone = "0ms"; // 이동·크기 애니메이션 없음 — 기본
+export const motionDurationNone = "0ms"; // 이동·크기 애니메이션 없음 - 기본
 export const motionDurationFast = "100ms"; // hover 색 전환에만
 export const gradientChrome =
   "linear-gradient(to bottom, #33353c 0%, #2a2c32 100%)"; // 타이틀바·메뉴바·대화상자 제목 띠
@@ -113,21 +113,21 @@ export const radiusRound = "9999px"; // 상태 점·dirty 점에만
 export const borderWidth = "1px"; // 모든 선은 1px
 export const borderFocusOffset = "-3px"; // 포커스 점선을 안쪽 3px 에
 export const fontFamilyUi =
-  "돋움, Dotum, 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif"; // UI 기본 — 돋움 12px 정체성
+  "돋움, Dotum, 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif"; // UI 기본 - 돋움 12px 정체성
 export const fontFamilyUiSkia =
-  "'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif"; // Avalonia/Skia 렌더러 — 돋움 비트맵이 비정수 크기·합성 굵게에서 깨진다 (2026-10-01)
+  "'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif"; // Avalonia/Skia 렌더러 - 돋움 비트맵이 비정수 크기·합성 굵게에서 깨진다 (2026-10-01)
 export const fontFamilyContent =
   "굴림, Gulim, 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif"; // 편집기 본문 콘텐츠 (sh-web-editor)
 export const fontFamilyMono =
   "'Cascadia Mono', Consolas, D2Coding, ui-monospace, monospace";
 export const fontSizeCaption = "11px"; // 상태 칸·단축키·툴팁·배지
-export const fontSizeBody = "12px"; // 본문·라벨·버튼·메뉴 — 기본
+export const fontSizeBody = "12px"; // 본문·라벨·버튼·메뉴 - 기본
 export const fontSizeEmphasis = "13px"; // 대화상자 제목·섹션 강조
 export const fontSizeTitle = "14px"; // 화면 제목 (크롬 글자 상한)
-export const fontSizeHeading = "16px"; // 문서·랜딩 제목 — 크롬에는 쓰지 않는다
+export const fontSizeHeading = "16px"; // 문서·랜딩 제목 - 크롬에는 쓰지 않는다
 export const fontWeightRegular = 400;
 export const fontWeightSemibold = 600; // 버튼 라벨
-export const fontWeightBold = 700; // 제목·legend — 상한
+export const fontWeightBold = 700; // 제목·legend - 상한
 export const fontLineHeightTight = 1.2;
 export const fontLineHeightDense = 1.3;
 export const fontLineHeightNormal = 1.45;

@@ -11,8 +11,8 @@ created: "2026-10-13"
 updated: "2026-10-13"
 author: 이성현 (SeongHyun Lee)
 lineage:
-  base: [ sh-web-editor, sh-messenger ] # 2026-10-13 사용자 지정 — 두 프로젝트가 기준, 나머지는 이 둘을 차용
-  sh-web-editor: "크롬 실측값(DEXT5 3.5, 기본 회색 스킨 — 2026-10-13 사용자 결정), 스킨 13종, 베벨 버튼, hover 테두리, 메뉴·툴바·대화상자 배치"
+  base: [ sh-web-editor, sh-messenger ] # 2026-10-13 사용자 지정 - 두 프로젝트가 기준, 나머지는 이 둘을 차용
+  sh-web-editor: "크롬 실측값(DEXT5 3.5, 기본 회색 스킨, 2026-10-13 사용자 결정), 스킨 13종, 베벨 버튼, hover 테두리, 메뉴·툴바·대화상자 배치"
   sh-messenger: "중립 팔레트(글자·선·면), accent, 그림자, 타입 스케일, 프레임리스 타이틀바, 컨텍스트 메뉴 문법, 다크"
   refined_by: [ sh-compositor, sh-econsent, sh-form-designer, remote-assist, pdf-editor-live ]
 platforms: [ css, scss, less, js, tailwind3, tailwind4, dtcg, wpf, avalonia, ios, android, compose, flutter ]
@@ -32,7 +32,7 @@ components:
   checkbox: { size: size.checkbox, bg: color.canvas, border: "1px color.border-strong", check: "color.text ✓" }
   tooltip: { bg: color.warning-subtle, border: "1px color.border-strong", font: font.size.caption, shadow: shadow.raised, arrow: none }
 tokens:
-  source: tokens/base/*.json (sh-design-system SSOT) — npm run build 가 생성
+  source: tokens/base/*.json (sh-design-system SSOT) - npm run build 가 생성
   colors:
     accent: "#2f6fed"
     accent-hover: "#255fd1"
@@ -163,14 +163,14 @@ tokens:
     duration-fast: 100ms
 themes:
   brand-compositor:
-    description: "앱 브랜드 파랑 #3b74f2 — sh-compositor·file-converter·pdf-editor 의 accent"
+    description: "앱 브랜드 파랑 #3b74f2 - sh-compositor·file-converter·pdf-editor 의 accent"
     tokens:
       color-accent: "#336ef1"
       color-accent-hover: "#2c5cd9"
       color-accent-pressed: "#2149b3"
       color-accent-subtle: "#eef3fe"
   dark:
-    description: 다크 — sh-messenger 다크 팔레트. 클래식 기본은 라이트, 어두운 작업실·야간용
+    description: 다크 - sh-messenger 다크 팔레트. 클래식 기본은 라이트, 어두운 작업실·야간용
     tokens:
       color-accent: "#3c71df"
       color-accent-hover: "#4f80e8"
@@ -227,7 +227,7 @@ themes:
       gradient-pressed: "linear-gradient(to bottom, #26282d 0%, #1c1d21 100%)"
       gradient-bevel: "linear-gradient(to bottom, #3a3d45 0%, #2a2c32 100%)"
   pacsplus:
-    description: PACSPLUS Viewer 하늘색 — 의료 영상 뷰어 계열 (remote-assist 실측)
+    description: PACSPLUS Viewer 하늘색 - 의료 영상 뷰어 계열 (remote-assist 실측)
     tokens:
       color-accent: "#0062df"
       color-accent-hover: "#1375ec"
@@ -263,7 +263,7 @@ themes:
       gradient-bevel: "linear-gradient(to bottom, #ffffff 0%, #dddddd 100%)"
       font-family-ui: 굴림, Gulim, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif, 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif
   skin-blue:
-    description: DEXT5 파랑 스킨 — sh-web-editor·sh-compositor 기본이던 크롬 색 (DEXT5 3.5 blue 실측)
+    description: DEXT5 파랑 스킨 - sh-web-editor·sh-compositor 기본이던 크롬 색 (DEXT5 3.5 blue 실측)
     tokens:
       color-chrome-frame: "#a1abb9"
       color-chrome-menubar-top: "#edf2f6"
@@ -282,7 +282,7 @@ themes:
       gradient-toolbar2: "linear-gradient(to bottom, #ffffff 0%, #ecf1f7 100%)"
       gradient-pressed: "linear-gradient(to bottom, #eff1f5 0%, #d3dbe7 100%)"
   skin-brown:
-    description: DEXT5 갈색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 갈색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#cb9958"
       color-chrome-menubar-top: "#f7e2c1"
@@ -306,7 +306,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #fff8ec 0%, #fff6e7 100%)"
       gradient-pressed: "linear-gradient(to bottom, #f8f4eb 0%, #d6b884 100%)"
   skin-darkgray:
-    description: DEXT5 진회색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 진회색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#7d7d7d"
       color-chrome-menubar-top: "#bbbbbb"
@@ -330,7 +330,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #f5f5f5 0%, #ebebeb 100%)"
       gradient-pressed: "linear-gradient(to bottom, #f4f4f4 0%, #b8b8b8 100%)"
   skin-gold:
-    description: DEXT5 금색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 금색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#c9be7d"
       color-chrome-menubar-top: "#f3eed1"
@@ -354,7 +354,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #f3efd1 0%, #f6f2da 100%)"
       gradient-pressed: "linear-gradient(to bottom, #f9f7e0 0%, #d8cd8a 100%)"
   skin-green:
-    description: DEXT5 초록 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 초록 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#98c331"
       color-chrome-menubar-top: "#eafbc5"
@@ -378,7 +378,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #f2fade 0%, #e8f6c6 100%)"
       gradient-pressed: "linear-gradient(to bottom, #f4fae8 0%, #c1e272 100%)"
   skin-orange:
-    description: DEXT5 주황 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 주황 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#ffa52f"
       color-chrome-menubar-top: "#ffe8bd"
@@ -402,7 +402,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #fdf5e7 0%, #fbe9cc 100%)"
       gradient-pressed: "linear-gradient(to bottom, #fff6ea 0%, #ffc679 100%)"
   skin-pink:
-    description: DEXT5 분홍 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 분홍 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#d5a8d5"
       color-chrome-menubar-top: "#fcecfb"
@@ -426,7 +426,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #f9f1f8 0%, #fcf6fa 100%)"
       gradient-pressed: "linear-gradient(to bottom, #f4e4f3 0%, #e6bbe6 100%)"
   skin-purple:
-    description: DEXT5 보라 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 보라 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#ae9bd5"
       color-chrome-menubar-top: "#f3ecff"
@@ -450,7 +450,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #f2eef6 0%, #f1e8f6 100%)"
       gradient-pressed: "linear-gradient(to bottom, #faf8fd 0%, #ded3f1 100%)"
   skin-red:
-    description: DEXT5 빨강 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 빨강 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#eb644e"
       color-chrome-menubar-top: "#ffd6d3"
@@ -474,7 +474,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #fff2ec 0%, #ffefe7 100%)"
       gradient-pressed: "linear-gradient(to bottom, #fff2f1 0%, #ffaea6 100%)"
   skin-silver:
-    description: DEXT5 은색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 은색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#acaba7"
       color-chrome-menubar-top: "#ebebe8"
@@ -494,7 +494,7 @@ themes:
       gradient-toolbar2: "linear-gradient(to bottom, #ffffff 0%, #d6d5cf 100%)"
       gradient-pressed: "linear-gradient(to bottom, #ebeae6 0%, #bab8ad 100%)"
   skin-white:
-    description: DEXT5 흰색 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 흰색 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#b1b2b4"
       color-chrome-menubar-top: "#ffffff"
@@ -517,7 +517,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 100%)"
       gradient-pressed: "linear-gradient(to bottom, #fefefe 0%, #f6f6f6 100%)"
   skin-yellow:
-    description: DEXT5 노랑 스킨 — 크롬 색만 교체 (sh-web-editor skins.css 실측)
+    description: DEXT5 노랑 스킨 - 크롬 색만 교체 (sh-web-editor skins.css 실측)
     tokens:
       color-chrome-frame: "#cfc700"
       color-chrome-menubar-top: "#fdfed8"
@@ -541,7 +541,7 @@ themes:
       gradient-status: "linear-gradient(to bottom, #fdfde7 0%, #fbfbcc 100%)"
       gradient-pressed: "linear-gradient(to bottom, #fdfced 0%, #f1ea8d 100%)"
   touch:
-    description: 터치 밀도 — 환자용 화면·coarse 포인터. 색은 그대로, 크기만 키운다 (sh-econsent .touch, pdf-editor coarse)
+    description: 터치 밀도 - 환자용 화면·coarse 포인터. 색은 그대로, 크기만 키운다 (sh-econsent .touch, pdf-editor coarse)
     tokens:
       size-control-sm: 40px
       size-control-md: 48px
@@ -563,7 +563,7 @@ themes:
       font-size-title: 18px
 ---
 
-# SH Classic — 디자인 계약
+# SH Classic - 디자인 계약
 
 > 이 문서는 **AI 에이전트와 사람이 함께 따르는 UI 계약**이다. 값은 위 머리말의 `tokens:` 와 `design-tokens/`
 > 생성 파일에서만 가져온다. 화면 코드에 hex·px 리터럴을 새로 쓰지 않는다.
@@ -575,7 +575,7 @@ themes:
 PACS 뷰어, 메신저 PC 판)의 문법을 지금 기술로 다시 만든다.
 
 - 반경 0, 모든 선 1px, 돋움 12px, 컨트롤 높이 24px.
-- 크롬(메뉴바·툴바·상태 줄)은 얕은 세로 그라데이션 띠. 버튼은 흰→회색 베벨.
+- 크롬(메뉴바·툴바·상태 줄)은 얕은 세로 그라데이션 띠. 버튼은 흰색에서 회색으로 내려가는 베벨.
 - 색은 아낀다. 크롬은 회색·옅은 파랑, 채도 있는 색은 주 동작·선택·포커스와 hover 테두리에만.
 - 기능은 메뉴에서 찾는다. 툴바·버튼은 메뉴의 지름길이다.
 - 웹처럼 넉넉한 여백, 둥근 카드, 큰 그림자, 히어로 영역은 이 시스템에 없다.
@@ -595,7 +595,7 @@ PACS 뷰어, 메신저 PC 판)의 문법을 지금 기술로 다시 만든다.
 | hover 테두리 | `--sh-color-hover-edge` | 베벨·도구 버튼·입력·탭의 hover 1px 테두리. 크롬에서 유일한 채도 |
 | 글자 | `--sh-color-text` · `--sh-color-text-secondary` · `--sh-color-text-muted` · `--sh-color-text-disabled` | 본문 / 보조 라벨 / 단축키·설명 / 비활성 |
 | 선 | `--sh-color-border` · `--sh-color-border-strong` · `--sh-color-grid` · `--sh-color-chrome-frame` | 안쪽 헤어라인 / 입력·메뉴 판 / 표 격자 / 패널·창 테두리 |
-| 베벨 | `--sh-color-control-top` → `--sh-color-control-bottom`, 테두리 `--sh-color-control-border`, 눌림 `--sh-color-control-pressed` | 버튼·표 머리글·패널 제목 띠 |
+| 베벨 | `--sh-color-control-top` 에서 `--sh-color-control-bottom` 으로, 테두리 `--sh-color-control-border`, 눌림 `--sh-color-control-pressed` | 버튼·표 머리글·패널 제목 띠 |
 | 크롬 | `--sh-color-chrome-*` (16개) | 메뉴바·툴바·상태 줄·탭. **스킨 테마가 이 그룹만 바꾼다** |
 | 의미 | danger · success · warning (+ `-subtle`) | 삭제·오류 / 완료 / 주의. 툴팁 면은 `--sh-color-warning-subtle` |
 | 스테이지 | `--sh-color-stage-image` · `--sh-color-stage-document` · `--sh-color-stage-viewer` | 이미지 보기 / 종이 편집 / 작성 뷰어의 바탕 |
@@ -607,10 +607,10 @@ PACS 뷰어, 메신저 PC 판)의 문법을 지금 기술로 다시 만든다.
 
 | 역할 | 토큰 | 값 |
 |---|---|---|
-| UI 글꼴 | `--sh-font-family-ui` | 돋움 → 맑은 고딕 → Apple SD Gothic Neo → Noto Sans KR |
+| UI 글꼴 | `--sh-font-family-ui` | 돋움, 맑은 고딕, Apple SD Gothic Neo, Noto Sans KR 순 |
 | Avalonia/Skia | `--sh-font-family-ui-skia` | 맑은 고딕 우선. 돋움 비트맵이 비정수 크기·합성 굵게에서 깨진다 (2026-10-01) |
 | 편집 콘텐츠 | `--sh-font-family-content` | 굴림 (문서·에디터 본문) |
-| 고정폭 | `--sh-font-family-mono` | Cascadia Mono → Consolas → D2Coding |
+| 고정폭 | `--sh-font-family-mono` | Cascadia Mono, Consolas, D2Coding 순 |
 
 크기는 다섯 단계만 쓴다: caption 11 · **body 12 (기본)** · emphasis 13 · title 14 · heading 16.
 굵기는 400 · 600(버튼) · 700(제목·legend, 상한). 줄 높이는 1.2 / 1.3 / 1.45.
@@ -633,10 +633,10 @@ PACS 뷰어, 메신저 PC 판)의 문법을 지금 기술로 다시 만든다.
 | 기본(베벨) | `--sh-gradient-bevel` 면, 1px `--sh-color-control-border`, 글자 600 | 흰 면 + 1px `--sh-color-hover-edge` | `--sh-color-control-pressed` 단색(오목) | 면 `--sh-color-sunken`, 테두리 `--sh-color-border`, 글자 `--sh-color-text-disabled` |
 | 주(primary) | `--sh-color-accent` 채움, 1px `--sh-color-accent-pressed`, 흰 글자 | `--sh-color-accent-hover` | `--sh-color-accent-pressed` | 면 `--sh-color-control-bottom`, 글자 비활성 |
 | 위험(외곽선) | 베벨 면 + 글자 `--sh-color-danger` + 테두리 `--sh-color-danger-border` | 면 `--sh-color-danger-subtle`, 테두리 `--sh-color-danger` | 눌림 면 | 기본과 같음 |
-| 위험(채움) | `--sh-color-danger` 채움 + 흰 글자 | 조금 어둡게 | — | — |
+| 위험(채움) | `--sh-color-danger` 채움 + 흰 글자 | 조금 어둡게 | - | - |
 
 - 높이 24 (`--sh-size-control-md`), 좌우 패딩 12, 작은 버튼 22. 대화상자 버튼 최소 폭 72.
-- **주 버튼은 한 화면·한 대화상자에 하나.** 버튼 순서는 보조 → 주. 위험 동작이 주이면 맨 오른쪽.
+- **주 버튼은 한 화면·한 대화상자에 하나.** 버튼 순서는 보조 다음에 주. 위험 동작이 주이면 맨 오른쪽.
 - 삭제류 버튼은 빨강 외곽선. 되돌릴 수 없는 확인 대화상자의 주 버튼만 빨강 채움.
 - 로딩 중에는 폭을 유지하고 라벨 자리에 12px 스피너.
 
@@ -681,7 +681,7 @@ PACS 뷰어, 메신저 PC 판)의 문법을 지금 기술로 다시 만든다.
 ### 4.6 체크박스·라디오·세그먼트
 
 - 체크박스 13×13, 흰 면, 1px border-strong, **체크 = 진한 글자색 ✓** (accent 채움 아님). 중간 상태 = 7×7 사각. hover 테두리 hover-edge.
-- 라디오 13×13 원 — 반경 예외. 선택 점은 글자색.
+- 라디오 13×13 원 - 반경 예외. 선택 점은 글자색.
 - 세그먼트: 1px border-strong 묶음, 항목 22, 베벨 면, 항목 사이 1px. 선택 = `--sh-color-accent-subtle` 면 + 진한 글자 + 600.
 
 ### 4.7 표·목록
@@ -694,7 +694,7 @@ PACS 뷰어, 메신저 PC 판)의 문법을 지금 기술로 다시 만든다.
 ### 4.8 트리 (클래식 연결선)
 
 - 행 19, 들여쓰기 16, 단계마다 1px 점선 `--sh-color-tree-line` 세로줄 + 항목으로 꺾이는 가로 점선.
-- 자식이 있으면 9×9 [+]/[−] 상자(흰 면, 1px `--sh-color-tree-box`, 기호 글자색).
+- 자식이 있으면 9×9 [+]/[-] 상자(흰 면, 1px `--sh-color-tree-box`, 기호 글자색).
 - hover·선택은 **글자 라벨만** 칠한다(선택 = accent-subtle + 1px hover-edge). 행 전체를 칠하지 않는다.
 - 폴더·사람 아이콘과 체크박스를 두지 않는다 (2026-10-01).
 
@@ -782,7 +782,7 @@ PACS 뷰어, 메신저 PC 판)의 문법을 지금 기술로 다시 만든다.
 처럼 무엇이 일어났고 무엇을 하면 되는지 말한다.
 
 - 느낌표·이모지·영어 혼용 금지. 원인 없는 "오류가 발생했습니다" 금지.
-- UI 문구에 em-dash(—)·en-dash(–)·텍스트 화살표(→)를 쓰지 않는다.
+- UI 문구에 em-dash, en-dash, 유니코드 화살표 같은 특수기호를 쓰지 않는다. 구분은 쉼표나 하이픈(-)으로.
 - 버튼 라벨은 동사: 확인 · 취소 · 저장 · 열기 · 삭제. "예/아니오" 보다 동작 이름.
 
 ## 11. Brand Narrative
@@ -822,7 +822,7 @@ PACS 뷰어, 메신저 PC 판)의 문법을 지금 기술로 다시 만든다.
 
 ## 15. Motion & Easing
 
-§8 과 같다. 곡선 토큰을 두지 않는다. 대화상자·메뉴·툴팁 등장 애니메이션이 없으므로 이징이 필요 없다.
+8절과 같다. 곡선 토큰을 두지 않는다. 대화상자·메뉴·툴팁 등장 애니메이션이 없으므로 이징이 필요 없다.
 
 ## 16. Do's and Don'ts
 

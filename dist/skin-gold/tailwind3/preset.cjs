@@ -1,4 +1,4 @@
-// sh-design-system 이 생성한 파일. 직접 고치지 말 것. (tokens/*.json → npm run build)
+// sh-design-system 이 생성한 파일. 직접 고치지 말 것. (tokens/*.json -> npm run build)
 // 사용: tailwind.config 의 presets: [require("./preset.cjs")] + css/tokens.css 를 함께 로드
 module.exports = { theme: { extend: {
   "colors": {

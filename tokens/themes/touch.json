@@ -1,5 +1,5 @@
 {
-  "$description": "터치 밀도 — 환자용 화면·coarse 포인터. 색은 그대로, 크기만 키운다 (sh-econsent .touch, pdf-editor coarse)",
+  "$description": "터치 밀도 - 환자용 화면·coarse 포인터. 색은 그대로, 크기만 키운다 (sh-econsent .touch, pdf-editor coarse)",
   "size": {
     "$type": "dimension",
     "control": {

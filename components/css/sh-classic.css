@@ -1,10 +1,10 @@
 /*
- * sh-classic 부품 CSS — DESIGN.md §4 계약의 웹 구현 (손으로 쓴 파일, 값은 전부 tokens.css 의 --sh-* 변수).
+ * sh-classic 부품 CSS - DESIGN.md 4절 계약의 웹 구현 (손으로 쓴 파일, 값은 전부 tokens.css 의 --sh-* 변수).
  * 사용: tokens.css 다음에 이 파일을 로드하고 class="sh-btn" 처럼 쓴다. 리터럴 hex·px 를 더하지 않는다.
  * 상태 강제 표시: data-state="hover|pressed|focus|on|selected|open" (쇼케이스·문서용) 은 실제 :hover 등과 같게 그린다.
  */
 
-/* ── 기본 ───────────────────────────────────────── */
+/* -- 기본 ----------------------------------------- */
 .sh-root,
 .sh-root *,
 .sh-root *::before,
@@ -42,7 +42,7 @@
   }
 }
 
-/* ── 4.1 버튼 ───────────────────────────────────── */
+/* -- 4.1 버튼 ------------------------------------- */
 .sh-btn {
   display: inline-flex;
   align-items: center;
@@ -130,7 +130,7 @@
   outline-color: var(--sh-color-on-accent);
 }
 
-/* ── 4.2 툴바·도구 버튼 ─────────────────────────── */
+/* -- 4.2 툴바·도구 버튼 --------------------------- */
 .sh-toolbar {
   display: flex;
   align-items: center;
@@ -190,13 +190,13 @@
 }
 .sh-separator {
   width: var(--sh-border-width);
-  height: 18px; /* DESIGN.md §4.2 구분선 높이 — 툴바 30 안에서 위아래 6 */
+  height: 18px; /* DESIGN.md 4.2절 구분선 높이 - 툴바 30 안에서 위아래 6 */
   margin: 0 var(--sh-space-4);
   background: var(--sh-color-chrome-separator);
   flex: none;
 }
 
-/* ── 4.3 메뉴바·메뉴 ────────────────────────────── */
+/* -- 4.3 메뉴바·메뉴 ------------------------------ */
 .sh-menubar {
   display: flex;
   align-items: stretch;
@@ -286,7 +286,7 @@
   background: var(--sh-color-border);
 }
 
-/* ── 4.4 탭 ─────────────────────────────────────── */
+/* -- 4.4 탭 --------------------------------------- */
 .sh-tabs {
   display: flex;
   align-items: flex-end;
@@ -333,7 +333,7 @@
   vertical-align: middle;
 }
 
-/* ── 4.5 입력·콤보 ──────────────────────────────── */
+/* -- 4.5 입력·콤보 -------------------------------- */
 .sh-input,
 .sh-select {
   height: var(--sh-size-control-md);
@@ -389,7 +389,7 @@
   align-items: center;
 }
 
-/* ── 4.6 체크박스·라디오·세그먼트 ───────────────── */
+/* -- 4.6 체크박스·라디오·세그먼트 ----------------- */
 .sh-check {
   display: inline-flex;
   align-items: center;
@@ -417,7 +417,7 @@
 }
 .sh-check input:checked::after {
   content: '';
-  width: 7px; /* ✓ 모양 — 13px 상자 안 고정 기하 */
+  width: 7px; /* ✓ 모양 - 13px 상자 안 고정 기하 */
   height: 4px;
   border-left: 2px solid var(--sh-color-text);
   border-bottom: 2px solid var(--sh-color-text);
@@ -471,7 +471,7 @@
   outline-offset: calc(var(--sh-border-focus-offset) + 1px);
 }
 
-/* ── 4.7 표 ─────────────────────────────────────── */
+/* -- 4.7 표 --------------------------------------- */
 .sh-table {
   border-collapse: collapse;
   background: var(--sh-color-canvas);
@@ -504,8 +504,8 @@
   background: var(--sh-color-accent-subtle);
 }
 
-/* ── 4.8 트리 (연결선) ──────────────────────────── */
-/* 구조: ul.sh-tree > li[aria-expanded] > .sh-tree__row(.sh-tree__toggle + .sh-tree__label) + ul > li … */
+/* -- 4.8 트리 (연결선) ---------------------------- */
+/* 구조: ul.sh-tree > li[aria-expanded] > .sh-tree__row(.sh-tree__toggle + .sh-tree__label) + ul > li ... */
 .sh-tree,
 .sh-tree ul {
   list-style: none;
@@ -561,7 +561,7 @@
   background: var(--sh-color-canvas);
   cursor: default;
 }
-/* [+]/[−] 기호는 1px 선 두 개로 그린다 (글꼴에 의존하지 않음) */
+/* [+]/[-] 기호는 1px 선 두 개로 그린다 (글꼴에 의존하지 않음) */
 .sh-tree__toggle::before,
 .sh-tree__toggle::after {
   content: '';
@@ -607,7 +607,7 @@ li[aria-expanded='true'] > .sh-tree__row > .sh-tree__toggle::after {
   display: none;
 }
 
-/* ── 4.9 대화상자·그룹 박스 ─────────────────────── */
+/* -- 4.9 대화상자·그룹 박스 ----------------------- */
 .sh-scrim {
   position: fixed;
   inset: 0;
@@ -666,7 +666,7 @@ li[aria-expanded='true'] > .sh-tree__row > .sh-tree__toggle::after {
   font-weight: var(--sh-font-weight-bold);
 }
 
-/* ── 4.10 상태 줄 ───────────────────────────────── */
+/* -- 4.10 상태 줄 --------------------------------- */
 .sh-statusbar {
   display: flex;
   align-items: center;
@@ -707,7 +707,7 @@ li[aria-expanded='true'] > .sh-tree__row > .sh-tree__toggle::after {
   background: var(--sh-color-accent);
 }
 
-/* ── 4.11 타이틀바 ──────────────────────────────── */
+/* -- 4.11 타이틀바 -------------------------------- */
 .sh-titlebar {
   display: flex;
   align-items: center;
@@ -751,7 +751,7 @@ li[aria-expanded='true'] > .sh-tree__row > .sh-tree__toggle::after {
   color: var(--sh-color-on-accent);
 }
 
-/* ── 4.12 패널 ──────────────────────────────────── */
+/* -- 4.12 패널 ------------------------------------ */
 .sh-panel {
   background: var(--sh-color-canvas);
   border: var(--sh-border-width) solid var(--sh-color-chrome-frame);
@@ -771,7 +771,7 @@ li[aria-expanded='true'] > .sh-tree__row > .sh-tree__toggle::after {
   white-space: nowrap;
 }
 
-/* ── 4.13 툴팁·알림·칩 ──────────────────────────── */
+/* -- 4.13 툴팁·알림·칩 ---------------------------- */
 .sh-tooltip {
   display: inline-block;
   padding: var(--sh-space-2) var(--sh-space-6);
@@ -806,7 +806,7 @@ li[aria-expanded='true'] > .sh-tree__row > .sh-tree__toggle::after {
 .sh-chip {
   display: inline-flex;
   align-items: center;
-  height: 18px; /* DESIGN.md §4.13 칩 높이 */
+  height: 18px; /* DESIGN.md 4.13절 칩 높이 */
   padding: 0 var(--sh-space-6);
   border: var(--sh-border-width) solid var(--sh-color-border-strong);
   background: var(--sh-color-sunken);
@@ -827,7 +827,7 @@ li[aria-expanded='true'] > .sh-tree__row > .sh-tree__toggle::after {
   color: var(--sh-color-accent-pressed);
 }
 
-/* ── 4.14 스크롤바 ──────────────────────────────── */
+/* -- 4.14 스크롤바 -------------------------------- */
 .sh-scroll {
   overflow: auto;
   scrollbar-width: auto;
@@ -854,7 +854,7 @@ li[aria-expanded='true'] > .sh-tree__row > .sh-tree__toggle::after {
   display: none;
 }
 
-/* ── 스테이지 ───────────────────────────────────── */
+/* -- 스테이지 ------------------------------------- */
 .sh-stage-document {
   background: var(--sh-color-stage-document);
   padding: var(--sh-space-16);

@@ -1,5 +1,5 @@
-/* sh-design-system 이 생성한 파일. 직접 고치지 말 것. (tokens/*.json → npm run build)
- * 사용: @import "tailwindcss"; @import "./theme.css";  → bg-canvas, text-text-secondary, h-size-control-md … */
+/* sh-design-system 이 생성한 파일. 직접 고치지 말 것. (tokens/*.json -> npm run build)
+ * 사용: @import "tailwindcss"; @import "./theme.css";  -> bg-canvas, text-text-secondary, h-size-control-md ... */
 @theme {
   --color-accent: #336ef1;
   --color-accent-hover: #2c5cd9;

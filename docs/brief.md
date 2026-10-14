@@ -28,7 +28,7 @@ status: confirmed
 ## 핵심 시나리오 (v1.0)
 
 1. 에이전트가 새 프로젝트 킥오프에서 Toss 대신 `sh-classic` 을 베이스 레퍼런스로 지정하고, `DESIGN.md` 를 복사해 같은 UI 를 만든다.
-2. 에이전트가 프로젝트 스택에 맞는 토큰 파일(CSS 변수·SCSS·Tailwind·JSON·WPF·Avalonia …)을 `dist/` 에서 그대로 가져다 쓴다.
+2. 에이전트가 프로젝트 스택에 맞는 토큰 파일(CSS 변수·SCSS·Tailwind·JSON·WPF·Avalonia ...)을 `dist/` 에서 그대로 가져다 쓴다.
 3. 작성자가 토큰 SSOT 한 곳을 고치면 빌드 한 번으로 모든 플랫폼 파일과 `DESIGN.md` 의 토큰 머리말이 함께 갱신된다.
 4. 작성자가 쇼케이스(도커 localhost)에서 버튼·툴바·메뉴·탭·표·트리·대화상자 등 부품의 모든 상태를 눈으로 확인한다.
 5. 프로젝트별 변형(DEXT5 파란 스킨, PACSPLUS 하늘색, 환자용 터치 크기)은 베이스를 깨지 않는 테마/변형으로 선택해 쓴다.

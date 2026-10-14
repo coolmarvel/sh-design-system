@@ -1,4 +1,4 @@
-// 검증 — 파일을 고치지 않고 어긋남만 잡는다. 실패하면 exit 1.
+// 검증 - 파일을 고치지 않고 어긋남만 잡는다. 실패하면 exit 1.
 // 1) dist/ 가 tokens/ 로 다시 빌드한 결과와 같은가  2) DESIGN.md 머리말이 토큰과 같은가
 // 3) 쇼케이스·DESIGN.md 가 존재하지 않는 CSS 변수를 쓰지 않는가  4) 대비(WCAG) 최소 기준
 import { execFileSync } from 'node:child_process';
@@ -24,14 +24,14 @@ const cur = existsSync('dist')
 for (const f of new Set([...fresh, ...cur])) {
   const a = existsSync(join(tmp, f)) ? readFileSync(join(tmp, f), 'utf8') : null;
   const b = existsSync(join('dist', f)) ? readFileSync(join('dist', f), 'utf8') : null;
-  if (a !== b) errors.push(`dist/${f} 가 토큰과 어긋남 — npm run build`);
+  if (a !== b) errors.push(`dist/${f} 가 토큰과 어긋남: npm run build 실행`);
 }
 
 // 2) DESIGN.md 머리말
 process.env.SH_OUT = tmp;
 const { renderFrontmatter, DESIGN_MD } = await import('./omd.mjs');
 const md = readFileSync(DESIGN_MD, 'utf8');
-if (renderFrontmatter(md) !== md) errors.push(`${DESIGN_MD} 머리말이 토큰과 어긋남 — npm run build`);
+if (renderFrontmatter(md) !== md) errors.push(`${DESIGN_MD} 머리말이 토큰과 어긋남: npm run build 실행`);
 
 // 3) CSS 변수 참조
 const defined = new Set(
@@ -49,7 +49,7 @@ for (const f of users) {
   for (const m of src.matchAll(/`(--sh-[\w-]+)`/g)) if (!defined.has(m[1])) errors.push(`${f}: 정의되지 않은 ${m[1]}`);
 }
 
-// 4) 대비 — tokens/contrast.json 의 [글자, 바탕, 최소비] 쌍을 모든 테마에서 확인
+// 4) 대비 - tokens/contrast.json 의 [글자, 바탕, 최소비] 쌍을 모든 테마에서 확인
 const lum = (hex) => {
   const h = hex.replace('#', '').slice(0, 6);
   const [r, g, b] = [0, 2, 4]
@@ -80,7 +80,7 @@ if (existsSync('tokens/contrast.json')) {
 
 rmSync(tmp, { recursive: true, force: true });
 if (errors.length) {
-  console.error('✗ check 실패\n' + errors.map((e) => '  - ' + e).join('\n'));
+  console.error('check 실패\n' + errors.map((e) => '  - ' + e).join('\n'));
   process.exit(1);
 }
-console.log('✓ check 통과 — dist·DESIGN.md·CSS 변수·대비 모두 일치');
+console.log('check 통과: dist·DESIGN.md·CSS 변수·대비 모두 일치');

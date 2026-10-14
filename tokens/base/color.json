@@ -21,11 +21,11 @@
     },
     "hover-edge": {
       "$value": "#2a8dd4",
-      "$description": "베벨·도구 버튼·입력 hover 테두리 — 크롬의 유일한 채도 (DEXT5 실측, sh-web-editor)"
+      "$description": "베벨·도구 버튼·입력 hover 테두리 - 크롬의 유일한 채도 (DEXT5 실측, sh-web-editor)"
     },
     "canvas": {
       "$value": "#ffffff",
-      "$description": "흰 면 — 입력·표·대화상자·활성 탭"
+      "$description": "흰 면 - 입력·표·대화상자·활성 탭"
     },
     "sunken": {
       "$value": "#f5f6f8",
@@ -93,7 +93,7 @@
     },
     "scrim": {
       "$value": "#00000026",
-      "$description": "대화상자 덮개 — 검정 15%"
+      "$description": "대화상자 덮개 - 검정 15%"
     },
     "control": {
       "top": {
@@ -106,7 +106,7 @@
       },
       "pressed": {
         "$value": "#d6d9df",
-        "$description": "눌린 베벨 버튼 — 오목한 단색"
+        "$description": "눌린 베벨 버튼 - 오목한 단색"
       },
       "border": {
         "$value": "#b5b5b5",
@@ -114,7 +114,7 @@
       }
     },
     "chrome": {
-      "$description": "크롬(메뉴바·툴바·상태 줄·탭) 색 — 스킨 테마가 이 그룹만 바꾼다. 기본 = DEXT5 회색 스킨 (2026-10-13 사용자 결정, sh-econsent·pdf-editor 톤)",
+      "$description": "크롬(메뉴바·툴바·상태 줄·탭) 색 - 스킨 테마가 이 그룹만 바꾼다. 기본 = DEXT5 회색 스킨 (2026-10-13 사용자 결정, sh-econsent·pdf-editor 톤)",
       "frame": {
         "$value": "#b8babc",
         "$description": "바깥 1px 테두리·패널 구분선"
@@ -162,7 +162,7 @@
       },
       "status-face": {
         "$value": "#ececec",
-        "$description": "상태 줄 면 — 파란 스킨에서도 회색"
+        "$description": "상태 줄 면 - 파란 스킨에서도 회색"
       },
       "tab-active": {
         "$value": "#e2e2e3"
@@ -199,7 +199,7 @@
       },
       "box": {
         "$value": "#7b8490",
-        "$description": "[+]/[−] 상자 테두리"
+        "$description": "[+]/[-] 상자 테두리"
       }
     }
   }

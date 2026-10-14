@@ -1,5 +1,5 @@
-// Tailwind 프리셋 — theme.extend 에 sh-* 이름으로 토큰을 연결한다.
-// 값은 CSS 변수(var(--sh-…))를 가리켜 런타임 테마 교체가 되게 한다.
+// Tailwind 프리셋 - theme.extend 에 sh-* 이름으로 토큰을 연결한다.
+// 값은 CSS 변수(var(--sh-...))를 가리켜 런타임 테마 교체가 되게 한다.
 const cssVar = (t) => `var(--sh-${t.path.join('-')})`;
 
 export const tailwindFormat = {
@@ -27,15 +27,15 @@ export const tailwindFormat = {
       boxShadow: Object.fromEntries(pick('shadow').map((t) => [`sh-${t.path.slice(1).join('-')}`, cssVar(t)])),
     };
     return (
-      '// sh-design-system 이 생성한 파일. 직접 고치지 말 것. (tokens/*.json → npm run build)\n' +
+      '// sh-design-system 이 생성한 파일. 직접 고치지 말 것. (tokens/*.json -> npm run build)\n' +
       '// 사용: tailwind.config 의 presets: [require("./preset.cjs")] + css/tokens.css 를 함께 로드\n' +
       `module.exports = { theme: { extend: ${JSON.stringify(theme, null, 2)} } };\n`
     );
   },
 };
 
-// Tailwind v4 — CSS 우선 설정. `@import "tailwindcss"; @import "./theme.css";` 로 쓴다.
-// v4 네임스페이스(--color-*, --font-*, --text-*, --spacing-*, --radius-*, --shadow-* …)에 맞춰 값 자체를 넣는다.
+// Tailwind v4 - CSS 우선 설정. `@import "tailwindcss"; @import "./theme.css";` 로 쓴다.
+// v4 네임스페이스(--color-*, --font-*, --text-*, --spacing-*, --radius-*, --shadow-* ...)에 맞춰 값 자체를 넣는다.
 export const tailwindV4Format = {
   name: 'tailwind/v4',
   format: ({ dictionary }) => {
@@ -57,8 +57,8 @@ export const tailwindV4Format = {
     };
     const lines = dictionary.allTokens.map((t) => `  ${ns(t)}: ${t.$value ?? t.value};`);
     return (
-      '/* sh-design-system 이 생성한 파일. 직접 고치지 말 것. (tokens/*.json → npm run build)\n' +
-      ' * 사용: @import "tailwindcss"; @import "./theme.css";  → bg-canvas, text-text-secondary, h-size-control-md … */\n' +
+      '/* sh-design-system 이 생성한 파일. 직접 고치지 말 것. (tokens/*.json -> npm run build)\n' +
+      ' * 사용: @import "tailwindcss"; @import "./theme.css";  -> bg-canvas, text-text-secondary, h-size-control-md ... */\n' +
       `@theme {\n${lines.join('\n')}\n}\n`
     );
   },

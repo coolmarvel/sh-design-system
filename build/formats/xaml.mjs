@@ -1,6 +1,6 @@
-// XAML 리소스 사전 포맷 — WPF 와 Avalonia 가 같은 토큰을 같은 키로 받는다.
-// 키 규칙: "Sh" + PascalCase(토큰 경로). 색은 Color + SolidColorBrush(…Brush) 두 개를 만든다.
-// 그라데이션은 세로 LinearGradientBrush(…Brush). 치수·숫자는 Double, 글꼴은 FontFamily.
+// XAML 리소스 사전 포맷 - WPF 와 Avalonia 가 같은 토큰을 같은 키로 받는다.
+// 키 규칙: "Sh" + PascalCase(토큰 경로). 색은 Color + SolidColorBrush(...Brush) 두 개를 만든다.
+// 그라데이션은 세로 LinearGradientBrush(...Brush). 치수·숫자는 Double, 글꼴은 FontFamily.
 
 const pascal = (path) =>
   'Sh' +
@@ -11,7 +11,7 @@ const pascal = (path) =>
     .map((p) => p[0].toUpperCase() + p.slice(1))
     .join('');
 
-// "#rrggbb" / "#rrggbbaa" → XAML "#AARRGGBB"
+// "#rrggbb" / "#rrggbbaa" -> XAML "#AARRGGBB"
 export const toXamlColor = (hex) => {
   const h = hex.replace('#', '').toLowerCase();
   if (h.length === 6) return `#FF${h.toUpperCase()}`;
@@ -37,7 +37,7 @@ function entries(token, flavor) {
   const key = pascal(token.path);
   const v = token.$value ?? token.value;
   const type = token.$type ?? token.type;
-  const desc = token.$description ? `  <!-- ${esc(token.$description).replace(/--/g, '—')} -->\n` : '';
+  const desc = token.$description ? `  <!-- ${esc(token.$description).replace(/--/g, '- -')} -->\n` : '';
   const dbl = flavor === 'wpf' ? 'sys:Double' : 'x:Double';
   switch (type) {
     case 'color':
@@ -72,13 +72,13 @@ function entries(token, flavor) {
     }
     default:
       // shadow·strokeStyle 등 XAML 에 대응 리소스가 없는 타입은 주석으로만 남긴다.
-      return `  <!-- ${key}: ${type} — XAML 대응 없음, DESIGN.md 계약 참고 -->\n`;
+      return `  <!-- ${key}: ${type} - XAML 대응 없음, DESIGN.md 계약 참고 -->\n`;
   }
 }
 
 const header = (flavor, name) =>
-  `<!--\n  ${name} — sh-design-system 이 생성한 파일. 직접 고치지 말 것.\n` +
-  `  원본: tokens/*.json → npm run build\n-->\n`;
+  `<!--\n  ${name} - sh-design-system 이 생성한 파일. 직접 고치지 말 것.\n` +
+  `  원본: tokens/*.json -> npm run build\n-->\n`;
 
 export const wpfFormat = {
   name: 'xaml/wpf',

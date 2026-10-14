@@ -1,5 +1,5 @@
 {
-  "$description": "DEXT5 파랑 스킨 — sh-web-editor·sh-compositor 기본이던 크롬 색 (DEXT5 3.5 blue 실측)",
+  "$description": "DEXT5 파랑 스킨 - sh-web-editor·sh-compositor 기본이던 크롬 색 (DEXT5 3.5 blue 실측)",
   "color": {
     "$type": "color",
     "chrome": {

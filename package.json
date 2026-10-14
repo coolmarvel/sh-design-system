@@ -1,7 +1,7 @@
 {
   "name": "sh-design-system",
-  "version": "0.1.0",
-  "description": "이성현의 클래식 UI 디자인 시스템 레퍼런스 (sh-classic) — omd 호환 DESIGN.md + 다중 플랫폼 토큰 + 쇼케이스",
+  "version": "0.1.1",
+  "description": "이성현의 클래식 UI 디자인 시스템 레퍼런스 (sh-classic) - omd 호환 DESIGN.md + 다중 플랫폼 토큰 + 쇼케이스",
   "scripts": {
     "build": "node build/build.mjs",
     "check": "node build/check.mjs",

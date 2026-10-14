@@ -1,5 +1,5 @@
 // references/sh-classic/DESIGN.md 의 YAML 머리말 중 `tokens:` 와 `themes:` 를 dist 결과로 다시 쓴다.
-// 본문(계약)은 사람이 쓰고, 값은 tokens/*.json 이 SSOT — 머리말 값을 손으로 고치지 않는다.
+// 본문(계약)은 사람이 쓰고, 값은 tokens/*.json 이 SSOT - 머리말 값을 손으로 고치지 않는다.
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { parseDocument } from 'yaml';
 
@@ -15,7 +15,7 @@ const load = (theme) => JSON.parse(readFileSync(`${process.env.SH_OUT ?? 'dist'}
 export function omdTokens(t) {
   const group = (k) => (t[k] ? Object.fromEntries(flat(t[k])) : undefined);
   return {
-    source: 'tokens/base/*.json (sh-design-system SSOT) — npm run build 가 생성',
+    source: 'tokens/base/*.json (sh-design-system SSOT) - npm run build 가 생성',
     colors: group('color'),
     gradients: group('gradient'),
     typography: group('font'),

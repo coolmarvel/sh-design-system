@@ -2,7 +2,7 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-/** 브랜드 #3b74f2 는 흰 글자 대비 4.23 — AA 4.5 를 넘는 가장 가까운 음영 */
+/** 브랜드 #3b74f2 는 흰 글자 대비 4.23 - AA 4.5 를 넘는 가장 가까운 음영 */
 export const colorAccent: string;
 export const colorAccentHover: string;
 /** 주 버튼 테두리·눌림 */
@@ -10,9 +10,9 @@ export const colorAccentPressed: string;
 /** 선택 행·선택 라벨·켜진 세그먼트 면 (진한 글자 유지) */
 export const colorAccentSubtle: string;
 export const colorAccentSubtleHover: string;
-/** 베벨·도구 버튼·입력 hover 테두리 — 크롬의 유일한 채도 (DEXT5 실측, sh-web-editor) */
+/** 베벨·도구 버튼·입력 hover 테두리 - 크롬의 유일한 채도 (DEXT5 실측, sh-web-editor) */
 export const colorHoverEdge: string;
-/** 흰 면 — 입력·표·대화상자·활성 탭 */
+/** 흰 면 - 입력·표·대화상자·활성 탭 */
 export const colorCanvas: string;
 /** 앱 바탕·사이드바·비활성 컨트롤 면 */
 export const colorSunken: string;
@@ -42,13 +42,13 @@ export const colorSuccessSubtle: string;
 export const colorWarning: string;
 /** 툴팁 면·경고 띠 */
 export const colorWarningSubtle: string;
-/** 대화상자 덮개 — 검정 15% */
+/** 대화상자 덮개 - 검정 15% */
 export const colorScrim: string;
 /** 베벨 버튼 면 위 (Money Forward·DEXT5 계열) */
 export const colorControlTop: string;
 /** 베벨 버튼 면 아래 */
 export const colorControlBottom: string;
-/** 눌린 베벨 버튼 — 오목한 단색 */
+/** 눌린 베벨 버튼 - 오목한 단색 */
 export const colorControlPressed: string;
 /** 베벨 버튼 테두리 */
 export const colorControlBorder: string;
@@ -71,7 +71,7 @@ export const colorChromePressedLight: string;
 export const colorChromeSeparator: string;
 export const colorChromeStatusTop: string;
 export const colorChromeStatusLight: string;
-/** 상태 줄 면 — 파란 스킨에서도 회색 */
+/** 상태 줄 면 - 파란 스킨에서도 회색 */
 export const colorChromeStatusFace: string;
 export const colorChromeTabActive: string;
 export const colorChromeTabDivider: string;
@@ -86,7 +86,7 @@ export const colorStageCheckerA: string;
 export const colorStageCheckerB: string;
 /** 연결선 점선 */
 export const colorTreeLine: string;
-/** [+]/[−] 상자 테두리 */
+/** [+]/[-] 상자 테두리 */
 export const colorTreeBox: string;
 /** 메뉴·팝오버·툴팁 */
 export const shadowRaised: string;
@@ -94,7 +94,7 @@ export const shadowRaised: string;
 export const shadowDialog: string;
 /** 문서 스테이지 위 종이 */
 export const shadowPage: string;
-/** 이동·크기 애니메이션 없음 — 기본 */
+/** 이동·크기 애니메이션 없음 - 기본 */
 export const motionDurationNone: string;
 /** hover 색 전환에만 */
 export const motionDurationFast: string;
@@ -162,27 +162,27 @@ export const radiusRound: string;
 export const borderWidth: string;
 /** 포커스 점선을 안쪽 3px 에 */
 export const borderFocusOffset: string;
-/** UI 기본 — 돋움 12px 정체성 */
+/** UI 기본 - 돋움 12px 정체성 */
 export const fontFamilyUi: string;
-/** Avalonia/Skia 렌더러 — 돋움 비트맵이 비정수 크기·합성 굵게에서 깨진다 (2026-10-01) */
+/** Avalonia/Skia 렌더러 - 돋움 비트맵이 비정수 크기·합성 굵게에서 깨진다 (2026-10-01) */
 export const fontFamilyUiSkia: string;
 /** 편집기 본문 콘텐츠 (sh-web-editor) */
 export const fontFamilyContent: string;
 export const fontFamilyMono: string;
 /** 상태 칸·단축키·툴팁·배지 */
 export const fontSizeCaption: string;
-/** 본문·라벨·버튼·메뉴 — 기본 */
+/** 본문·라벨·버튼·메뉴 - 기본 */
 export const fontSizeBody: string;
 /** 대화상자 제목·섹션 강조 */
 export const fontSizeEmphasis: string;
 /** 화면 제목 (크롬 글자 상한) */
 export const fontSizeTitle: string;
-/** 문서·랜딩 제목 — 크롬에는 쓰지 않는다 */
+/** 문서·랜딩 제목 - 크롬에는 쓰지 않는다 */
 export const fontSizeHeading: string;
 export const fontWeightRegular: number;
 /** 버튼 라벨 */
 export const fontWeightSemibold: number;
-/** 제목·legend — 상한 */
+/** 제목·legend - 상한 */
 export const fontWeightBold: number;
 export const fontLineHeightTight: number;
 export const fontLineHeightDense: number;

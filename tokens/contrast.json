@@ -1,5 +1,5 @@
 {
-  "$description": "글자/바탕 대비 최소 기준 — 모든 테마에서 npm run check 가 확인한다 (WCAG: 본문 4.5, 비텍스트 3)",
+  "$description": "글자/바탕 대비 최소 기준 - 모든 테마에서 npm run check 가 확인한다 (WCAG: 본문 4.5, 비텍스트 3)",
   "pairs": [
     ["text", "canvas", 7],
     ["text", "sunken", 7],

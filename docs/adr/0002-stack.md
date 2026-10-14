@@ -13,7 +13,7 @@ Accepted (2026-10-13 킥오프 위저드에서 사용자 확정)
 ## 맥락
 
 이성현의 데스크톱·웹 프로젝트(sh-messenger, sh-compositor, sh-econsent, sh-form-designer, sh-web-editor,
-remote-assist, pdf-editor(-live), file-converter …)는 모두 "클래식 UI"를 지향하지만 프로젝트마다 DESIGN.md
+remote-assist, pdf-editor(-live), file-converter ...)는 모두 "클래식 UI"를 지향하지만 프로젝트마다 DESIGN.md
 와 토큰을 따로 정해 결과가 제각각이다. 스택도 Electron/React(CSS), 바닐라 TS, WPF, Avalonia 로 섞여 있다.
 oh-my-design(omd)의 브랜드 레퍼런스처럼 **"내 레퍼런스"** 하나를 두고 모든 프로젝트가 그것을 불러 쓰게 한다.
 
@@ -21,17 +21,17 @@ oh-my-design(omd)의 브랜드 레퍼런스처럼 **"내 레퍼런스"** 하나�
 
 | 항목 | 결정 |
 |---|---|
-| 유형 | 디자인 시스템 레퍼런스 저장소 — 새 프로젝트가 불러 씀 |
-| 계약 문서 | `references/sh-classic/DESIGN.md` — omd 0.1 레퍼런스 형식(YAML 머리말 + 16절 본문) |
-| 토큰 SSOT | `tokens/base/*.json` — W3C DTCG 형식(`$type`/`$value`). 변형은 `tokens/themes/<이름>.json` 덮어쓰기 |
+| 유형 | 디자인 시스템 레퍼런스 저장소 - 새 프로젝트가 불러 씀 |
+| 계약 문서 | `references/sh-classic/DESIGN.md` - omd 0.1 레퍼런스 형식(YAML 머리말 + 16절 본문) |
+| 토큰 SSOT | `tokens/base/*.json` - W3C DTCG 형식(`$type`/`$value`). 변형은 `tokens/themes/<이름>.json` 덮어쓰기 |
 | 생성기 | Style Dictionary **5.5.5** (npm, 정확 버전 고정) + 커스텀 포맷(WPF·Avalonia XAML, Tailwind 프리셋, omd 머리말) |
 | 출력 | `dist/<테마>/` 에 CSS 변수 · SCSS · LESS · JS/TS/JSON · Tailwind · WPF · Avalonia · iOS Swift · Android XML · Compose · Flutter |
-| 미리보기 | `showcase/` 정적 HTML(프레임워크 없음) — 도커 nginx 로 `http://localhost:8083` |
-| DB | 없음 — 파일 기반 |
+| 미리보기 | `showcase/` 정적 HTML(프레임워크 없음) - 도커 nginx 로 `http://localhost:8083` |
+| DB | 없음 - 파일 기반 |
 | 디자인 방향 | 베이스 = 기존 프로젝트들의 클래식 UI 를 통합한 `sh-classic`. 외부 브랜드 베이스 없음 |
 | 패키지 매니저 | npm |
 
-`dist/` 는 커밋한다 — 소비 프로젝트가 빌드 없이 GitHub 에서 파일을 가져가게 하기 위함이다. 대신 `npm run check`
+`dist/` 는 커밋한다. 소비 프로젝트가 빌드 없이 GitHub 에서 파일을 가져가게 하기 위함이다. 대신 `npm run check`
 가 "tokens 로 다시 빌드한 결과 = 커밋된 dist" 를 강제한다.
 
 ## 근거
@@ -51,7 +51,7 @@ oh-my-design(omd)의 브랜드 레퍼런스처럼 **"내 레퍼런스"** 하나�
 
 ## 결과
 
-- 좋음: 토큰 한 곳 수정 → `npm run build` 한 번으로 모든 플랫폼 파일과 DESIGN.md 값이 갱신된다.
+- 좋음: 토큰 한 곳 수정 후 `npm run build` 한 번으로 모든 플랫폼 파일과 DESIGN.md 값이 갱신된다.
 - 좋음: 새 플랫폼(예: Qt QSS, WinUI) 추가는 `build/formats/` 에 포맷 하나.
 - 비용: 모바일 출력은 그라데이션·그림자를 내보내지 않는다(네이티브 리소스 대응 없음). 계약은 DESIGN.md 를 따른다.
 - 비용: XAML 은 토큰(리소스)만 준다. 부품 스타일(ControlTheme·Style)은 각 프로젝트가 DESIGN.md 계약대로 만든다.
