@@ -22,6 +22,7 @@ domain: development
 ## P3 - 품질
 
 - [ ] 테마 토큰의 배열 값이 베이스 배열과 칸 단위로 합쳐짐(pacsplus 글꼴에서 발견). 배열은 통째로 덮어쓰게 빌드 병합 규칙 수정 (`build/build.mjs`)
+- [ ] `npx -y github:coolmarvel/sh-design-system@main init ...` 이 출력 없이 아무것도 설치하지 않고 끝남(접미사 없이는 정상). 원인 확인 또는 README 에 경고 (`bin/sh-ds.mjs`)
 - [ ] 쇼케이스 도커가 WSL 에 없으면 `showcase:up` 이 실패. 정적 서버 대안을 스크립트로 (`package.json`)
 - [ ] dark 테마에서 종이(`sh-paper`)도 어둡게 그려짐 - 문서 스테이지 종이는 항상 흰색이어야 하는지 결정
 

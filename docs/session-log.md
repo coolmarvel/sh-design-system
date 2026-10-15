@@ -22,7 +22,8 @@ domain: development
   ADR-0003 글꼴 행에 대체 표시. DESIGN.md 1·3절, README, 쇼케이스 타이포그래피 안내 문장. `npm run build` 로 17개 테마 13개 플랫폼 재생성.
 - **검증**: `npm run build && npm run verify` 통과(대비 포함). 도커가 이 WSL 에 없어 같은 폴더를 `python3 -m http.server 8083` 으로 띄우고
   Playwright 1440·390 에서 타이포그래피·탭·메뉴·대화상자 전후 비교: 굵은 제목이 맑은 고딕 Bold 로, 390 가로 넘침 없음. 리눅스라 ClearType 은
-  재현하지 못함. 소비 경로 `npx -y github:coolmarvel/sh-design-system@main` 를 빈 폴더에서 시험.
+  재현하지 못함. 소비 경로는 빈 폴더에서 `npx -y github:coolmarvel/sh-design-system init --platform css` 와 `update` 로
+  확인: sh-ds.json 0.1.2, tokens.css 의 UI 글꼴 맑은 고딕 우선, 프로젝트 DESIGN.md 는 덮어쓰지 않음. `@main` 을 붙이면 아무것도 설치하지 않고 끝남.
 - **다음**: sh-video-editor 에서 `update` 로 받아 편집기 덮어쓰기 제거. 다른 소비 앱(SH Compositor 등)도 다음 갱신 때 반영.
 
 ## 2026-10-14 - 특수기호 정리 v0.1.1
