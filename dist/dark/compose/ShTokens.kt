@@ -67,7 +67,7 @@ object ShTokens {
   val colorWarningSubtle = Color(0xff3a3120)
   val fontFamilyContent = "굴림"
   val fontFamilyMono = "Cascadia Mono"
-  val fontFamilyUi = "돋움"
+  val fontFamilyUi = "Malgun Gothic"
   val fontFamilyUiSkia = "Malgun Gothic"
   val fontLineHeightDense = 1.3f
   val fontLineHeightNormal = 1.45f

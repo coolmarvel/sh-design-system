@@ -91,7 +91,8 @@
     "family": {
       "$type": "fontFamily",
       "ui": {
-        "$value": ["굴림", "Gulim", "Malgun Gothic", "Apple SD Gothic Neo", "sans-serif"]
+        "$value": ["굴림", "Gulim", "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", "sans-serif"],
+        "$description": "PACSPLUS 뷰어 실측 글꼴 굴림 (ADR-0004 의 예외: 원본 모양이 테마의 정체성)"
       }
     }
   }

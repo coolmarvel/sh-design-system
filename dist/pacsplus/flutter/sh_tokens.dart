@@ -69,8 +69,8 @@ class ShTokens {
     static const colorWarningSubtle = Color(0xFFFFF4D6); /** 툴팁 면·경고 띠 */
     static const fontFamilyContent = "굴림"; /** 편집기 본문 콘텐츠 (sh-web-editor) */
     static const fontFamilyMono = "Cascadia Mono";
-    static const fontFamilyUi = "굴림"; /** UI 기본 - 돋움 12px 정체성 */
-    static const fontFamilyUiSkia = "Malgun Gothic"; /** Avalonia/Skia 렌더러 - 돋움 비트맵이 비정수 크기·합성 굵게에서 깨진다 (2026-10-01) */
+    static const fontFamilyUi = "굴림"; /** PACSPLUS 뷰어 실측 글꼴 굴림 (ADR-0004 의 예외: 원본 모양이 테마의 정체성) */
+    static const fontFamilyUiSkia = "Malgun Gothic"; /** Avalonia/Skia 렌더러용 이름. 0.1.2 부터 ui 와 같은 값 (호환 유지, 2026-10-15) */
     static const fontLineHeightDense = 1.3;
     static const fontLineHeightNormal = 1.4;
     static const fontLineHeightTight = 1.2;

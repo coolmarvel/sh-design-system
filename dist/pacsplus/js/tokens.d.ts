@@ -162,9 +162,9 @@ export const radiusRound: string;
 export const borderWidth: string;
 /** 포커스 점선을 안쪽 3px 에 */
 export const borderFocusOffset: string;
-/** UI 기본 - 돋움 12px 정체성 */
+/** PACSPLUS 뷰어 실측 글꼴 굴림 (ADR-0004 의 예외: 원본 모양이 테마의 정체성) */
 export const fontFamilyUi: string;
-/** Avalonia/Skia 렌더러 - 돋움 비트맵이 비정수 크기·합성 굵게에서 깨진다 (2026-10-01) */
+/** Avalonia/Skia 렌더러용 이름. 0.1.2 부터 ui 와 같은 값 (호환 유지, 2026-10-15) */
 export const fontFamilyUiSkia: string;
 /** 편집기 본문 콘텐츠 (sh-web-editor) */
 export const fontFamilyContent: string;

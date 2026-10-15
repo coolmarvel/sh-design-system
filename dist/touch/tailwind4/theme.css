@@ -105,7 +105,7 @@
   --radius-round: 9999px;
   --border-width: 1px;
   --border-focus-offset: -3px;
-  --font-ui: 돋움, Dotum, 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif;
+  --font-ui: 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif;
   --font-ui-skia: 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif;
   --font-content: 굴림, Gulim, 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
   --font-mono: 'Cascadia Mono', Consolas, D2Coding, ui-monospace, monospace;

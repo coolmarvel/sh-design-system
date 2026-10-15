@@ -1,7 +1,7 @@
 ---
 title: 세션 로그
 created: 2026-10-13
-updated: 2026-10-14
+updated: 2026-10-15
 domain: development
 ---
 
@@ -10,6 +10,20 @@ domain: development
 이 파일이 **"언제 무슨 일이 있었나"의 SSOT**다. 세션마다 최상단에 블록 추가.
 
 블록 형식: `## YYYY-MM-DD - 제목` 아래에 **요청/피드백, 수정, 검증, 다음** 순서로 간결하게.
+
+## 2026-10-15 - UI 글꼴을 맑은 고딕 우선으로 v0.1.2
+
+- **요청**: sh-video-editor 피드백. 12px 굵은 글자(대화상자 제목, 트랙 이름 A1·V1, 패널 머리)가 번져 보인다. 한컴 한글처럼
+  클래식하면서 선명하게. 원천(이 저장소)도 바꾸기로 사용자가 확인함.
+- **원인**: `font.family.ui` 의 첫 글꼴 돋움은 굵은 글꼴이 없어 Windows 가 굵게를 흉내 낸다.
+- **수정**: `tokens/base/typography.json` 의 ui 를 맑은 고딕 우선으로(돋움 제거), ui-skia 는 같은 값으로 호환 유지. pacsplus 테마는
+  굴림 그대로 두되 목록을 6개로 맞춰 베이스 꼬리가 섞이던 것(`sans-serif, 'Noto Sans CJK KR', ...`)을 없앰. content(굴림)·mono 그대로.
+  부품 CSS 루트에 `font-synthesis: none` 은 넣지 않음(굴림 본문의 사용자 굵게가 사라짐), 대신 DESIGN.md 3절 규칙. ADR-0004 신규,
+  ADR-0003 글꼴 행에 대체 표시. DESIGN.md 1·3절, README, 쇼케이스 타이포그래피 안내 문장. `npm run build` 로 17개 테마 13개 플랫폼 재생성.
+- **검증**: `npm run build && npm run verify` 통과(대비 포함). 도커가 이 WSL 에 없어 같은 폴더를 `python3 -m http.server 8083` 으로 띄우고
+  Playwright 1440·390 에서 타이포그래피·탭·메뉴·대화상자 전후 비교: 굵은 제목이 맑은 고딕 Bold 로, 390 가로 넘침 없음. 리눅스라 ClearType 은
+  재현하지 못함. 소비 경로 `npx -y github:coolmarvel/sh-design-system@main` 를 빈 폴더에서 시험.
+- **다음**: sh-video-editor 에서 `update` 로 받아 편집기 덮어쓰기 제거. 다른 소비 앱(SH Compositor 등)도 다음 갱신 때 반영.
 
 ## 2026-10-14 - 특수기호 정리 v0.1.1
 
