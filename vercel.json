@@ -2,9 +2,13 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "",
-  "buildCommand": "rm -rf site && mkdir site && cp -r showcase dist references components site/",
+  "buildCommand": "rm -rf site && mkdir site && cp -r showcase/. site/ && cp -r dist references components site/",
   "outputDirectory": "site",
-  "redirects": [{ "source": "/", "destination": "/showcase/", "permanent": false }],
+  "redirects": [
+    { "source": "/showcase", "destination": "/", "permanent": true },
+    { "source": "/showcase/", "destination": "/", "permanent": true },
+    { "source": "/showcase/:path+", "destination": "/:path+", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

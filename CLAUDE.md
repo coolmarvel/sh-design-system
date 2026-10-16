@@ -77,7 +77,7 @@ npm run build            # tokens -> dist/ 전체 + DESIGN.md 머리말(tokens·
 npm run verify           # lint(prettier) + check(dist 신선도·DESIGN.md 동기화·CSS 변수 참조·대비)
 npm run format           # prettier 로 build/ showcase/ tokens/ 정리
 npm run showcase:up      # 도커 nginx -> http://localhost:8083  (끄기: showcase:down)
-npm run deploy:site      # 공개 쇼케이스 https://sh-design-system.vercel.app (vercel.json 이 showcase·dist·references·components 를 site/ 로 모은다)
+npm run deploy:site      # 공개 쇼케이스 https://sh-design-system.vercel.app (vercel.json 이 showcase 파일을 site/ 루트에, dist·references·components 를 그 옆에 모은다. 쇼케이스는 루트 / 에서 열리고 예전 /showcase/ 는 루트로 넘긴다)
 node bin/sh-ds.mjs list  # 설치 명령 로컬 시험 (init --platform css --dir <폴더>)
 ```
 

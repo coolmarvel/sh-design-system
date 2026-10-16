@@ -16,6 +16,7 @@ domain: development
 - **요청**: 포트폴리오에 개인 프로젝트로 올리면서 쇼케이스를 Vercel 로 배포.
 - **수정**: `vercel.json`(빌드 단계 없음, `showcase`·`dist`·`references`·`components` 를 `site/` 로 복사, `/` 를 `/showcase/` 로 넘김, `.md` 는 text/markdown) · `.vercelignore` · `.gitignore`(`site/`·`.vercel/`) · 스크립트 `deploy:site`.
 - **검증**: https://sh-design-system.vercel.app 에서 `/` 307, `/showcase/`·`/dist/themes.json`·`/references/sh-classic/DESIGN.md`·부품 CSS 200, `/docs/`·`/package.json` 404(업로드 안 됨).
+- **후속(같은 날)**: 쇼케이스를 `/showcase/` 없이 루트에서 열리게 바꿈. 빌드가 `showcase/` 내용을 `site/` 루트로 복사하고 `dist`·`references`·`components` 는 그 옆에 둔다. 쇼케이스의 `../dist` 같은 상대경로는 루트에서 `/dist` 로 풀려 코드 변경이 없다. 예전 주소 `/showcase`·`/showcase/`·`/showcase/*` 는 308 로 루트로. 브라우저에서 토큰 로드·테마 전환·4xx 0 확인. 로컬 도커(nginx)는 그대로 `/showcase/`.
 - **다음**: 쇼케이스나 dist 를 바꾸면 푸시와 함께 `npm run deploy:site`.
 
 
