@@ -1,7 +1,7 @@
 ---
 title: 세션 로그
 created: 2026-10-13
-updated: 2026-10-15
+updated: 2026-10-16
 domain: development
 ---
 
@@ -10,6 +10,14 @@ domain: development
 이 파일이 **"언제 무슨 일이 있었나"의 SSOT**다. 세션마다 최상단에 블록 추가.
 
 블록 형식: `## YYYY-MM-DD - 제목` 아래에 **요청/피드백, 수정, 검증, 다음** 순서로 간결하게.
+
+## 2026-10-16 - 쇼케이스를 Vercel 에 공개 배포
+
+- **요청**: 포트폴리오에 개인 프로젝트로 올리면서 쇼케이스를 Vercel 로 배포.
+- **수정**: `vercel.json`(빌드 단계 없음, `showcase`·`dist`·`references`·`components` 를 `site/` 로 복사, `/` 를 `/showcase/` 로 넘김, `.md` 는 text/markdown) · `.vercelignore` · `.gitignore`(`site/`·`.vercel/`) · 스크립트 `deploy:site`.
+- **검증**: https://sh-design-system.vercel.app 에서 `/` 307, `/showcase/`·`/dist/themes.json`·`/references/sh-classic/DESIGN.md`·부품 CSS 200, `/docs/`·`/package.json` 404(업로드 안 됨).
+- **다음**: 쇼케이스나 dist 를 바꾸면 푸시와 함께 `npm run deploy:site`.
+
 
 ## 2026-10-15 - UI 글꼴을 맑은 고딕 우선으로 v0.1.2
 

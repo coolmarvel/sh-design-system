@@ -42,6 +42,7 @@ npm install
 npm run build          # tokens -> dist/ + DESIGN.md 머리말 갱신
 npm run verify         # prettier 검사 + dist·DESIGN.md·CSS 변수·대비 검증
 npm run showcase:up    # http://localhost:8083 (도커) - 끄기: npm run showcase:down
+npm run deploy:site    # 공개 쇼케이스 https://sh-design-system.vercel.app 갱신 (Vercel CLI)
 ```
 
 값을 바꾸려면 `tokens/` 만 고치고 빌드한다. `dist/` 와 DESIGN.md 머리말을 손으로 고치면 `verify` 가 실패한다.

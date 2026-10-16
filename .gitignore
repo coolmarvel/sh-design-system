@@ -22,3 +22,8 @@ Thumbs.db
 # Node
 node_modules/
 # dist/ 는 커밋한다. 다른 프로젝트가 GitHub 에서 생성 파일을 그대로 가져다 쓴다
+
+# Vercel 정적 묶음·링크 정보
+site/
+.vercel/
+.vercel

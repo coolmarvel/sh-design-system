@@ -9,7 +9,8 @@
     "format": "prettier --write build showcase tokens",
     "verify": "npm run lint && npm run check",
     "showcase:up": "docker compose up -d",
-    "showcase:down": "docker compose down"
+    "showcase:down": "docker compose down",
+    "deploy:site": "npx -y vercel@latest deploy --prod"
   },
   "author": "이성현",
   "license": "UNLICENSED",

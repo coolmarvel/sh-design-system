@@ -1,0 +1,13 @@
+# Vercel 업로드에서 뺄 것. 쇼케이스는 showcase·dist·references·components 만 쓴다(빌드가 site/ 로 모은다)
+/node_modules/
+/docs/
+/tokens/
+/build/
+/scripts/
+/bin/
+/.claude/
+/.omd/
+/.playwright-mcp/
+/site/
+/.env
+/.env.*
